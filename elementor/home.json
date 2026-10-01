@@ -1,0 +1,3556 @@
+[
+ {
+  "id": "cd599d5",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "full",
+   "flex_direction": "column",
+   "flex_justify_content": "center",
+   "padding": {
+    "unit": "px",
+    "top": "0",
+    "right": "0",
+    "bottom": "0",
+    "left": "0",
+    "isLinked": true
+   },
+   "background_background": "classic",
+   "background_image": {
+    "id": "__IMG__dr-home-hero.jpg",
+    "url": "__IMG__dr-home-hero.jpg",
+    "size": "",
+    "alt": "",
+    "source": "library"
+   },
+   "background_position": "center center",
+   "background_size": "cover",
+   "background_repeat": "no-repeat",
+   "background_color": "#050507",
+   "min_height": {
+    "unit": "vh",
+    "size": 92,
+    "sizes": []
+   },
+   "css_classes": "dr-sec dr-hero dr-smoke",
+   "_element_id": "top"
+  },
+  "elements": [
+   {
+    "id": "3ef4f1e",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "boxed",
+     "flex_direction": "column",
+     "boxed_width": {
+      "unit": "px",
+      "size": 1280,
+      "sizes": []
+     },
+     "flex_gap": {
+      "column": "24",
+      "row": "24",
+      "isLinked": true,
+      "unit": "px",
+      "size": 24
+     },
+     "flex_justify_content": "center",
+     "flex_align_items": "flex-start",
+     "padding": {
+      "unit": "px",
+      "top": "120",
+      "right": "48",
+      "bottom": "210",
+      "left": "48",
+      "isLinked": false
+     },
+     "padding_tablet": {
+      "unit": "px",
+      "top": "96",
+      "right": "32",
+      "bottom": "190",
+      "left": "32",
+      "isLinked": false
+     },
+     "padding_mobile": {
+      "unit": "px",
+      "top": "64",
+      "right": "16",
+      "bottom": "72",
+      "left": "16",
+      "isLinked": false
+     },
+     "css_classes": "dr-hero-content"
+    },
+    "elements": [
+     {
+      "id": "14a8f4a",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Mobile DJ · Melbourne",
+       "header_size": "div",
+       "_css_classes": "dr-badge"
+      },
+      "elements": []
+     },
+     {
+      "id": "cebb9f3",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Dance Reaction",
+       "header_size": "h1",
+       "_css_classes": "dr-hero-title"
+      },
+      "elements": []
+     },
+     {
+      "id": "6a481ab",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Mobile Disco's",
+       "header_size": "p",
+       "_css_classes": "dr-hero-sub"
+      },
+      "elements": []
+     },
+     {
+      "id": "cedb309",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Feel the rhythm of the night",
+       "header_size": "p",
+       "_css_classes": "dr-hero-tag"
+      },
+      "elements": []
+     },
+     {
+      "id": "b4946d0",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>Weddings, corporate dinners, birthdays and any other type of event.</p>",
+       "_css_classes": "dr-lead"
+      },
+      "elements": []
+     },
+     {
+      "id": "3752f4a",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "row",
+       "flex_gap": {
+        "column": "12",
+        "row": "12",
+        "isLinked": true,
+        "unit": "px",
+        "size": 12
+       },
+       "flex_align_items": "center",
+       "flex_wrap": "wrap",
+       "padding": {
+        "unit": "px",
+        "top": "8",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+       },
+       "css_classes": "dr-btn-row"
+      },
+      "elements": [
+       {
+        "id": "42b383e",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Booking enquiry",
+         "link": {
+          "url": "#enquiry",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn"
+        },
+        "elements": []
+       },
+       {
+        "id": "e3dd9f2",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Call 0419 399 374",
+         "link": {
+          "url": "tel:0419399374",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn dr-btn--outline"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "7a4b5e2",
+    "elType": "widget",
+    "widgetType": "html",
+    "settings": {
+     "html": "<a href=\"#welcome\" aria-label=\"Scroll down\"><span class=\"dr-scroll__line\"></span><span class=\"dr-scroll__dot\"><svg width=\"14\" height=\"12\" viewBox=\"0 0 14 12\" aria-hidden=\"true\"><path d=\"M0 0 H14 L7 12 Z\" fill=\"#fff\"/></svg></span><span class=\"dr-scroll__chev\"><svg width=\"52\" height=\"46\" viewBox=\"0 0 52 46\" fill=\"none\" stroke=\"#fff\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 3 L26 22 L49 3\"/><path d=\"M3 22 L26 41 L49 22\"/></svg></span></a>",
+     "_css_classes": "dr-scroll"
+    },
+    "elements": []
+   }
+  ]
+ },
+ {
+  "id": "7f27c15",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "padding": {
+    "unit": "px",
+    "top": "120",
+    "right": "48",
+    "bottom": "120",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "css_classes": "dr-sec dr-welcome dr-smoke",
+   "_element_id": "welcome"
+  },
+  "elements": [
+   {
+    "id": "c313e98",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "88",
+      "row": "40",
+      "isLinked": false,
+      "unit": "px",
+      "size": 88
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "flex_direction_tablet": "column",
+     "_animation": "fadeInUp",
+     "animation_duration": "slow",
+     "css_classes": "dr-split"
+    },
+    "elements": [
+     {
+      "id": "46292e9",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-stack"
+      },
+      "elements": [
+       {
+        "id": "2d9a2cb",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "id": "__IMG__dr-home-dj.jpg",
+          "url": "__IMG__dr-home-dj.jpg",
+          "size": "",
+          "alt": "DJ playing a set under neon lights",
+          "source": "library"
+         },
+         "image_size": "full",
+         "caption_source": "none",
+         "link_to": "none",
+         "_css_classes": "dr-stack__a dr-fill"
+        },
+        "elements": []
+       },
+       {
+        "id": "ad01efb",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "id": "__IMG__dr-home-dj-b.jpg",
+          "url": "__IMG__dr-home-dj-b.jpg",
+          "size": "",
+          "alt": "DJ at the decks in a neon-lit club",
+          "source": "library"
+         },
+         "image_size": "full",
+         "caption_source": "none",
+         "link_to": "none",
+         "_css_classes": "dr-stack__b dr-fill dr-tint"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "20b0802",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "24",
+        "row": "24",
+        "isLinked": true,
+        "unit": "px",
+        "size": 24
+       },
+       "flex_justify_content": "center",
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-split__copy"
+      },
+      "elements": [
+       {
+        "id": "aa76e54",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Welcome",
+         "header_size": "div",
+         "_css_classes": "dr-eyebrow"
+        },
+        "elements": []
+       },
+       {
+        "id": "d01d3a6",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Hi, thanks for dropping by",
+         "header_size": "h2",
+         "_css_classes": "dr-h2"
+        },
+        "elements": []
+       },
+       {
+        "id": "b6e3225",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Hi, thanks for dropping by to check out Dance Reaction. I know that planning a party or a celebration, be it a wedding, corporate dinner, birthday or any other type of event, can take some time, and trying to find the right DJ for your event may be frustrating.</p><p>So what you will get here, is an uncomplicated honest look at what Dance Reaction is about, what I do, and how I make it work for your event.</p>",
+         "_css_classes": "dr-body-lg"
+        },
+        "elements": []
+       },
+       {
+        "id": "694b374",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "row",
+         "flex_gap": {
+          "column": "12",
+          "row": "12",
+          "isLinked": true,
+          "unit": "px",
+          "size": 12
+         },
+         "flex_align_items": "center",
+         "flex_wrap": "wrap",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-btn-row"
+        },
+        "elements": [
+         {
+          "id": "9ba5e5b",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+           "text": "Get in touch",
+           "link": {
+            "url": "#enquiry",
+            "is_external": "",
+            "nofollow": ""
+           },
+           "size": "sm",
+           "_css_classes": "dr-btn"
+          },
+          "elements": []
+         },
+         {
+          "id": "c17365d",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+           "text": "About Dance Reaction →",
+           "link": {
+            "url": "#",
+            "is_external": "",
+            "nofollow": ""
+           },
+           "size": "sm",
+           "_css_classes": "dr-btn dr-btn--link"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "3b93d90",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "padding": {
+    "unit": "px",
+    "top": "120",
+    "right": "48",
+    "bottom": "110",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "gradient",
+   "background_color": "#E052D8",
+   "background_color_b": "#3D4FE8",
+   "background_gradient_type": "linear",
+   "background_gradient_angle": {
+    "unit": "deg",
+    "size": 100,
+    "sizes": []
+   },
+   "css_classes": "dr-sec dr-why",
+   "_element_id": "why"
+  },
+  "elements": [
+   {
+    "id": "4a98ef7",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "18",
+      "row": "18",
+      "isLinked": true,
+      "unit": "px",
+      "size": 18
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "_animation": "fadeInUp",
+     "animation_duration": "slow",
+     "css_classes": "dr-why-head"
+    },
+    "elements": [
+     {
+      "id": "6e7e7fd",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Booking a DJ",
+       "header_size": "h2",
+       "align": "center",
+       "_css_classes": "dr-h2 dr-h2--md"
+      },
+      "elements": []
+     },
+     {
+      "id": "a7e3754",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>When you are booking a dj for your function, the first thing you should be thinking about is what is important to the success of your function...</p>",
+       "align": "center"
+      },
+      "elements": []
+     },
+     {
+      "id": "f538425",
+      "elType": "widget",
+      "widgetType": "html",
+      "settings": {
+       "html": "<a href=\"#enquiry\" aria-label=\"Booking enquiry\"><span class=\"dr-play__ring dr-play__ring--outer\"></span><span class=\"dr-play__ring dr-play__ring--inner\"></span><span class=\"dr-play__core\"></span><span class=\"dr-play__icon\">▶</span></a>",
+       "_css_classes": "dr-play"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "c2bf5a4",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "18",
+      "row": "18",
+      "isLinked": true,
+      "unit": "px",
+      "size": 18
+     },
+     "flex_align_items": "flex-start",
+     "flex_wrap": "nowrap",
+     "flex_wrap_tablet": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "72",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     },
+     "padding_mobile": {
+      "unit": "px",
+      "top": "48",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     },
+     "css_classes": "dr-tiles"
+    },
+    "elements": [
+     {
+      "id": "b713c9c",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 25,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 48,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 47,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "4",
+        "row": "4",
+        "isLinked": true,
+        "unit": "px",
+        "size": 4
+       },
+       "flex_justify_content": "flex-end",
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "12",
+        "bottom": "14",
+        "left": "12",
+        "isLinked": false
+       },
+       "background_background": "classic",
+       "background_image": {
+        "id": "__IMG__dr-home-why-1.jpg",
+        "url": "__IMG__dr-home-why-1.jpg",
+        "size": "",
+        "alt": "",
+        "source": "library"
+       },
+       "background_position": "center center",
+       "background_size": "cover",
+       "background_repeat": "no-repeat",
+       "_animation": "fadeInUp",
+       "animation_duration": "slow",
+       "css_classes": "dr-tile"
+      },
+      "elements": [
+       {
+        "id": "6bf059a",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "01",
+         "header_size": "div",
+         "_css_classes": "dr-tile__num"
+        },
+        "elements": []
+       },
+       {
+        "id": "4733981",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Quality",
+         "header_size": "h3",
+         "_css_classes": "dr-tile__title"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "2818786",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 25,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 48,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 47,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "4",
+        "row": "4",
+        "isLinked": true,
+        "unit": "px",
+        "size": 4
+       },
+       "flex_justify_content": "flex-end",
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "12",
+        "bottom": "14",
+        "left": "12",
+        "isLinked": false
+       },
+       "background_background": "classic",
+       "background_image": {
+        "id": "__IMG__dr-home-why-2.jpg",
+        "url": "__IMG__dr-home-why-2.jpg",
+        "size": "",
+        "alt": "",
+        "source": "library"
+       },
+       "background_position": "center center",
+       "background_size": "cover",
+       "background_repeat": "no-repeat",
+       "_animation": "fadeInUp",
+       "animation_duration": "slow",
+       "css_classes": "dr-tile"
+      },
+      "elements": [
+       {
+        "id": "6d0bf83",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "02",
+         "header_size": "div",
+         "_css_classes": "dr-tile__num"
+        },
+        "elements": []
+       },
+       {
+        "id": "ff4f2de",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Experience",
+         "header_size": "h3",
+         "_css_classes": "dr-tile__title"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "d3b4f1d",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 25,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 48,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 47,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "4",
+        "row": "4",
+        "isLinked": true,
+        "unit": "px",
+        "size": 4
+       },
+       "flex_justify_content": "flex-end",
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "12",
+        "bottom": "14",
+        "left": "12",
+        "isLinked": false
+       },
+       "background_background": "classic",
+       "background_image": {
+        "id": "__IMG__dr-home-why-3.jpg",
+        "url": "__IMG__dr-home-why-3.jpg",
+        "size": "",
+        "alt": "",
+        "source": "library"
+       },
+       "background_position": "center center",
+       "background_size": "cover",
+       "background_repeat": "no-repeat",
+       "_animation": "fadeInUp",
+       "animation_duration": "slow",
+       "css_classes": "dr-tile"
+      },
+      "elements": [
+       {
+        "id": "a3bd1ec",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "03",
+         "header_size": "div",
+         "_css_classes": "dr-tile__num"
+        },
+        "elements": []
+       },
+       {
+        "id": "7408e74",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Music range",
+         "header_size": "h3",
+         "_css_classes": "dr-tile__title"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "a1a81f9",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 25,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 48,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 47,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "4",
+        "row": "4",
+        "isLinked": true,
+        "unit": "px",
+        "size": 4
+       },
+       "flex_justify_content": "flex-end",
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "12",
+        "bottom": "14",
+        "left": "12",
+        "isLinked": false
+       },
+       "background_background": "classic",
+       "background_image": {
+        "id": "__IMG__dr-home-why-4.jpg",
+        "url": "__IMG__dr-home-why-4.jpg",
+        "size": "",
+        "alt": "",
+        "source": "library"
+       },
+       "background_position": "center center",
+       "background_size": "cover",
+       "background_repeat": "no-repeat",
+       "_animation": "fadeInUp",
+       "animation_duration": "slow",
+       "css_classes": "dr-tile"
+      },
+      "elements": [
+       {
+        "id": "0e1e65b",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "04",
+         "header_size": "div",
+         "_css_classes": "dr-tile__num"
+        },
+        "elements": []
+       },
+       {
+        "id": "0c50e19",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Equipment",
+         "header_size": "h3",
+         "_css_classes": "dr-tile__title"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ea5391e",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "padding": {
+    "unit": "px",
+    "top": "130",
+    "right": "48",
+    "bottom": "130",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "classic",
+   "background_color": "#050507",
+   "css_classes": "dr-sec dr-price dr-smoke",
+   "_element_id": "price"
+  },
+  "elements": [
+   {
+    "id": "12cb2c2",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "96",
+      "row": "40",
+      "isLinked": false,
+      "unit": "px",
+      "size": 96
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "flex_direction_tablet": "column",
+     "_animation": "fadeInUp",
+     "animation_duration": "slow",
+     "css_classes": "dr-split"
+    },
+    "elements": [
+     {
+      "id": "d670425",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-stack"
+      },
+      "elements": [
+       {
+        "id": "98cc78a",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "id": "__IMG__dr-home-price-a.jpg",
+          "url": "__IMG__dr-home-price-a.jpg",
+          "size": "",
+          "alt": "DJ under lasers",
+          "source": "library"
+         },
+         "image_size": "full",
+         "caption_source": "none",
+         "link_to": "none",
+         "_css_classes": "dr-stack__a dr-fill"
+        },
+        "elements": []
+       },
+       {
+        "id": "bc84a0b",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "id": "__IMG__dr-home-price-b.jpg",
+          "url": "__IMG__dr-home-price-b.jpg",
+          "size": "",
+          "alt": "Crowd dancing under confetti",
+          "source": "library"
+         },
+         "image_size": "full",
+         "caption_source": "none",
+         "link_to": "none",
+         "_css_classes": "dr-stack__b dr-fill dr-tint"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "44c1d60",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "22",
+        "row": "22",
+        "isLinked": true,
+        "unit": "px",
+        "size": 22
+       },
+       "flex_justify_content": "center",
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-split__copy"
+      },
+      "elements": [
+       {
+        "id": "a3a3b3f",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Price should be the last thing.",
+         "header_size": "h2",
+         "_css_classes": "dr-h2 dr-h2--md"
+        },
+        "elements": []
+       },
+       {
+        "id": "c442184",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>In reality, the cost of your entertainment is a small portion of your overall event budget - however, it WILL be the critical element of a successful event.</p>",
+         "_css_classes": "dr-body-lg"
+        },
+        "elements": []
+       },
+       {
+        "id": "387b272",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "row",
+         "flex_gap": {
+          "column": "12",
+          "row": "12",
+          "isLinked": true,
+          "unit": "px",
+          "size": 12
+         },
+         "flex_align_items": "center",
+         "flex_wrap": "wrap",
+         "padding": {
+          "unit": "px",
+          "top": "6",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+         },
+         "css_classes": "dr-btn-row"
+        },
+        "elements": [
+         {
+          "id": "3ef7c09",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+           "text": "Booking enquiry",
+           "link": {
+            "url": "#enquiry",
+            "is_external": "",
+            "nofollow": ""
+           },
+           "size": "sm",
+           "_css_classes": "dr-btn"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "23bab28",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "48",
+    "row": "48",
+    "isLinked": true,
+    "unit": "px",
+    "size": 48
+   },
+   "padding": {
+    "unit": "px",
+    "top": "120",
+    "right": "48",
+    "bottom": "120",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "classic",
+   "background_color": "#050507",
+   "css_classes": "dr-sec dr-how dr-smoke",
+   "_element_id": "how"
+  },
+  "elements": [
+   {
+    "id": "ba1cfe3",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "28",
+      "row": "28",
+      "isLinked": true,
+      "unit": "px",
+      "size": 28
+     },
+     "flex_align_items": "stretch",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "flex_direction_tablet": "column",
+     "css_classes": "dr-cards"
+    },
+    "elements": [
+     {
+      "id": "46970fa",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "0",
+        "row": "0",
+        "isLinked": true,
+        "unit": "px",
+        "size": 0
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "_animation": "fadeInUp",
+       "animation_duration": "slow",
+       "css_classes": "dr-card dr-card--note"
+      },
+      "elements": [
+       {
+        "id": "2e9063e",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "id": "__IMG__dr-home-how-a.jpg",
+          "url": "__IMG__dr-home-how-a.jpg",
+          "size": "",
+          "alt": "Couple's first dance at a wedding reception",
+          "source": "library"
+         },
+         "image_size": "full",
+         "caption_source": "none",
+         "link_to": "none",
+         "_css_classes": "dr-card__media dr-fill dr-tint"
+        },
+        "elements": []
+       },
+       {
+        "id": "5d24343",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "14",
+          "row": "14",
+          "isLinked": true,
+          "unit": "px",
+          "size": 14
+         },
+         "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "36",
+          "bottom": "36",
+          "left": "36",
+          "isLinked": false
+         },
+         "padding_mobile": {
+          "unit": "px",
+          "top": "44",
+          "right": "22",
+          "bottom": "26",
+          "left": "22",
+          "isLinked": false
+         },
+         "css_classes": "dr-card__body"
+        },
+        "elements": [
+         {
+          "id": "f195818",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Planning & communication",
+           "header_size": "h3",
+           "_css_classes": "dr-eyebrow"
+          },
+          "elements": []
+         },
+         {
+          "id": "19ae7f0",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+           "editor": "<p>Through planning and communication, I will provide you with quality music and a great atmosphere designed specifically for your event. I have the experience and attention to detail to maximise the event's success!</p>"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "22b23fa",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "0",
+        "row": "0",
+        "isLinked": true,
+        "unit": "px",
+        "size": 0
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "_animation": "fadeInUp",
+       "animation_duration": "slow",
+       "css_classes": "dr-card"
+      },
+      "elements": [
+       {
+        "id": "66f3533",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "id": "__IMG__dr-home-how-b.jpg",
+          "url": "__IMG__dr-home-how-b.jpg",
+          "size": "",
+          "alt": "Guests at a corporate dinner",
+          "source": "library"
+         },
+         "image_size": "full",
+         "caption_source": "none",
+         "link_to": "none",
+         "_css_classes": "dr-card__media dr-fill dr-tint"
+        },
+        "elements": []
+       },
+       {
+        "id": "bf75602",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "14",
+          "row": "14",
+          "isLinked": true,
+          "unit": "px",
+          "size": 14
+         },
+         "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "36",
+          "bottom": "36",
+          "left": "36",
+          "isLinked": false
+         },
+         "padding_mobile": {
+          "unit": "px",
+          "top": "44",
+          "right": "22",
+          "bottom": "26",
+          "left": "22",
+          "isLinked": false
+         },
+         "css_classes": "dr-card__body"
+        },
+        "elements": [
+         {
+          "id": "c688af6",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Presented & professional",
+           "header_size": "h3",
+           "_css_classes": "dr-eyebrow"
+          },
+          "elements": []
+         },
+         {
+          "id": "47885a2",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+           "editor": "<p>You will find me well presented and professional at all times, whether DJing a private party or larger corporate events, all are treated with the same level of attention to detail, ensuring your event's complete success!</p>"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "f4cf087",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "20",
+      "row": "20",
+      "isLinked": true,
+      "unit": "px",
+      "size": 20
+     },
+     "flex_justify_content": "space-between",
+     "flex_align_items": "center",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "40",
+      "right": "48",
+      "bottom": "40",
+      "left": "48",
+      "isLinked": false
+     },
+     "padding_mobile": {
+      "unit": "px",
+      "top": "24",
+      "right": "22",
+      "bottom": "24",
+      "left": "22",
+      "isLinked": false
+     },
+     "background_background": "gradient",
+     "background_color": "#E052D8",
+     "background_color_b": "#3D4FE8",
+     "background_gradient_type": "linear",
+     "background_gradient_angle": {
+      "unit": "deg",
+      "size": 100,
+      "sizes": []
+     },
+     "border_radius": {
+      "unit": "px",
+      "top": "28",
+      "right": "28",
+      "bottom": "28",
+      "left": "28",
+      "isLinked": true
+     },
+     "_animation": "fadeInUp",
+     "animation_duration": "slow",
+     "css_classes": "dr-cta"
+    },
+    "elements": [
+     {
+      "id": "2c5c376",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Be sure to contact me to discuss your events requirements in detail!",
+       "header_size": "p",
+       "_css_classes": "dr-cta__text"
+      },
+      "elements": []
+     },
+     {
+      "id": "f65bbeb",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "row",
+       "flex_gap": {
+        "column": "12",
+        "row": "12",
+        "isLinked": true,
+        "unit": "px",
+        "size": 12
+       },
+       "flex_align_items": "center",
+       "flex_wrap": "wrap",
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-btn-row"
+      },
+      "elements": [
+       {
+        "id": "d27feb5",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Booking enquiry",
+         "link": {
+          "url": "#enquiry",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn dr-btn--dark"
+        },
+        "elements": []
+       },
+       {
+        "id": "1ff1e71",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Call 0419 399 374",
+         "link": {
+          "url": "tel:0419399374",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn dr-btn--light-outline"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "07e0868",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "56",
+    "row": "56",
+    "isLinked": true,
+    "unit": "px",
+    "size": 56
+   },
+   "padding": {
+    "unit": "px",
+    "top": "120",
+    "right": "48",
+    "bottom": "120",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "gradient",
+   "background_color": "#E052D8",
+   "background_color_b": "#3D4FE8",
+   "background_gradient_type": "linear",
+   "background_gradient_angle": {
+    "unit": "deg",
+    "size": 100,
+    "sizes": []
+   },
+   "css_classes": "dr-sec dr-events",
+   "_element_id": "events"
+  },
+  "elements": [
+   {
+    "id": "f0ebbb2",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "24",
+      "row": "24",
+      "isLinked": true,
+      "unit": "px",
+      "size": 24
+     },
+     "flex_justify_content": "space-between",
+     "flex_align_items": "flex-end",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-events-head"
+    },
+    "elements": [
+     {
+      "id": "b3de76a",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Events we cover",
+       "header_size": "h2",
+       "_css_classes": "dr-h2 dr-h2--xl"
+      },
+      "elements": []
+     },
+     {
+      "id": "5963d90",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "Check your date",
+       "link": {
+        "url": "#enquiry",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "size": "sm",
+       "_css_classes": "dr-btn dr-btn--dark"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "9b71da1",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "16",
+      "row": "16",
+      "isLinked": true,
+      "unit": "px",
+      "size": 16
+     },
+     "flex_align_items": "stretch",
+     "flex_wrap": "nowrap",
+     "flex_wrap_tablet": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-events-grid"
+    },
+    "elements": [
+     {
+      "id": "ff05e58",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 25,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 48,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_justify_content": "flex-end",
+       "padding": {
+        "unit": "px",
+        "top": "18",
+        "right": "20",
+        "bottom": "18",
+        "left": "20",
+        "isLinked": false
+       },
+       "html_tag": "a",
+       "link": {
+        "url": "#enquiry",
+        "is_external": "",
+        "nofollow": "",
+        "custom_attributes": ""
+       },
+       "background_background": "classic",
+       "background_image": {
+        "id": "__IMG__dr-home-ev-wedding.jpg",
+        "url": "__IMG__dr-home-ev-wedding.jpg",
+        "size": "",
+        "alt": "",
+        "source": "library"
+       },
+       "background_position": "center center",
+       "background_size": "cover",
+       "background_repeat": "no-repeat",
+       "_animation": "fadeInUp",
+       "animation_duration": "slow",
+       "css_classes": "dr-event"
+      },
+      "elements": [
+       {
+        "id": "bfc6127",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Weddings",
+         "header_size": "h3",
+         "_css_classes": "dr-event__title"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "45b3243",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 25,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 48,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_justify_content": "flex-end",
+       "padding": {
+        "unit": "px",
+        "top": "18",
+        "right": "20",
+        "bottom": "18",
+        "left": "20",
+        "isLinked": false
+       },
+       "html_tag": "a",
+       "link": {
+        "url": "#enquiry",
+        "is_external": "",
+        "nofollow": "",
+        "custom_attributes": ""
+       },
+       "background_background": "classic",
+       "background_image": {
+        "id": "__IMG__dr-home-ev-corporate.jpg",
+        "url": "__IMG__dr-home-ev-corporate.jpg",
+        "size": "",
+        "alt": "",
+        "source": "library"
+       },
+       "background_position": "center center",
+       "background_size": "cover",
+       "background_repeat": "no-repeat",
+       "_animation": "fadeInUp",
+       "animation_duration": "slow",
+       "css_classes": "dr-event"
+      },
+      "elements": [
+       {
+        "id": "b9af475",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Corporate dinners",
+         "header_size": "h3",
+         "_css_classes": "dr-event__title"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "7594ea4",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 25,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 48,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_justify_content": "flex-end",
+       "padding": {
+        "unit": "px",
+        "top": "18",
+        "right": "20",
+        "bottom": "18",
+        "left": "20",
+        "isLinked": false
+       },
+       "html_tag": "a",
+       "link": {
+        "url": "#enquiry",
+        "is_external": "",
+        "nofollow": "",
+        "custom_attributes": ""
+       },
+       "background_background": "classic",
+       "background_image": {
+        "id": "__IMG__dr-home-ev-birthday.jpg",
+        "url": "__IMG__dr-home-ev-birthday.jpg",
+        "size": "",
+        "alt": "",
+        "source": "library"
+       },
+       "background_position": "center center",
+       "background_size": "cover",
+       "background_repeat": "no-repeat",
+       "_animation": "fadeInUp",
+       "animation_duration": "slow",
+       "css_classes": "dr-event"
+      },
+      "elements": [
+       {
+        "id": "8f9469e",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Birthdays",
+         "header_size": "h3",
+         "_css_classes": "dr-event__title"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "a40c02e",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 25,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 48,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_justify_content": "flex-end",
+       "padding": {
+        "unit": "px",
+        "top": "18",
+        "right": "20",
+        "bottom": "18",
+        "left": "20",
+        "isLinked": false
+       },
+       "html_tag": "a",
+       "link": {
+        "url": "#enquiry",
+        "is_external": "",
+        "nofollow": "",
+        "custom_attributes": ""
+       },
+       "background_background": "classic",
+       "background_image": {
+        "id": "__IMG__dr-home-hero.jpg",
+        "url": "__IMG__dr-home-hero.jpg",
+        "size": "",
+        "alt": "",
+        "source": "library"
+       },
+       "background_position": "center center",
+       "background_size": "cover",
+       "background_repeat": "no-repeat",
+       "_animation": "fadeInUp",
+       "animation_duration": "slow",
+       "css_classes": "dr-event"
+      },
+      "elements": [
+       {
+        "id": "f102927",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Any other event",
+         "header_size": "h3",
+         "_css_classes": "dr-event__title"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "8dfae65",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "56",
+    "row": "56",
+    "isLinked": true,
+    "unit": "px",
+    "size": 56
+   },
+   "padding": {
+    "unit": "px",
+    "top": "120",
+    "right": "48",
+    "bottom": "120",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "classic",
+   "background_color": "#050507",
+   "css_classes": "dr-sec dr-testimonials dr-smoke",
+   "_element_id": "testimonials"
+  },
+  "elements": [
+   {
+    "id": "2a11501",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "14",
+      "row": "14",
+      "isLinked": true,
+      "unit": "px",
+      "size": 14
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "_animation": "fadeInUp",
+     "animation_duration": "slow",
+     "css_classes": "dr-quotes-head"
+    },
+    "elements": [
+     {
+      "id": "ce8964e",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Testimonials",
+       "header_size": "div",
+       "align": "center",
+       "_css_classes": "dr-eyebrow"
+      },
+      "elements": []
+     },
+     {
+      "id": "a4461ad",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "What they say",
+       "header_size": "h2",
+       "align": "center",
+       "_css_classes": "dr-h2"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "70c0685",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "24",
+      "row": "24",
+      "isLinked": true,
+      "unit": "px",
+      "size": 24
+     },
+     "flex_align_items": "stretch",
+     "flex_wrap": "nowrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "_animation": "fadeInUp",
+     "animation_duration": "slow",
+     "css_classes": "dr-marquee"
+    },
+    "elements": [
+     {
+      "id": "34a496c",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "f14c1d9",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "0c73b37",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Thank you for all your help at our wedding at the zoo. With your experience and professionalism we enjoyed our reception knowing you were in control giving us one less thing to worry about.</p><p>Thanks again,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "dad7e45",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "23f8b17",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Robert and Sharon",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "b30f089",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "7616ae9",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "a46939b",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "68c6729",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>A big thank you for the sensational job you did at our wedding at the Brighton Savoy. Both Stewart and I, as well as our guests, loved the variety of music you played which was evident by the number of people on the dance floor. We definitely recommend you to our friends.</p><p>Regards,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "f63838d",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "4967772",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Melinda and Stewart",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "8bf6810",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "f5b1243",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "067279f",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "5a09a4a",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Thank you for doing a fantastic job as DJ/MC at our wedding. The music was great and your professionalism appreciated. All our Guests tell us they had a fantastic time. We know we certainly did. We could have easily partied on for a few hours more.</p><p>Thanks once again,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "6ba0518",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "0eae95b",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Leonie and Romeo",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "914a13a",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "ae3aff4",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "e52aeda",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "ba95ae8",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>I just wanted to say a big thank you for all your musical entertainment at my 21st birthday. The music couldn't have been better. I've passed your name on to many of my friends.</p><p>Thanks again,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "1c2f783",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "9ffe3b4",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Samantha",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "bd9a91b",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "21st Birthday",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "3496e6d",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "9596222",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "671f216",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Just a note to say thank you for all your efforts at our staff ball at the Regent Hotel. The evening was a great success and the dance floor was at capacity level throughout the night. Your selection of music suited all the different age groups within our company, and I have had many of our staff comment on the DJ and the music.</p><p>Thanks,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "e66d030",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "f970b9e",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Peta",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "859241d",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Staff ball",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "f5cb579",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "1e56303",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "8f1ab30",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>On behalf of my wife and myself, I sincerely thank you for the wonderful job by you on the occasion of our wedding at the Royal Melbourne Zoo. Your professionalism and ability to put both of us at ease on such an important day in our lives, was truly outstanding.</p><p>Thank you, thank you, thank you.</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "b90fc62",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "0e0d33e",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Ian and Debbie",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "fac03a3",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "e2f0624",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "a576bfa",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "f8e579d",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Please accept our sincere thanks for your entertainment at our wedding. Everyone at the function had a fantastic time.</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "c3d6427",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "5c6aeb2",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Anthony and Naomi",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "1a01c51",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "8d8f857",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "5714cef",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "ec27328",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>It was really helpful having you take care of the music for our wedding reception. The night was a total success. Your MC/DJ skills and timing made the night.</p><p>Thanks heaps for a really professional service,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "ecf4af0",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "4c13bb8",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Yran & George",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "6de4674",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fb49234",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "56",
+    "row": "56",
+    "isLinked": true,
+    "unit": "px",
+    "size": 56
+   },
+   "padding": {
+    "unit": "px",
+    "top": "140",
+    "right": "48",
+    "bottom": "140",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "css_classes": "dr-sec dr-gallery-sec dr-smoke",
+   "_element_id": "gallery"
+  },
+  "elements": [
+   {
+    "id": "01267d0",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "18",
+      "row": "18",
+      "isLinked": true,
+      "unit": "px",
+      "size": 18
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "_animation": "fadeInUp",
+     "animation_duration": "slow",
+     "css_classes": "dr-gallery-head"
+    },
+    "elements": [
+     {
+      "id": "cac045b",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Feel the <span class=\"dr-hp\"><span>rhythm</span></span> of the night",
+       "header_size": "h2",
+       "align": "center",
+       "_css_classes": "dr-rhythm"
+      },
+      "elements": []
+     },
+     {
+      "id": "b7615f3",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>Weddings, corporate dinners, birthdays and any other type of event.</p>",
+       "align": "center",
+       "_css_classes": "dr-muted"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "fb90036",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "_animation": "fadeInUp",
+     "animation_duration": "slow",
+     "css_classes": "dr-gallery"
+    },
+    "elements": [
+     {
+      "id": "ccb0d69",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": "__IMG__dr-home-g1.jpg",
+        "url": "__IMG__dr-home-g1.jpg",
+        "size": "",
+        "alt": "DJ booth under lasers",
+        "source": "library"
+       },
+       "image_size": "full",
+       "caption_source": "none",
+       "link_to": "none",
+       "_css_classes": "dr-g1 dr-fill dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "f41081e",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": "__IMG__dr-home-g2.jpg",
+        "url": "__IMG__dr-home-g2.jpg",
+        "size": "",
+        "alt": "DJ performing in a neon club",
+        "source": "library"
+       },
+       "image_size": "full",
+       "caption_source": "none",
+       "link_to": "none",
+       "_css_classes": "dr-g2 dr-fill"
+      },
+      "elements": []
+     },
+     {
+      "id": "65802ab",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": "__IMG__dr-home-g3.jpg",
+        "url": "__IMG__dr-home-g3.jpg",
+        "size": "",
+        "alt": "Birthday celebration with sparklers",
+        "source": "library"
+       },
+       "image_size": "full",
+       "caption_source": "none",
+       "link_to": "none",
+       "_css_classes": "dr-g3 dr-fill dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "d38d783",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": "__IMG__dr-home-ev-wedding.jpg",
+        "url": "__IMG__dr-home-ev-wedding.jpg",
+        "size": "",
+        "alt": "Wedding first dance",
+        "source": "library"
+       },
+       "image_size": "full",
+       "caption_source": "none",
+       "link_to": "none",
+       "_css_classes": "dr-g4 dr-fill dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "ce28015",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": "__IMG__dr-home-g5.jpg",
+        "url": "__IMG__dr-home-g5.jpg",
+        "size": "",
+        "alt": "Party guests dancing",
+        "source": "library"
+       },
+       "image_size": "full",
+       "caption_source": "none",
+       "link_to": "none",
+       "_css_classes": "dr-g5 dr-fill dr-tint"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "4ab96ee",
+    "elType": "widget",
+    "widgetType": "button",
+    "settings": {
+     "text": "View gallery",
+     "link": {
+      "url": "#",
+      "is_external": "",
+      "nofollow": ""
+     },
+     "size": "sm",
+     "align": "center",
+     "_css_classes": "dr-btn dr-btn--outline"
+    },
+    "elements": []
+   }
+  ]
+ },
+ {
+  "id": "043ce46",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "padding": {
+    "unit": "px",
+    "top": "120",
+    "right": "48",
+    "bottom": "120",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "classic",
+   "background_image": {
+    "id": "__IMG__dr-home-hero.jpg",
+    "url": "__IMG__dr-home-hero.jpg",
+    "size": "",
+    "alt": "",
+    "source": "library"
+   },
+   "background_position": "center center",
+   "background_size": "cover",
+   "background_repeat": "no-repeat",
+   "background_color": "#050507",
+   "css_classes": "dr-sec dr-enquiry dr-smoke",
+   "_element_id": "enquiry"
+  },
+  "elements": [
+   {
+    "id": "f81c858",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "80",
+      "row": "40",
+      "isLinked": false,
+      "unit": "px",
+      "size": 80
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "flex_direction_tablet": "column",
+     "_animation": "fadeInUp",
+     "animation_duration": "slow",
+     "css_classes": "dr-split"
+    },
+    "elements": [
+     {
+      "id": "6e62023",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "26",
+        "row": "26",
+        "isLinked": true,
+        "unit": "px",
+        "size": 26
+       },
+       "flex_justify_content": "center",
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-split__copy"
+      },
+      "elements": [
+       {
+        "id": "412e5b8",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Booking enquiry",
+         "header_size": "div",
+         "_css_classes": "dr-eyebrow dr-eyebrow--line"
+        },
+        "elements": []
+       },
+       {
+        "id": "04df761",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Book your <span class=\"dr-grad-text\">DJ</span>",
+         "header_size": "h2",
+         "_css_classes": "dr-h2 dr-h2--xl"
+        },
+        "elements": []
+       },
+       {
+        "id": "a8ca600",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Send an enquiry with your event date, or call directly.</p>",
+         "_css_classes": "dr-body-lg"
+        },
+        "elements": []
+       },
+       {
+        "id": "9d37c9e",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "12",
+          "row": "12",
+          "isLinked": true,
+          "unit": "px",
+          "size": 12
+         },
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-info-list"
+        },
+        "elements": [
+         {
+          "id": "93a189c",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "html_tag": "a",
+           "link": {
+            "url": "tel:0419399374",
+            "is_external": "",
+            "nofollow": "",
+            "custom_attributes": ""
+           },
+           "css_classes": "dr-info dr-info--call"
+          },
+          "elements": [
+           {
+            "id": "3edaaf8",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Call",
+             "header_size": "div",
+             "_css_classes": "dr-info__label"
+            },
+            "elements": []
+           },
+           {
+            "id": "c475a5f",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "0419 399 374",
+             "header_size": "div",
+             "_css_classes": "dr-info__value"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "5825330",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-info dr-info--place"
+          },
+          "elements": [
+           {
+            "id": "89d96af",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Based in",
+             "header_size": "div",
+             "_css_classes": "dr-info__label"
+            },
+            "elements": []
+           },
+           {
+            "id": "58eecb9",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Sunshine North, VIC 3020",
+             "header_size": "div",
+             "_css_classes": "dr-info__value"
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "ad1a076",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-split__form"
+      },
+      "elements": [
+       {
+        "id": "b5d94df",
+        "elType": "widget",
+        "widgetType": "shortcode",
+        "settings": {
+         "shortcode": "[dr_booking_form]",
+         "_css_classes": "dr-form-wrap"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

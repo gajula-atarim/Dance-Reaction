@@ -1,0 +1,12 @@
+/*
+Theme Name:   Dance Reaction
+Theme URI:    https://dance-reaction.wsdfy.com/
+Description:  Child theme of Hello Elementor for Dance Reaction Mobile Discos. Holds the brand design system (fonts, gradient, buttons, decorative effects) used by the Elementor-built pages.
+Author:       Dance Reaction
+Template:     hello-elementor
+Version:      1.0.0
+Text Domain:  dance-reaction
+License:      GNU General Public License v2 or later
+*/
+
+/* Styles live in assets/css/dr.css so they can be versioned for cache-busting. */

@@ -1,0 +1,155 @@
+[
+ {
+  "id": "b7c6b3b",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "20",
+    "row": "20",
+    "isLinked": true,
+    "unit": "px",
+    "size": 20
+   },
+   "padding": {
+    "unit": "px",
+    "top": "32",
+    "right": "48",
+    "bottom": "24",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "28",
+    "right": "16",
+    "bottom": "22",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "gradient",
+   "background_color": "#E052D8",
+   "background_color_b": "#3D4FE8",
+   "background_gradient_type": "linear",
+   "background_gradient_angle": {
+    "unit": "deg",
+    "size": 100,
+    "sizes": []
+   },
+   "css_classes": "dr-footer"
+  },
+  "elements": [
+   {
+    "id": "39da380",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "20",
+      "row": "20",
+      "isLinked": true,
+      "unit": "px",
+      "size": 20
+     },
+     "flex_justify_content": "space-between",
+     "flex_align_items": "center",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-footer__top"
+    },
+    "elements": [
+     {
+      "id": "5015c73",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Dance Reaction",
+       "header_size": "div",
+       "link": {
+        "url": "/",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "_css_classes": "dr-footer__logo"
+      },
+      "elements": []
+     },
+     {
+      "id": "60ea00b",
+      "elType": "widget",
+      "widgetType": "shortcode",
+      "settings": {
+       "shortcode": "[dr_menu location=\"footer\"]"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "efb36fc",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "24",
+      "row": "10",
+      "isLinked": false,
+      "unit": "px",
+      "size": 24
+     },
+     "flex_justify_content": "space-between",
+     "flex_align_items": "center",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "20",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     },
+     "css_classes": "dr-footer__bottom"
+    },
+    "elements": [
+     {
+      "id": "079108b",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>© Dance Reaction Mobile Discos [dr_year]. all rights reserved</p>",
+       "_css_classes": "dr-footer__copy"
+      },
+      "elements": []
+     },
+     {
+      "id": "5162831",
+      "elType": "widget",
+      "widgetType": "shortcode",
+      "settings": {
+       "shortcode": "[dr_menu location=\"legal\"]"
+      },
+      "elements": []
+     }
+    ]
+   }
+  ]
+ }
+]
