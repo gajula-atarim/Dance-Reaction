@@ -121,7 +121,7 @@
        "menu_typography_font_weight": "600",
        "color_menu_item": "#FFFFFF",
        "color_menu_item_hover": "#050507",
-       "color_menu_item_active": "#050507",
+       "color_menu_item_active": "#FFFFFF",
        "_css_classes": "dr-footer__nav"
       },
       "elements": []
@@ -209,7 +209,7 @@
        "menu_typography_font_weight": "400",
        "color_menu_item": "#FFFFFF",
        "color_menu_item_hover": "#050507",
-       "color_menu_item_active": "#050507",
+       "color_menu_item_active": "#FFFFFF",
        "_css_classes": "dr-footer__legal"
       },
       "elements": []

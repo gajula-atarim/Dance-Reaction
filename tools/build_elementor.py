@@ -423,7 +423,7 @@ def hfe_site_title(cls):
 
 
 def hfe_nav(menu, cls, *, size=15, weight="600", space=32, align="center", dropdown="none", color="#F4F1EA",
-            hover="#FFFFFF", vpad=8):
+            hover="#FFFFFF", vpad=8, active=None):
     s = {
         "menu": menu,
         "layout": "horizontal",
@@ -439,7 +439,7 @@ def hfe_nav(menu, cls, *, size=15, weight="600", space=32, align="center", dropd
         "menu_typography_font_weight": weight,
         "color_menu_item": color,
         "color_menu_item_hover": hover,
-        "color_menu_item_active": hover,
+        "color_menu_item_active": active or hover,
     }
     if dropdown != "none":
         s.update({
@@ -485,14 +485,14 @@ def hfe_footer_tpl():
     return [con([
         con([hfe_site_title("dr-footer__logo"),
              hfe_nav("footer-menu", "dr-footer__nav", size=13, space=22, align="right", color="#FFFFFF",
-                     hover="#050507", vpad=4)],
+                     hover="#050507", vpad=4, active="#FFFFFF")],
             "dr-footer__top", direction="row", wrap="wrap", justify="space-between", align="center", gap_=20),
         con([widget("copyright", {"shortcode": "© Dance Reaction Mobile Discos [hfe_current_year]. all rights reserved",
                                   "title_color": "#FFFFFF", "caption_typography_typography": "custom",
                                   "caption_typography_font_family": "Archivo", "caption_typography_font_size": px(12)},
                     "dr-footer__copy"),
              hfe_nav("footer-legal", "dr-footer__legal", size=12, weight="400", space=20, align="right",
-                     color="#FFFFFF", hover="#050507", vpad=4)],
+                     color="#FFFFFF", hover="#050507", vpad=4, active="#FFFFFF")],
             "dr-footer__bottom", direction="row", wrap="wrap", justify="space-between", align="center",
             gap_=gap(24, 10), pad=box(20, 0, 0, 0)),
     ], "dr-footer", boxed=True, gap_=20, pad=box(32, 48, 24, 48), pad_m=box(28, 16, 22, 16), bg=bg_grad(), inner=False)]
