@@ -75,7 +75,10 @@ function dr_handle_booking_enquiry() {
 		exit;
 	};
 
-	if ( ! isset( $_POST['dr_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['dr_nonce'] ) ), 'dr_booking_enquiry' ) ) {
+	// Visitors usually get a page from the page cache, where a nonce can be older than its
+	// 24h lifetime, so the nonce is only enforced for logged-in users. The honeypot below
+	// and the required-field checks protect the public form.
+	if ( is_user_logged_in() && ( ! isset( $_POST['dr_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['dr_nonce'] ) ), 'dr_booking_enquiry' ) ) ) {
 		$fail();
 	}
 

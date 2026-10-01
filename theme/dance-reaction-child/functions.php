@@ -61,6 +61,15 @@ add_action( 'wp_head', function () {
 // from loading a second, much heavier copy of the same Google Fonts.
 add_filter( 'elementor/frontend/print_google_fonts', '__return_false' );
 
+// New image sizes are generated as WebP (smaller than JPEG at the same quality).
+// Originals are kept as uploaded.
+add_filter( 'image_editor_output_format', function ( $formats ) {
+	if ( wp_image_editor_supports( array( 'mime_type' => 'image/webp' ) ) ) {
+		$formats['image/jpeg'] = 'image/webp';
+	}
+	return $formats;
+} );
+
 // Preload the hero photo (a CSS background, so the browser would otherwise find it late).
 add_action( 'wp_head', function () {
 	if ( ! is_front_page() ) {
@@ -68,12 +77,11 @@ add_action( 'wp_head', function () {
 	}
 	$hero = get_posts( array( 'post_type' => 'attachment', 'post_status' => 'inherit', 'meta_key' => '_dr_source', 'meta_value' => 'dr-home-hero.jpg', 'numberposts' => 1, 'fields' => 'ids' ) );
 	if ( $hero ) {
-		$id = (int) $hero[0];
-		printf(
-			'<link rel="preload" as="image" href="%1$s" imagesrcset="%2$s" imagesizes="100vw" fetchpriority="high">' . "\n",
-			esc_url( wp_get_attachment_image_url( $id, 'full' ) ),
-			esc_attr( (string) wp_get_attachment_image_srcset( $id, 'full' ) )
-		);
+		// Same file the hero container uses as its background (the 1536px WebP copy when it exists).
+		$url = wp_get_attachment_image_url( (int) $hero[0], '1536x1536' );
+		if ( $url ) {
+			printf( '<link rel="preload" as="image" href="%s" fetchpriority="high">' . "\n", esc_url( $url ) );
+		}
 	}
 }, 2 );
 
