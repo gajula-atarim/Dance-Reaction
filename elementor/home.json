@@ -1278,7 +1278,7 @@
     },
     "elements": [
      {
-      "id": "46970fa",
+      "id": "508cd85",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -1314,7 +1314,7 @@
         "left": "0",
         "isLinked": true
        },
-       "css_classes": "dr-card dr-card--note"
+       "css_classes": "dr-card"
       },
       "elements": [
        {

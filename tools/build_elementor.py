@@ -281,7 +281,7 @@ def how():
     cards = con([
         card("dr-home-how-a.jpg", "Couple's first dance at a wedding reception", "Planning & communication",
              "Through planning and communication, I will provide you with quality music and a great atmosphere designed "
-             "specifically for your event. I have the experience and attention to detail to maximise the event's success!", True),
+             "specifically for your event. I have the experience and attention to detail to maximise the event's success!"),
         card("dr-home-how-b.jpg", "Guests at a corporate dinner", "Presented & professional",
              "You will find me well presented and professional at all times, whether DJing a private party or larger "
              "corporate events, all are treated with the same level of attention to detail, ensuring your event's "
