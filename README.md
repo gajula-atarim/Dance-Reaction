@@ -33,5 +33,6 @@ Floating notes, flares, dot circles and smoke are added by `dr.js`, keyed to the
 ```bash
 python3 tools/build_elementor.py          # regenerate elementor/*.json
 git push                                  # setup.php pulls files from GitHub
-# then run tools/setup.php on the site with DR_REF set to the pushed commit
+# first install: run tools/setup.php on the site (DR_REF = pushed commit)
+# later updates: run tools/redeploy.php (theme files + Elementor data only)
 ```
