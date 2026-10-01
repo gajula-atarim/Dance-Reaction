@@ -584,8 +584,14 @@ body.dr-site #masthead { position: sticky !important; top: 0; z-index: 50; }
 .dr-site .dr-footer__copy .hfe-copyright-wrapper, .dr-site .dr-footer__copy .hfe-copyright-wrapper a { color: #fff; }
 
 @media (max-width: 1024px) {
-	.dr-site .dr-header .dr-nav--hfe { display: block; flex: 1 1 auto; }
-	.dr-site .dr-nav--hfe .hfe-nav-menu__toggle { margin-left: auto !important; margin-right: 0 !important; }
+	/* Tablet & phone header order: logo · (phone) Book now · hamburger at the end. */
+	.dr-site .dr-header > .e-con-inner > .dr-logo { order: 1; }
+	.dr-site .dr-header > .e-con-inner > .dr-header__cta { order: 2; margin-left: auto !important; }
+	.dr-site .dr-header .dr-nav--hfe { display: block; flex: 0 0 auto !important; order: 3; }
+	.dr-site .dr-nav--hfe .hfe-nav-menu__toggle { margin-left: 0 !important; margin-right: 0 !important; }
+	/* Keep the collapsed dropdown out of the flow so the menu button stays button-sized
+	   (UAE positions and widens it to full width when opened). */
+	.dr-site .dr-header .dr-nav--hfe nav.hfe-nav-menu__layout-horizontal { position: absolute; top: 100%; right: 0; }
 }
 
 /* ---------- Footer ---------- */
