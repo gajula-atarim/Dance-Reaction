@@ -1,0 +1,221 @@
+[
+ {
+  "id": "544ed49",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "20",
+    "row": "20",
+    "isLinked": true,
+    "unit": "px",
+    "size": 20
+   },
+   "padding": {
+    "unit": "px",
+    "top": "32",
+    "right": "48",
+    "bottom": "24",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "28",
+    "right": "16",
+    "bottom": "22",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "gradient",
+   "background_color": "#E052D8",
+   "background_color_b": "#3D4FE8",
+   "background_gradient_type": "linear",
+   "background_gradient_angle": {
+    "unit": "deg",
+    "size": 100,
+    "sizes": []
+   },
+   "css_classes": "dr-footer"
+  },
+  "elements": [
+   {
+    "id": "4321e8a",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "20",
+      "row": "20",
+      "isLinked": true,
+      "unit": "px",
+      "size": 20
+     },
+     "flex_justify_content": "space-between",
+     "flex_align_items": "center",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-footer__top"
+    },
+    "elements": [
+     {
+      "id": "047a2ff",
+      "elType": "widget",
+      "widgetType": "hfe-site-title",
+      "settings": {
+       "custom_link": "default",
+       "heading_tag": "h2",
+       "size": "default",
+       "_css_classes": "dr-footer__logo"
+      },
+      "elements": []
+     },
+     {
+      "id": "9d000c4",
+      "elType": "widget",
+      "widgetType": "navigation-menu",
+      "settings": {
+       "menu": "footer-menu",
+       "layout": "horizontal",
+       "navmenu_align": "right",
+       "pointer": "none",
+       "dropdown": "none",
+       "padding_horizontal_menu_item": {
+        "unit": "px",
+        "size": 0,
+        "sizes": []
+       },
+       "padding_vertical_menu_item": {
+        "unit": "px",
+        "size": 4,
+        "sizes": []
+       },
+       "menu_space_between": {
+        "unit": "px",
+        "size": 22,
+        "sizes": []
+       },
+       "menu_typography_typography": "custom",
+       "menu_typography_font_family": "Archivo",
+       "menu_typography_font_size": {
+        "unit": "px",
+        "size": 13,
+        "sizes": []
+       },
+       "menu_typography_font_weight": "600",
+       "color_menu_item": "#FFFFFF",
+       "color_menu_item_hover": "#050507",
+       "color_menu_item_active": "#050507",
+       "_css_classes": "dr-footer__nav"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "463b493",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "24",
+      "row": "10",
+      "isLinked": false,
+      "unit": "px",
+      "size": 24
+     },
+     "flex_justify_content": "space-between",
+     "flex_align_items": "center",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "20",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": false
+     },
+     "css_classes": "dr-footer__bottom"
+    },
+    "elements": [
+     {
+      "id": "e1dc80f",
+      "elType": "widget",
+      "widgetType": "copyright",
+      "settings": {
+       "shortcode": "© Dance Reaction Mobile Discos [hfe_current_year]. all rights reserved",
+       "title_color": "#FFFFFF",
+       "caption_typography_typography": "custom",
+       "caption_typography_font_family": "Archivo",
+       "caption_typography_font_size": {
+        "unit": "px",
+        "size": 12,
+        "sizes": []
+       },
+       "_css_classes": "dr-footer__copy"
+      },
+      "elements": []
+     },
+     {
+      "id": "ad7b040",
+      "elType": "widget",
+      "widgetType": "navigation-menu",
+      "settings": {
+       "menu": "footer-legal",
+       "layout": "horizontal",
+       "navmenu_align": "right",
+       "pointer": "none",
+       "dropdown": "none",
+       "padding_horizontal_menu_item": {
+        "unit": "px",
+        "size": 0,
+        "sizes": []
+       },
+       "padding_vertical_menu_item": {
+        "unit": "px",
+        "size": 4,
+        "sizes": []
+       },
+       "menu_space_between": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+       },
+       "menu_typography_typography": "custom",
+       "menu_typography_font_family": "Archivo",
+       "menu_typography_font_size": {
+        "unit": "px",
+        "size": 12,
+        "sizes": []
+       },
+       "menu_typography_font_weight": "400",
+       "color_menu_item": "#FFFFFF",
+       "color_menu_item_hover": "#050507",
+       "color_menu_item_active": "#050507",
+       "_css_classes": "dr-footer__legal"
+      },
+      "elements": []
+     }
+    ]
+   }
+  ]
+ }
+]

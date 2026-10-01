@@ -414,12 +414,98 @@ def footer_tpl():
     ], "dr-footer", boxed=True, gap_=20, pad=box(32, 48, 24, 48), pad_m=box(28, 16, 22, 16), bg=bg_grad(), inner=False)]
 
 
+# ---------------------------------------------------------------- UAE (Header Footer Elementor) templates
+# Widget setting keys match Ultimate Addons for Elementor 2.9.x
+# (navigation-menu, hfe-site-title, copyright).
+
+def hfe_site_title(cls):
+    return widget("hfe-site-title", {"custom_link": "default", "heading_tag": "h2", "size": "default"}, cls)
+
+
+def hfe_nav(menu, cls, *, size=15, weight="600", space=32, align="center", dropdown="none", color="#F4F1EA",
+            hover="#FFFFFF", vpad=8):
+    s = {
+        "menu": menu,
+        "layout": "horizontal",
+        "navmenu_align": align,
+        "pointer": "none",
+        "dropdown": dropdown,
+        "padding_horizontal_menu_item": px(0),
+        "padding_vertical_menu_item": px(vpad),
+        "menu_space_between": px(space),
+        "menu_typography_typography": "custom",
+        "menu_typography_font_family": "Archivo",
+        "menu_typography_font_size": px(size),
+        "menu_typography_font_weight": weight,
+        "color_menu_item": color,
+        "color_menu_item_hover": hover,
+        "color_menu_item_active": hover,
+    }
+    if dropdown != "none":
+        s.update({
+            "full_width_dropdown": "yes",
+            "resp_align": "left",
+            "hamburger_align": "right",
+            "hamburger_align_tablet": "right",
+            "hamburger_align_mobile": "right",
+            "toggle_color": "#FFFFFF",
+            "toggle_hover_color": "#F08BEA",
+            "toggle_size": px(22),
+            "color_dropdown_item": "#F4F1EA",
+            "background_color_dropdown_item": "#0B0A12",
+            "color_dropdown_item_hover": "#FFFFFF",
+            "background_color_dropdown_item_hover": "#17142A",
+            "color_dropdown_item_active": "#FFFFFF",
+            "background_color_dropdown_item_active": "#17142A",
+            "dropdown_typography_typography": "custom",
+            "dropdown_typography_font_family": "Archivo",
+            "dropdown_typography_font_size": px(16),
+            "dropdown_typography_font_weight": "600",
+            "padding_horizontal_dropdown_item": px(24),
+            "padding_vertical_dropdown_item": px(14),
+            "divider_border_color": "rgba(244,241,234,0.1)",
+            "distance_from_menu": px(12),
+        })
+    return widget("navigation-menu", s, cls)
+
+
+def hfe_header_tpl():
+    return [con([
+        hfe_site_title("dr-logo"),
+        hfe_nav("header-menu", "dr-nav dr-nav--hfe", dropdown="tablet"),
+        con([
+            button(PHONE, TEL, "dr-btn dr-btn--plain"),
+            button("Book now", "/#enquiry"),
+        ], "dr-header__cta", direction="row", align="center", gap_=12, wrap="nowrap"),
+    ], "dr-header", boxed=True, direction="row", justify="space-between", align="center", gap_=20, wrap="nowrap",
+        pad=box(14, 48, 14, 48), pad_t=box(12, 32, 12, 32), pad_m=box(10, 16, 10, 16), inner=False)]
+
+
+def hfe_footer_tpl():
+    return [con([
+        con([hfe_site_title("dr-footer__logo"),
+             hfe_nav("footer-menu", "dr-footer__nav", size=13, space=22, align="right", color="#FFFFFF",
+                     hover="#050507", vpad=4)],
+            "dr-footer__top", direction="row", wrap="wrap", justify="space-between", align="center", gap_=20),
+        con([widget("copyright", {"shortcode": "© Dance Reaction Mobile Discos [hfe_current_year]. all rights reserved",
+                                  "title_color": "#FFFFFF", "caption_typography_typography": "custom",
+                                  "caption_typography_font_family": "Archivo", "caption_typography_font_size": px(12)},
+                    "dr-footer__copy"),
+             hfe_nav("footer-legal", "dr-footer__legal", size=12, weight="400", space=20, align="right",
+                     color="#FFFFFF", hover="#050507", vpad=4)],
+            "dr-footer__bottom", direction="row", wrap="wrap", justify="space-between", align="center",
+            gap_=gap(24, 10), pad=box(20, 0, 0, 0)),
+    ], "dr-footer", boxed=True, gap_=20, pad=box(32, 48, 24, 48), pad_m=box(28, 16, 22, 16), bg=bg_grad(), inner=False)]
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     pages = {
         "home.json": [hero(), welcome(), why(), price(), how(), events(), testimonials(), gallery(), enquiry()],
         "header.json": header_tpl(),
         "footer.json": footer_tpl(),
+        "hfe-header.json": hfe_header_tpl(),
+        "hfe-footer.json": hfe_footer_tpl(),
     }
     for name, data in pages.items():
         with open(os.path.join(OUT, name), "w") as f:

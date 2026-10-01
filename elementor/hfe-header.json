@@ -1,0 +1,208 @@
+[
+ {
+  "id": "403b10a",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "row",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "20",
+    "row": "20",
+    "isLinked": true,
+    "unit": "px",
+    "size": 20
+   },
+   "flex_justify_content": "space-between",
+   "flex_align_items": "center",
+   "flex_wrap": "nowrap",
+   "padding": {
+    "unit": "px",
+    "top": "14",
+    "right": "48",
+    "bottom": "14",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "12",
+    "right": "32",
+    "bottom": "12",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "10",
+    "right": "16",
+    "bottom": "10",
+    "left": "16",
+    "isLinked": false
+   },
+   "css_classes": "dr-header"
+  },
+  "elements": [
+   {
+    "id": "4c9d92d",
+    "elType": "widget",
+    "widgetType": "hfe-site-title",
+    "settings": {
+     "custom_link": "default",
+     "heading_tag": "h2",
+     "size": "default",
+     "_css_classes": "dr-logo"
+    },
+    "elements": []
+   },
+   {
+    "id": "187ad4e",
+    "elType": "widget",
+    "widgetType": "navigation-menu",
+    "settings": {
+     "menu": "header-menu",
+     "layout": "horizontal",
+     "navmenu_align": "center",
+     "pointer": "none",
+     "dropdown": "tablet",
+     "padding_horizontal_menu_item": {
+      "unit": "px",
+      "size": 0,
+      "sizes": []
+     },
+     "padding_vertical_menu_item": {
+      "unit": "px",
+      "size": 8,
+      "sizes": []
+     },
+     "menu_space_between": {
+      "unit": "px",
+      "size": 32,
+      "sizes": []
+     },
+     "menu_typography_typography": "custom",
+     "menu_typography_font_family": "Archivo",
+     "menu_typography_font_size": {
+      "unit": "px",
+      "size": 15,
+      "sizes": []
+     },
+     "menu_typography_font_weight": "600",
+     "color_menu_item": "#F4F1EA",
+     "color_menu_item_hover": "#FFFFFF",
+     "color_menu_item_active": "#FFFFFF",
+     "full_width_dropdown": "yes",
+     "resp_align": "left",
+     "hamburger_align": "right",
+     "hamburger_align_tablet": "right",
+     "hamburger_align_mobile": "right",
+     "toggle_color": "#FFFFFF",
+     "toggle_hover_color": "#F08BEA",
+     "toggle_size": {
+      "unit": "px",
+      "size": 22,
+      "sizes": []
+     },
+     "color_dropdown_item": "#F4F1EA",
+     "background_color_dropdown_item": "#0B0A12",
+     "color_dropdown_item_hover": "#FFFFFF",
+     "background_color_dropdown_item_hover": "#17142A",
+     "color_dropdown_item_active": "#FFFFFF",
+     "background_color_dropdown_item_active": "#17142A",
+     "dropdown_typography_typography": "custom",
+     "dropdown_typography_font_family": "Archivo",
+     "dropdown_typography_font_size": {
+      "unit": "px",
+      "size": 16,
+      "sizes": []
+     },
+     "dropdown_typography_font_weight": "600",
+     "padding_horizontal_dropdown_item": {
+      "unit": "px",
+      "size": 24,
+      "sizes": []
+     },
+     "padding_vertical_dropdown_item": {
+      "unit": "px",
+      "size": 14,
+      "sizes": []
+     },
+     "divider_border_color": "rgba(244,241,234,0.1)",
+     "distance_from_menu": {
+      "unit": "px",
+      "size": 12,
+      "sizes": []
+     },
+     "_css_classes": "dr-nav dr-nav--hfe"
+    },
+    "elements": []
+   },
+   {
+    "id": "914c957",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "12",
+      "row": "12",
+      "isLinked": true,
+      "unit": "px",
+      "size": 12
+     },
+     "flex_align_items": "center",
+     "flex_wrap": "nowrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-header__cta"
+    },
+    "elements": [
+     {
+      "id": "e6bb719",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "0419 399 374",
+       "link": {
+        "url": "tel:0419399374",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "size": "sm",
+       "_css_classes": "dr-btn dr-btn--plain"
+      },
+      "elements": []
+     },
+     {
+      "id": "7f71dff",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "Book now",
+       "link": {
+        "url": "/#enquiry",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "size": "sm",
+       "_css_classes": "dr-btn"
+      },
+      "elements": []
+     }
+    ]
+   }
+  ]
+ }
+]

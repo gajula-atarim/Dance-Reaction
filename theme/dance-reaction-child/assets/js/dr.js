@@ -162,7 +162,7 @@
 
 	// Underline the menu item for the section in view (home page anchors).
 	function scrollspy() {
-		document.querySelectorAll( '.dr-menu--primary' ).forEach( function ( nav ) {
+		document.querySelectorAll( '.dr-menu--primary, .dr-nav--hfe .hfe-nav-menu' ).forEach( function ( nav ) {
 			if ( nav.dataset.drSpy ) { return; }
 			var here = window.location.origin + window.location.pathname;
 			var links = [], home = null;

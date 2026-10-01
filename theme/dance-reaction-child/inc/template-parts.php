@@ -2,8 +2,9 @@
 /**
  * Site header / footer rendered from Elementor templates.
  *
- * The header and footer are regular Elementor templates (Templates → Saved Templates),
- * so they are edited with Elementor like any page. Their IDs are stored in the
+ * When Ultimate Addons for Elementor (header-footer-elementor) has a header/footer
+ * template assigned, that is used. Otherwise the header and footer fall back to the
+ * regular Elementor templates (Templates → Saved Templates). Their IDs are stored in the
  * `dr_header_template_id` / `dr_footer_template_id` options and can be changed in
  * Appearance → Customize → Dance Reaction layout.
  *
@@ -45,6 +46,14 @@ function dr_site_header() {
 		return;
 	}
 
+	// Ultimate Addons for Elementor header (Appearance → UAE → Header/Footer Builder).
+	if ( function_exists( 'hfe_header_enabled' ) && hfe_header_enabled() ) {
+		echo '<header id="site-header" class="dr-site-header dr-site-header--hfe">';
+		hfe_render_header();
+		echo '</header>';
+		return;
+	}
+
 	echo '<header id="site-header" class="dr-site-header">';
 	if ( ! dr_render_elementor_template( get_option( 'dr_header_template_id' ) ) ) {
 		printf(
@@ -61,6 +70,13 @@ function dr_site_header() {
  */
 function dr_site_footer() {
 	if ( function_exists( 'elementor_theme_do_location' ) && elementor_theme_do_location( 'footer' ) ) {
+		return;
+	}
+
+	if ( function_exists( 'hfe_footer_enabled' ) && hfe_footer_enabled() ) {
+		echo '<footer id="site-footer" class="dr-site-footer dr-site-footer--hfe">';
+		hfe_render_footer();
+		echo '</footer>';
 		return;
 	}
 
