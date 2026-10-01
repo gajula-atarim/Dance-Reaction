@@ -361,13 +361,20 @@ def gallery():
         heading('Feel the <span class="dr-hp"><span>rhythm</span></span> of the night', "dr-rhythm", "h2", align="center"),
         text("<p>Weddings, corporate dinners, birthdays and any other type of event.</p>", "dr-muted", align="center"),
     ], "dr-gallery-head", align="center", gap_=18)
-    grid = con([
-        image("dr-home-g1.jpg", "DJ booth under lasers", "dr-g1 dr-fill dr-tint"),
-        image("dr-home-g2.jpg", "DJ performing in a neon club", "dr-g2 dr-fill"),
-        image("dr-home-g3.jpg", "Birthday celebration with sparklers", "dr-g3 dr-fill dr-tint"),
-        image("dr-home-ev-wedding.jpg", "Wedding first dance", "dr-g4 dr-fill dr-tint"),
-        image("dr-home-g5.jpg", "Party guests dancing", "dr-g5 dr-fill dr-tint"),
-    ], "dr-gallery", direction="row", wrap="wrap")
+    # Slideshow: the child theme shows these 5 at a time in the 5-tile grid (dr.js).
+    pics = [(80, "gal_31"), (81, "gal_30"), (82, "gal_29"), (83, "gal_28"), (84, "gal_21"), (85, "gal_17"),
+            (86, "gal_16"), (87, "gal_14"), (88, "gal_11"), (89, "gal_10"), (90, "gal_36"), (91, "gal_9"),
+            (92, "IMG_68"), (93, "gal_01"), (94, "IMG_89"), (95, "gal_04"), (96, "IMG_96"), (97, "IMG_a72"),
+            (98, "gal_06"), (99, "IMG_a74")]
+    uploads = "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/"
+    grid = widget("image-gallery", {
+        "wp_gallery": [{"id": i, "url": f"{uploads}{n}.jpg"} for i, n in pics],
+        "thumbnail_size": "full",
+        "gallery_columns": "4",
+        "gallery_link": "none",
+        "open_lightbox": "no",
+        "gallery_rand": "",
+    }, "dr-gallery-show")
     return section([head, grid, button("View gallery", "#", "dr-btn dr-btn--outline", align="center")],
                    "dr-gallery-sec dr-smoke", "gallery", gap_=56, pad=box(140, 48, 140, 48))
 

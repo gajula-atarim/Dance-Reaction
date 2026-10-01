@@ -1,6 +1,6 @@
 [
  {
-  "id": "544ed49",
+  "id": "1c380ca",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -47,7 +47,7 @@
   },
   "elements": [
    {
-    "id": "4321e8a",
+    "id": "177d234",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -75,7 +75,7 @@
     },
     "elements": [
      {
-      "id": "047a2ff",
+      "id": "7458d07",
       "elType": "widget",
       "widgetType": "hfe-site-title",
       "settings": {
@@ -87,7 +87,7 @@
       "elements": []
      },
      {
-      "id": "9d000c4",
+      "id": "960b0a2",
       "elType": "widget",
       "widgetType": "navigation-menu",
       "settings": {
@@ -129,7 +129,7 @@
     ]
    },
    {
-    "id": "463b493",
+    "id": "2efd793",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -157,7 +157,7 @@
     },
     "elements": [
      {
-      "id": "e1dc80f",
+      "id": "01f67a6",
       "elType": "widget",
       "widgetType": "copyright",
       "settings": {
@@ -175,7 +175,7 @@
       "elements": []
      },
      {
-      "id": "ad7b040",
+      "id": "f318b0c",
       "elType": "widget",
       "widgetType": "navigation-menu",
       "settings": {

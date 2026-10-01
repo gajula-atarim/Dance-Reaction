@@ -216,6 +216,123 @@
 		} );
 	}
 
+	// "Feel the rhythm" gallery: an Elementor Basic Gallery (class dr-gallery-show) becomes the
+	// 5-tile grid, cycling through the images 5 at a time with music-note indicators.
+	var NOTES = [ '♪', '♫', '♬', '♩' ];
+
+	function bestSrc( img ) {
+		var set = img.getAttribute( 'srcset' ), best = img.getAttribute( 'src' ), w = 0;
+		if ( set ) {
+			set.split( ',' ).forEach( function ( part ) {
+				var bits = part.trim().split( /\s+/ ), n = parseInt( bits[ 1 ], 10 ) || 0;
+				if ( n > w ) { w = n; best = bits[ 0 ]; }
+			} );
+		}
+		return best;
+	}
+
+	function gallerySlides() {
+		document.querySelectorAll( '.dr-gallery-show' ).forEach( function ( widget ) {
+			if ( widget.querySelector( '.dr-gallery--live' ) ) { return; }
+			var imgs = Array.prototype.slice.call( widget.querySelectorAll( '.elementor-image-gallery img, .gallery img' ) );
+			if ( ! imgs.length ) { return; }
+
+			var pics = imgs.map( function ( i ) { return { src: bestSrc( i ), alt: i.getAttribute( 'alt' ) || '' }; } );
+			var per = 5, sets = Math.max( 1, Math.ceil( pics.length / per ) );
+			var reduced = window.matchMedia && window.matchMedia( '(prefers-reduced-motion: reduce)' ).matches;
+
+			var grid = el( 'div', 'dr-gallery dr-gallery--live' );
+			var tiles = [];
+			for ( var t = 0; t < per; t++ ) {
+				var tile = el( 'div', 'dr-gtile dr-g' + ( t + 1 ) + ( t === 1 ? '' : ' dr-tint' ) );
+				for ( var s = 0; s < sets; s++ ) {
+					var p = pics[ ( s * per + t ) % pics.length ];
+					var im = el( 'img', 'dr-gtile__img' + ( s === 0 ? ' is-on' : '' ) );
+					im.src = p.src; im.alt = s === 0 ? p.alt : ''; im.decoding = 'async';
+					if ( s > 0 ) { im.loading = 'lazy'; im.setAttribute( 'aria-hidden', 'true' ); }
+					tile.appendChild( im );
+				}
+				grid.appendChild( tile );
+				tiles.push( tile );
+			}
+
+			var dots = el( 'div', 'dr-gnotes' );
+			dots.setAttribute( 'role', 'group' );
+			dots.setAttribute( 'aria-label', 'Gallery sets' );
+			var buttons = [];
+			for ( var d = 0; d < sets; d++ ) {
+				var b = el( 'button', 'dr-gnote' + ( d === 0 ? ' is-on' : '' ) );
+				b.type = 'button';
+				b.textContent = NOTES[ d % NOTES.length ];
+				b.setAttribute( 'aria-label', 'Show photo set ' + ( d + 1 ) + ' of ' + sets );
+				b.setAttribute( 'aria-pressed', d === 0 ? 'true' : 'false' );
+				b.dataset.set = d;
+				dots.appendChild( b );
+				buttons.push( b );
+			}
+			if ( sets < 2 ) { dots.hidden = true; }
+
+			widget.appendChild( grid );
+			widget.appendChild( dots );
+			widget.classList.add( 'is-built' );
+
+			var current = 0, timer = null, paused = false, visible = true;
+
+			function show( n ) {
+				if ( n === current ) { return; }
+				var prev = current;
+				current = n;
+				tiles.forEach( function ( tile, i ) {
+					var layers = tile.querySelectorAll( '.dr-gtile__img' );
+					window.setTimeout( function () {
+						if ( current !== n ) { return; }
+						layers.forEach( function ( l, k ) {
+							if ( k !== n ) { l.classList.remove( 'is-on' ); l.setAttribute( 'aria-hidden', 'true' ); }
+						} );
+						layers[ n ].classList.add( 'is-on' );
+						layers[ n ].removeAttribute( 'aria-hidden' );
+						layers[ n ].alt = pics[ ( n * per + i ) % pics.length ].alt;
+						tile.classList.remove( 'is-beat' );
+						void tile.offsetWidth;
+						tile.classList.add( 'is-beat' );
+					}, reduced ? 0 : i * 120 );
+				} );
+				buttons.forEach( function ( b, i ) {
+					b.classList.toggle( 'is-on', i === n );
+					b.setAttribute( 'aria-pressed', i === n ? 'true' : 'false' );
+				} );
+				return prev;
+			}
+
+			function schedule() {
+				window.clearInterval( timer );
+				if ( reduced || editor || sets < 2 ) { return; }
+				timer = window.setInterval( function () {
+					if ( ! paused && visible && ! document.hidden ) { show( ( current + 1 ) % sets ); }
+				}, 5000 );
+			}
+
+			dots.addEventListener( 'click', function ( e ) {
+				var b = e.target.closest( '.dr-gnote' );
+				if ( ! b ) { return; }
+				show( parseInt( b.dataset.set, 10 ) );
+				schedule();
+			} );
+			[ grid, dots ].forEach( function ( zone ) {
+				zone.addEventListener( 'mouseenter', function () { paused = true; } );
+				zone.addEventListener( 'mouseleave', function () { paused = false; } );
+				zone.addEventListener( 'focusin', function () { paused = true; } );
+				zone.addEventListener( 'focusout', function () { paused = false; } );
+			} );
+			if ( 'IntersectionObserver' in window ) {
+				new IntersectionObserver( function ( entries ) {
+					visible = entries[ 0 ].isIntersecting;
+				}, { threshold: .2 } ).observe( grid );
+			}
+			schedule();
+		} );
+	}
+
 	function init() {
 		Object.keys( DECO ).forEach( function ( id ) {
 			var s = document.getElementById( id );
@@ -226,6 +343,7 @@
 		marquee();
 		burger();
 		scrollspy();
+		gallerySlides();
 	}
 
 	if ( document.readyState === 'loading' ) {

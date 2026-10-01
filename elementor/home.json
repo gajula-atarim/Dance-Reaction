@@ -2962,7 +2962,7 @@
   ]
  },
  {
-  "id": "fb49234",
+  "id": "0c3643b",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -3060,123 +3060,103 @@
     ]
    },
    {
-    "id": "fb90036",
-    "elType": "container",
-    "isInner": true,
+    "id": "5e9bd41",
+    "elType": "widget",
+    "widgetType": "image-gallery",
     "settings": {
-     "content_width": "full",
-     "flex_direction": "row",
-     "flex_wrap": "wrap",
-     "padding": {
-      "unit": "px",
-      "top": "0",
-      "right": "0",
-      "bottom": "0",
-      "left": "0",
-      "isLinked": true
-     },
-     "css_classes": "dr-gallery"
+     "wp_gallery": [
+      {
+       "id": 80,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_31.jpg"
+      },
+      {
+       "id": 81,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_30.jpg"
+      },
+      {
+       "id": 82,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_29.jpg"
+      },
+      {
+       "id": 83,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_28.jpg"
+      },
+      {
+       "id": 84,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_21.jpg"
+      },
+      {
+       "id": 85,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_17.jpg"
+      },
+      {
+       "id": 86,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_16.jpg"
+      },
+      {
+       "id": 87,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_14.jpg"
+      },
+      {
+       "id": 88,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_11.jpg"
+      },
+      {
+       "id": 89,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_10.jpg"
+      },
+      {
+       "id": 90,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_36.jpg"
+      },
+      {
+       "id": 91,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_9.jpg"
+      },
+      {
+       "id": 92,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_68.jpg"
+      },
+      {
+       "id": 93,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_01.jpg"
+      },
+      {
+       "id": 94,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_89.jpg"
+      },
+      {
+       "id": 95,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_04.jpg"
+      },
+      {
+       "id": 96,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_96.jpg"
+      },
+      {
+       "id": 97,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_a72.jpg"
+      },
+      {
+       "id": 98,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_06.jpg"
+      },
+      {
+       "id": 99,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_a74.jpg"
+      }
+     ],
+     "thumbnail_size": "full",
+     "gallery_columns": "4",
+     "gallery_link": "none",
+     "open_lightbox": "no",
+     "gallery_rand": "",
+     "_css_classes": "dr-gallery-show"
     },
-    "elements": [
-     {
-      "id": "ccb0d69",
-      "elType": "widget",
-      "widgetType": "image",
-      "settings": {
-       "image": {
-        "id": "__IMG__dr-home-g1.jpg",
-        "url": "__IMG__dr-home-g1.jpg",
-        "size": "",
-        "alt": "DJ booth under lasers",
-        "source": "library"
-       },
-       "image_size": "full",
-       "caption_source": "none",
-       "link_to": "none",
-       "_css_classes": "dr-g1 dr-fill dr-tint"
-      },
-      "elements": []
-     },
-     {
-      "id": "f41081e",
-      "elType": "widget",
-      "widgetType": "image",
-      "settings": {
-       "image": {
-        "id": "__IMG__dr-home-g2.jpg",
-        "url": "__IMG__dr-home-g2.jpg",
-        "size": "",
-        "alt": "DJ performing in a neon club",
-        "source": "library"
-       },
-       "image_size": "full",
-       "caption_source": "none",
-       "link_to": "none",
-       "_css_classes": "dr-g2 dr-fill"
-      },
-      "elements": []
-     },
-     {
-      "id": "65802ab",
-      "elType": "widget",
-      "widgetType": "image",
-      "settings": {
-       "image": {
-        "id": "__IMG__dr-home-g3.jpg",
-        "url": "__IMG__dr-home-g3.jpg",
-        "size": "",
-        "alt": "Birthday celebration with sparklers",
-        "source": "library"
-       },
-       "image_size": "full",
-       "caption_source": "none",
-       "link_to": "none",
-       "_css_classes": "dr-g3 dr-fill dr-tint"
-      },
-      "elements": []
-     },
-     {
-      "id": "d38d783",
-      "elType": "widget",
-      "widgetType": "image",
-      "settings": {
-       "image": {
-        "id": "__IMG__dr-home-ev-wedding.jpg",
-        "url": "__IMG__dr-home-ev-wedding.jpg",
-        "size": "",
-        "alt": "Wedding first dance",
-        "source": "library"
-       },
-       "image_size": "full",
-       "caption_source": "none",
-       "link_to": "none",
-       "_css_classes": "dr-g4 dr-fill dr-tint"
-      },
-      "elements": []
-     },
-     {
-      "id": "ce28015",
-      "elType": "widget",
-      "widgetType": "image",
-      "settings": {
-       "image": {
-        "id": "__IMG__dr-home-g5.jpg",
-        "url": "__IMG__dr-home-g5.jpg",
-        "size": "",
-        "alt": "Party guests dancing",
-        "source": "library"
-       },
-       "image_size": "full",
-       "caption_source": "none",
-       "link_to": "none",
-       "_css_classes": "dr-g5 dr-fill dr-tint"
-      },
-      "elements": []
-     }
-    ]
+    "elements": []
    },
    {
-    "id": "4ab96ee",
+    "id": "8d2f5f0",
     "elType": "widget",
     "widgetType": "button",
     "settings": {
@@ -3195,7 +3175,7 @@
   ]
  },
  {
-  "id": "043ce46",
+  "id": "1d778bf",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -3247,7 +3227,7 @@
   },
   "elements": [
    {
-    "id": "f81c858",
+    "id": "6a6b520",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -3274,7 +3254,7 @@
     },
     "elements": [
      {
-      "id": "6e62023",
+      "id": "6b29caf",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -3315,7 +3295,7 @@
       },
       "elements": [
        {
-        "id": "412e5b8",
+        "id": "8fcd17d",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3326,7 +3306,7 @@
         "elements": []
        },
        {
-        "id": "04df761",
+        "id": "eed4a6e",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3337,7 +3317,7 @@
         "elements": []
        },
        {
-        "id": "a8ca600",
+        "id": "c51a696",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -3347,7 +3327,7 @@
         "elements": []
        },
        {
-        "id": "9d37c9e",
+        "id": "be16257",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -3372,7 +3352,7 @@
         },
         "elements": [
          {
-          "id": "93a189c",
+          "id": "bfe000f",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3397,7 +3377,7 @@
           },
           "elements": [
            {
-            "id": "3edaaf8",
+            "id": "66dca15",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3408,7 +3388,7 @@
             "elements": []
            },
            {
-            "id": "c475a5f",
+            "id": "21aeaaf",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3421,7 +3401,7 @@
           ]
          },
          {
-          "id": "5825330",
+          "id": "53a985e",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3439,7 +3419,7 @@
           },
           "elements": [
            {
-            "id": "89d96af",
+            "id": "8572a09",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3450,7 +3430,7 @@
             "elements": []
            },
            {
-            "id": "58eecb9",
+            "id": "d7e4345",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3467,7 +3447,7 @@
       ]
      },
      {
-      "id": "ad1a076",
+      "id": "a2df5d2",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -3500,7 +3480,7 @@
       },
       "elements": [
        {
-        "id": "b5d94df",
+        "id": "8f8dd22",
         "elType": "widget",
         "widgetType": "shortcode",
         "settings": {
