@@ -277,8 +277,6 @@
       "isLinked": true
      },
      "flex_direction_tablet": "column",
-     "_animation": "fadeInUp",
-     "animation_duration": "slow",
      "css_classes": "dr-split"
     },
     "elements": [
@@ -567,8 +565,6 @@
       "left": "0",
       "isLinked": true
      },
-     "_animation": "fadeInUp",
-     "animation_duration": "slow",
      "css_classes": "dr-why-head"
     },
     "elements": [
@@ -691,8 +687,6 @@
        "background_position": "center center",
        "background_size": "cover",
        "background_repeat": "no-repeat",
-       "_animation": "fadeInUp",
-       "animation_duration": "slow",
        "css_classes": "dr-tile"
       },
       "elements": [
@@ -769,8 +763,6 @@
        "background_position": "center center",
        "background_size": "cover",
        "background_repeat": "no-repeat",
-       "_animation": "fadeInUp",
-       "animation_duration": "slow",
        "css_classes": "dr-tile"
       },
       "elements": [
@@ -847,8 +839,6 @@
        "background_position": "center center",
        "background_size": "cover",
        "background_repeat": "no-repeat",
-       "_animation": "fadeInUp",
-       "animation_duration": "slow",
        "css_classes": "dr-tile"
       },
       "elements": [
@@ -925,8 +915,6 @@
        "background_position": "center center",
        "background_size": "cover",
        "background_repeat": "no-repeat",
-       "_animation": "fadeInUp",
-       "animation_duration": "slow",
        "css_classes": "dr-tile"
       },
       "elements": [
@@ -1024,8 +1012,6 @@
       "isLinked": true
      },
      "flex_direction_tablet": "column",
-     "_animation": "fadeInUp",
-     "animation_duration": "slow",
      "css_classes": "dr-split"
     },
     "elements": [
@@ -1328,8 +1314,6 @@
         "left": "0",
         "isLinked": true
        },
-       "_animation": "fadeInUp",
-       "animation_duration": "slow",
        "css_classes": "dr-card dr-card--note"
       },
       "elements": [
@@ -1446,8 +1430,6 @@
         "left": "0",
         "isLinked": true
        },
-       "_animation": "fadeInUp",
-       "animation_duration": "slow",
        "css_classes": "dr-card"
       },
       "elements": [
@@ -1579,8 +1561,6 @@
       "left": "28",
       "isLinked": true
      },
-     "_animation": "fadeInUp",
-     "animation_duration": "slow",
      "css_classes": "dr-cta"
     },
     "elements": [
@@ -1850,8 +1830,6 @@
        "background_position": "center center",
        "background_size": "cover",
        "background_repeat": "no-repeat",
-       "_animation": "fadeInUp",
-       "animation_duration": "slow",
        "css_classes": "dr-event"
       },
       "elements": [
@@ -1917,8 +1895,6 @@
        "background_position": "center center",
        "background_size": "cover",
        "background_repeat": "no-repeat",
-       "_animation": "fadeInUp",
-       "animation_duration": "slow",
        "css_classes": "dr-event"
       },
       "elements": [
@@ -1984,8 +1960,6 @@
        "background_position": "center center",
        "background_size": "cover",
        "background_repeat": "no-repeat",
-       "_animation": "fadeInUp",
-       "animation_duration": "slow",
        "css_classes": "dr-event"
       },
       "elements": [
@@ -2051,8 +2025,6 @@
        "background_position": "center center",
        "background_size": "cover",
        "background_repeat": "no-repeat",
-       "_animation": "fadeInUp",
-       "animation_duration": "slow",
        "css_classes": "dr-event"
       },
       "elements": [
@@ -2145,8 +2117,6 @@
       "left": "0",
       "isLinked": true
      },
-     "_animation": "fadeInUp",
-     "animation_duration": "slow",
      "css_classes": "dr-quotes-head"
     },
     "elements": [
@@ -2200,8 +2170,6 @@
       "left": "0",
       "isLinked": true
      },
-     "_animation": "fadeInUp",
-     "animation_duration": "slow",
      "css_classes": "dr-marquee"
     },
     "elements": [
@@ -3063,8 +3031,6 @@
       "left": "0",
       "isLinked": true
      },
-     "_animation": "fadeInUp",
-     "animation_duration": "slow",
      "css_classes": "dr-gallery-head"
     },
     "elements": [
@@ -3109,8 +3075,6 @@
       "left": "0",
       "isLinked": true
      },
-     "_animation": "fadeInUp",
-     "animation_duration": "slow",
      "css_classes": "dr-gallery"
     },
     "elements": [
@@ -3306,8 +3270,6 @@
       "isLinked": true
      },
      "flex_direction_tablet": "column",
-     "_animation": "fadeInUp",
-     "animation_duration": "slow",
      "css_classes": "dr-split"
     },
     "elements": [

@@ -229,7 +229,7 @@ def welcome():
 
     row = con([stack("dr-home-dj.jpg", "DJ playing a set under neon lights",
                      "dr-home-dj-b.jpg", "DJ at the decks in a neon-lit club"), copy],
-              "dr-split", direction="row", dir_t="column", gap_=gap(88, 40), align="center", anim="fadeInUp")
+              "dr-split", direction="row", dir_t="column", gap_=gap(88, 40), align="center")
     return section([row], "dr-welcome dr-smoke", "welcome")
 
 
@@ -242,7 +242,7 @@ def why():
              '<span class="dr-play__ring dr-play__ring--outer"></span>'
              '<span class="dr-play__ring dr-play__ring--inner"></span>'
              '<span class="dr-play__core"></span><span class="dr-play__icon">▶</span></a>', "dr-play"),
-    ], "dr-why-head", align="center", gap_=18, anim="fadeInUp")
+    ], "dr-why-head", align="center", gap_=18)
 
     tiles = []
     for n, (num, title, pic) in enumerate([("01", "Quality", "dr-home-why-1.jpg"),
@@ -251,7 +251,7 @@ def why():
                                            ("04", "Equipment", "dr-home-why-4.jpg")]):
         tiles.append(con([heading(num, "dr-tile__num", "div"), heading(title, "dr-tile__title", "h3")],
                          "dr-tile", width=25, width_t=48, width_m=47, justify="flex-end", gap_=4,
-                         pad=box(0, 12, 14, 12), bg=bg_image(pic), anim="fadeInUp"))
+                         pad=box(0, 12, 14, 12), bg=bg_image(pic)))
 
     grid = con(tiles, "dr-tiles", direction="row", wrap="nowrap", wrap_t="wrap", gap_=gap(18, 18), align="flex-start",
                pad=box(72, 0, 0, 0), pad_m=box(48, 0, 0, 0))
@@ -266,7 +266,7 @@ def price():
         btn_row([button("Booking enquiry", "#enquiry")], mt=6),
     ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=22, justify="center")
     row = con([stack("dr-home-price-a.jpg", "DJ under lasers", "dr-home-price-b.jpg", "Crowd dancing under confetti"), copy],
-              "dr-split", direction="row", dir_t="column", gap_=gap(96, 40), align="center", anim="fadeInUp")
+              "dr-split", direction="row", dir_t="column", gap_=gap(96, 40), align="center")
     return section([row], "dr-price dr-smoke", "price", bg=bg_color("#050507"), pad=box(130, 48, 130, 48))
 
 
@@ -276,7 +276,7 @@ def how():
             image(pic, alt, "dr-card__media dr-fill dr-tint"),
             con([heading(eyebrow, "dr-eyebrow", "h3"), text(f"<p>{body}</p>")],
                 "dr-card__body", gap_=14, pad=box(48, 36, 36, 36), pad_m=box(44, 22, 26, 22)),
-        ], "dr-card" + (" dr-card--note" if note else ""), width=50, width_t=100, width_m=100, gap_=0, anim="fadeInUp")
+        ], "dr-card" + (" dr-card--note" if note else ""), width=50, width_t=100, width_m=100, gap_=0)
 
     cards = con([
         card("dr-home-how-a.jpg", "Couple's first dance at a wedding reception", "Planning & communication",
@@ -293,7 +293,7 @@ def how():
         btn_row([button("Booking enquiry", "#enquiry", "dr-btn dr-btn--dark"),
                  button(f"Call {PHONE}", TEL, "dr-btn dr-btn--light-outline")]),
     ], "dr-cta", direction="row", wrap="wrap", justify="space-between", align="center", gap_=20,
-        pad=box(40, 48, 40, 48), pad_m=box(24, 22, 24, 22), bg=bg_grad(), radius=28, anim="fadeInUp")
+        pad=box(40, 48, 40, 48), pad_m=box(24, 22, 24, 22), bg=bg_grad(), radius=28)
 
     return section([cards, cta], "dr-how dr-smoke", "how", bg=bg_color("#050507"), gap_=48)
 
@@ -309,7 +309,7 @@ def events():
                        ("Birthdays", "dr-home-ev-birthday.jpg"), ("Any other event", "dr-home-hero.jpg")]:
         cards.append(con([heading(title, "dr-event__title", "h3")], "dr-event", width=25, width_t=48, width_m=100,
                          justify="flex-end", pad=box(18, 20, 18, 20), tag="a", link="#enquiry",
-                         bg=bg_image(pic), anim="fadeInUp"))
+                         bg=bg_image(pic)))
     grid = con(cards, "dr-events-grid", direction="row", wrap="nowrap", wrap_t="wrap", gap_=16, align="stretch")
     return section([head, grid], "dr-events", "events", bg=bg_grad(), gap_=56)
 
@@ -344,7 +344,7 @@ TESTIMONIALS = [
 def testimonials():
     head = con([heading("Testimonials", "dr-eyebrow", "div", align="center"),
                 heading("What they say", "dr-h2", "h2", align="center")],
-               "dr-quotes-head", align="center", gap_=14, anim="fadeInUp")
+               "dr-quotes-head", align="center", gap_=14)
     cards = []
     for body, sign, name, tag in TESTIMONIALS:
         cards.append(con([
@@ -352,7 +352,7 @@ def testimonials():
             text(f"<p>{body}</p>" + (f"<p>{sign}</p>" if sign else ""), "dr-quote__text"),
             con([heading(name, "dr-quote__name", "div"), heading(tag, "dr-quote__tag", "div")], "dr-quote__by"),
         ], "dr-quote", gap_=18, pad=box(36, 34, 38, 34), pad_m=box(28, 26, 30, 26)))
-    strip = con(cards, "dr-marquee", direction="row", wrap="nowrap", gap_=24, align="stretch", anim="fadeInUp")
+    strip = con(cards, "dr-marquee", direction="row", wrap="nowrap", gap_=24, align="stretch")
     return section([head, strip], "dr-testimonials dr-smoke", "testimonials", bg=bg_color("#050507"), gap_=56)
 
 
@@ -360,14 +360,14 @@ def gallery():
     head = con([
         heading('Feel the <span class="dr-hp"><span>rhythm</span></span> of the night', "dr-rhythm", "h2", align="center"),
         text("<p>Weddings, corporate dinners, birthdays and any other type of event.</p>", "dr-muted", align="center"),
-    ], "dr-gallery-head", align="center", gap_=18, anim="fadeInUp")
+    ], "dr-gallery-head", align="center", gap_=18)
     grid = con([
         image("dr-home-g1.jpg", "DJ booth under lasers", "dr-g1 dr-fill dr-tint"),
         image("dr-home-g2.jpg", "DJ performing in a neon club", "dr-g2 dr-fill"),
         image("dr-home-g3.jpg", "Birthday celebration with sparklers", "dr-g3 dr-fill dr-tint"),
         image("dr-home-ev-wedding.jpg", "Wedding first dance", "dr-g4 dr-fill dr-tint"),
         image("dr-home-g5.jpg", "Party guests dancing", "dr-g5 dr-fill dr-tint"),
-    ], "dr-gallery", direction="row", wrap="wrap", anim="fadeInUp")
+    ], "dr-gallery", direction="row", wrap="wrap")
     return section([head, grid, button("View gallery", "#", "dr-btn dr-btn--outline", align="center")],
                    "dr-gallery-sec dr-smoke", "gallery", gap_=56, pad=box(140, 48, 140, 48))
 
@@ -385,7 +385,7 @@ def enquiry():
         ], "dr-info-list", gap_=12),
     ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=26, justify="center")
     right = con([shortcode("[dr_booking_form]", "dr-form-wrap")], "dr-split__form", width=50, width_t=100, width_m=100)
-    row = con([left, right], "dr-split", direction="row", dir_t="column", gap_=gap(80, 40), align="center", anim="fadeInUp")
+    row = con([left, right], "dr-split", direction="row", dir_t="column", gap_=gap(80, 40), align="center")
     return section([row], "dr-enquiry dr-smoke", "enquiry", bg={**bg_image("dr-home-hero.jpg"), "background_color": "#050507"})
 
 

@@ -453,6 +453,11 @@ a.dr-info:hover, .dr-site a.dr-info:hover { background: rgba(244, 241, 234, .09)
 .admin-bar .dr-site-header { top: 32px; }
 @media (max-width: 782px) { .admin-bar .dr-site-header { top: 0; } }
 
+.dr-site .dr-header > .e-con-inner { width: 100%; }
+.dr-site .dr-header > .e-con-inner > .elementor-element { flex: 0 0 auto; width: auto; max-width: none; }
+.dr-site .dr-header > .e-con-inner > .dr-nav { flex: 1 1 auto; min-width: 0; }
+.dr-site .dr-header__cta > .elementor-element { flex: 0 0 auto; width: auto; }
+.dr-menu--primary .dr-menu__list { justify-content: center; }
 .dr-site .dr-header { background: rgba(5, 5, 7, .82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(244, 241, 234, .08); }
 .dr-site .dr-logo .elementor-heading-title {
 	font-size: clamp(14.1px, 1.41vw, 17.6px); line-height: 1; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; white-space: nowrap;
