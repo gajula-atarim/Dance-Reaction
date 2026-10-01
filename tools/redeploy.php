@@ -1,6 +1,7 @@
 <?php
 /**
- * Redeploy theme files and Elementor data from GitHub without touching media, menus or settings.
+ * Redeploy theme files and the Home page Elementor data from GitHub without touching media, menus or settings.
+ * (Header/footer are UAE templates: use tools/hfe-setup.php.)
  * Run through Atarim's execute-php with DR_REF defined as the commit to deploy.
  */
 
@@ -52,8 +53,6 @@ try {
 
 	$elementor = \Elementor\Plugin::instance();
 	$targets   = array(
-		'header.json' => (int) get_option( 'dr_header_template_id' ),
-		'footer.json' => (int) get_option( 'dr_footer_template_id' ),
 		'home.json'   => (int) get_option( 'dr_home_page_id' ),
 	);
 	foreach ( $targets as $file => $id ) {

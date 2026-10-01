@@ -396,31 +396,6 @@ def enquiry():
     return section([row], "dr-enquiry dr-smoke", "enquiry", bg={**bg_image("dr-home-hero.jpg"), "background_color": "#050507"})
 
 
-def header_tpl():
-    return [con([
-        heading("Dance Reaction", "dr-logo", "div", link="/"),
-        shortcode('[dr_menu location="primary"]', "dr-nav"),
-        con([
-            button(PHONE, TEL, "dr-btn dr-btn--plain"),
-            button("Book now", "/#enquiry"),
-            html('<button type="button" aria-label="Menu" aria-expanded="false"><span></span></button>', "dr-burger"),
-        ], "dr-header__cta", direction="row", align="center", gap_=12, wrap="nowrap"),
-    ], "dr-header", boxed=True, direction="row", justify="space-between", align="center", gap_=20, wrap="nowrap",
-        pad=box(14, 48, 14, 48), pad_t=box(12, 32, 12, 32), pad_m=box(10, 16, 10, 16), inner=False)]
-
-
-def footer_tpl():
-    return [con([
-        con([heading("Dance Reaction", "dr-footer__logo", "div", link="/"),
-             shortcode('[dr_menu location="footer"]')],
-            "dr-footer__top", direction="row", wrap="wrap", justify="space-between", align="center", gap_=20),
-        con([text("<p>© Dance Reaction Mobile Discos [dr_year]. all rights reserved</p>", "dr-footer__copy"),
-             shortcode('[dr_menu location="legal"]')],
-            "dr-footer__bottom", direction="row", wrap="wrap", justify="space-between", align="center",
-            gap_=gap(24, 10), pad=box(20, 0, 0, 0)),
-    ], "dr-footer", boxed=True, gap_=20, pad=box(32, 48, 24, 48), pad_m=box(28, 16, 22, 16), bg=bg_grad(), inner=False)]
-
-
 # ---------------------------------------------------------------- UAE (Header Footer Elementor) templates
 # Widget setting keys match Ultimate Addons for Elementor 2.9.x
 # (navigation-menu, hfe-site-title, copyright).
@@ -509,8 +484,6 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     pages = {
         "home.json": [hero(), welcome(), why(), price(), how(), events(), testimonials(), gallery(), enquiry()],
-        "header.json": header_tpl(),
-        "footer.json": footer_tpl(),
         "hfe-header.json": hfe_header_tpl(),
         "hfe-footer.json": hfe_footer_tpl(),
     }

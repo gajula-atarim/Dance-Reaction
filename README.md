@@ -8,7 +8,7 @@ https://dance-reaction.wsdfy.com/
 | Path | Purpose |
 | --- | --- |
 | `theme/dance-reaction-child/` | Child theme: brand CSS (`assets/css/dr.css`), effects JS (`assets/js/dr.js`), header/footer loader, booking form shortcode. |
-| `elementor/*.json` | Elementor data for the Home page, Site Header and Site Footer templates (generated). |
+| `elementor/*.json` | Elementor data for the Home page and the UAE Site Header / Site Footer templates (generated). |
 | `assets/images/` | Optimised design images, imported into the Media Library. |
 | `tools/build_elementor.py` | Generates `elementor/*.json` from the design. |
 | `tools/setup.php` | Idempotent installer: copies the theme, imports images, creates the page, templates and menus, and sets Elementor global colours and fonts. |
@@ -24,7 +24,7 @@ Every section is a native Elementor **container**. Content is native widgets (He
 
 Floating notes, flares, dot circles and smoke are added by `dr.js`, keyed to the section CSS IDs (`top`, `welcome`, `why`, `price`, `how`, `events`, `testimonials`, `gallery`, `enquiry`). Add `dr-smoke` to any section to give it the smoke layer.
 
-**Header / footer.** These are Elementor templates (*Templates → Saved Templates → Site Header / Site Footer*). The child theme prints them on every page; you can swap them in *Appearance → Customize → Dance Reaction layout*. Menu links are managed in *Appearance → Menus* (Header Menu, Footer Menu, Footer Legal).
+**Header / footer.** Built with Ultimate Addons for Elementor: *Appearance → UAE → Header/Footer Builder → Site Header (UAE) / Site Footer (UAE)*, shown on the entire site. Menu links are managed in *Appearance → Menus* (Header Menu, Footer Menu, Footer Legal). `tools/hfe-setup.php` recreates them.
 
 **Booking form.** The form is the `[dr_booking_form]` shortcode, because the free version of Elementor has no Form widget. Enquiries are emailed to the site admin email. Optional attributes are `to="name@example.com"`, `button="Send"` and `types="Wedding, Birthday"`.
 

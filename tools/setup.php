@@ -122,21 +122,7 @@ try {
 
 	$elementor = \Elementor\Plugin::instance();
 
-	/* 3. Header & footer as Elementor templates. */
-	$save_template = function ( $title, $key, $elements ) use ( $elementor ) {
-		$id = (int) get_option( $key );
-		if ( ! $id || 'elementor_library' !== get_post_type( $id ) ) {
-			$doc = $elementor->documents->create( 'section', array( 'post_title' => $title, 'post_status' => 'publish' ) );
-			$id  = $doc->get_main_id();
-			update_option( $key, $id );
-		}
-		wp_update_post( array( 'ID' => $id, 'post_status' => 'publish', 'post_title' => $title ) );
-		$elementor->documents->get( $id, false )->save( array( 'elements' => $elements ) );
-		return $id;
-	};
-	$header_id = $save_template( 'Site Header', 'dr_header_template_id', $load( 'header.json' ) );
-	$footer_id = $save_template( 'Site Footer', 'dr_footer_template_id', $load( 'footer.json' ) );
-	$log[]     = "templates: header=$header_id footer=$footer_id";
+	/* 3. Header & footer: built with Ultimate Addons for Elementor — run tools/hfe-setup.php after this. */
 
 	/* 4. Home page. */
 	$home_id = (int) get_option( 'dr_home_page_id' );
