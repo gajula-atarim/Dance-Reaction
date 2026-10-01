@@ -90,6 +90,26 @@ add_shortcode( 'dr_menu', function ( $atts ) {
 } );
 
 /**
+ * Menu links to a #section are not "the current page" — only real page links are.
+ * (dr.js highlights the section in view on the home page instead.)
+ */
+add_filter( 'nav_menu_css_class', function ( $classes, $item ) {
+	if ( 'custom' === $item->type && false !== strpos( (string) $item->url, '#' ) ) {
+		$classes = array_diff( $classes, array( 'current-menu-item', 'current_page_item', 'current-menu-ancestor', 'current-menu-parent' ) );
+	}
+	return $classes;
+}, 10, 2 );
+
+add_filter( 'nav_menu_link_attributes', function ( $atts, $item ) {
+	if ( in_array( 'current-menu-item', (array) $item->classes, true ) && false === strpos( (string) $item->url, '#' ) ) {
+		$atts['aria-current'] = 'page';
+	} else {
+		unset( $atts['aria-current'] );
+	}
+	return $atts;
+}, 10, 2 );
+
+/**
  * [dr_year] — current year, for the footer copyright line.
  */
 add_shortcode( 'dr_year', function () {

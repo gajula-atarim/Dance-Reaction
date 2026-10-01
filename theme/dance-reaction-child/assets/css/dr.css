@@ -478,6 +478,11 @@ a.dr-info:hover, .dr-site a.dr-info:hover { background: rgba(244, 241, 234, .09)
 .dr-menu--primary a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 2px; background: var(--dr-grad); transform: scaleX(0); transform-origin: left; transition: transform .3s var(--dr-ease); }
 .dr-menu--primary a:hover { color: #fff; }
 .dr-menu--primary a:hover::after { transform: scaleX(1); }
+.dr-menu--primary .current-menu-item > a,
+.dr-menu--primary a.is-active { color: #fff; }
+.dr-menu--primary .current-menu-item > a::after,
+.dr-menu--primary a.is-active::after { transform: scaleX(1); }
+.dr-menu--primary.dr-spy .current-menu-item > a:not(.is-active)::after { transform: scaleX(0); }
 
 .dr-burger { display: none; }
 .dr-burger button {

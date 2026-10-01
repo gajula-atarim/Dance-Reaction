@@ -160,6 +160,43 @@
 		} );
 	}
 
+	// Underline the menu item for the section in view (home page anchors).
+	function scrollspy() {
+		document.querySelectorAll( '.dr-menu--primary' ).forEach( function ( nav ) {
+			if ( nav.dataset.drSpy ) { return; }
+			var here = window.location.origin + window.location.pathname;
+			var links = [], home = null;
+			nav.querySelectorAll( 'a[href]' ).forEach( function ( a ) {
+				var u = new URL( a.href, window.location.href );
+				if ( u.origin + u.pathname !== here ) { return; }
+				if ( u.hash && document.getElementById( u.hash.slice( 1 ) ) ) {
+					links.push( { a: a, el: document.getElementById( u.hash.slice( 1 ) ) } );
+				} else if ( ! u.hash ) {
+					home = a;
+				}
+			} );
+			if ( ! links.length ) { return; }
+			nav.dataset.drSpy = '1';
+			nav.classList.add( 'dr-spy' );
+
+			var ticking = false;
+			function update() {
+				ticking = false;
+				var line = window.innerHeight * .35, current = null;
+				links.forEach( function ( l ) {
+					if ( l.el.getBoundingClientRect().top <= line ) { current = l; }
+				} );
+				links.forEach( function ( l ) { l.a.classList.toggle( 'is-active', l === current ); } );
+				if ( home ) { home.classList.toggle( 'is-active', ! current ); }
+			}
+			window.addEventListener( 'scroll', function () {
+				if ( ! ticking ) { ticking = true; window.requestAnimationFrame( update ); }
+			}, { passive: true } );
+			window.addEventListener( 'resize', update );
+			update();
+		} );
+	}
+
 	// Mobile menu toggle in the header template.
 	function burger() {
 		document.querySelectorAll( '.dr-burger button' ).forEach( function ( btn ) {
@@ -188,6 +225,7 @@
 		addEq();
 		marquee();
 		burger();
+		scrollspy();
 	}
 
 	if ( document.readyState === 'loading' ) {
