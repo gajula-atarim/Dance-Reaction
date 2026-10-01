@@ -145,7 +145,7 @@ try {
 
 	/* 5. Menus. */
 	$menus = array(
-		'primary' => array( 'Header Menu', array( 'Home' => '/', 'About Me' => '/#welcome', 'The Music' => '/#why', 'Equipment' => '/#how', 'Contact' => '/#enquiry' ) ),
+		'primary' => array( 'Header Menu', array( 'Home' => '/', 'About Me' => '#', 'The Music' => '#', 'Equipment' => '#', 'Contact' => '#' ) ), // '#' until those pages are designed
 		'footer'  => array( 'Footer Menu', array( 'Home Page' => '/', 'About Me' => '/#welcome', 'The Music' => '/#why', 'Equipment' => '/#how', 'Contact' => '/#enquiry', 'Site Map' => '#' ) ),
 		'legal'   => array( 'Footer Legal', array( 'Standard Terms & Conditions of Hire' => '#', 'Privacy Statement' => '#' ) ),
 	);
