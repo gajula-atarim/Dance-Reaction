@@ -64,12 +64,18 @@ body.dr-site {
 
 /* Decorative layers injected by dr.js */
 .dr-deco, .dr-smoke-layer { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 1; }
-.dr-smoke-layer { mix-blend-mode: screen; }
+/* Smoke: pre-softened gradients (no live blur / blend) so it is cheap to animate. */
 .dr-smoke-layer i {
-	position: absolute; border-radius: 50%; filter: blur(38px);
-	background: radial-gradient(circle at 50% 50%, rgba(210, 205, 225, .16) 0%, rgba(160, 150, 190, .07) 35%, transparent 70%);
+	position: absolute; border-radius: 50%;
+	background: radial-gradient(closest-side, rgba(210, 205, 225, .12) 0%, rgba(170, 160, 200, .07) 38%, rgba(160, 150, 190, .025) 70%, transparent 100%);
 	animation: drSmoke 36s ease-in-out infinite alternate;
+	will-change: transform, opacity;
 }
+
+/* Pause decorative motion in sections that are off screen (class set by dr.js). */
+.dr-offscreen .dr-smoke-layer i, .dr-offscreen .dr-deco *, .dr-offscreen .dr-eq i,
+.dr-offscreen .dr-marquee__track, .dr-offscreen .dr-hp, .dr-offscreen .dr-gnote,
+.dr-offscreen .dr-play__ring, .dr-offscreen .dr-scroll__chev { animation-play-state: paused !important; }
 .dr-note { position: absolute; line-height: 1; animation: drFloat 7s ease-in-out infinite; }
 .dr-dots {
 	position: absolute; border-radius: 50%;

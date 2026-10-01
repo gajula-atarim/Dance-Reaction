@@ -248,8 +248,8 @@
 				for ( var s = 0; s < sets; s++ ) {
 					var p = pics[ ( s * per + t ) % pics.length ];
 					var im = el( 'img', 'dr-gtile__img' + ( s === 0 ? ' is-on' : '' ) );
-					im.src = p.src; im.alt = s === 0 ? p.alt : ''; im.decoding = 'async';
-					if ( s > 0 ) { im.loading = 'lazy'; im.setAttribute( 'aria-hidden', 'true' ); }
+					im.alt = s === 0 ? p.alt : ''; im.decoding = 'async';
+					if ( s === 0 ) { im.src = p.src; im.loading = 'lazy'; } else { im.dataset.src = p.src; im.setAttribute( 'aria-hidden', 'true' ); }
 					tile.appendChild( im );
 				}
 				grid.appendChild( tile );
@@ -276,10 +276,20 @@
 			widget.appendChild( dots );
 			widget.classList.add( 'is-built' );
 
-			var current = 0, timer = null, paused = false, visible = true;
+			var current = 0, timer = null, paused = false, visible = false;
+
+			// Lazy-load a photo set only when it is about to be shown.
+			function loadSet( n ) {
+				tiles.forEach( function ( tile ) {
+					var img = tile.querySelectorAll( '.dr-gtile__img' )[ n ];
+					if ( img && img.dataset.src ) { img.src = img.dataset.src; delete img.dataset.src; }
+				} );
+			}
 
 			function show( n ) {
 				if ( n === current ) { return; }
+				loadSet( n );
+				if ( sets > 1 ) { window.setTimeout( function () { loadSet( ( n + 1 ) % sets ); }, 2500 ); }
 				var prev = current;
 				current = n;
 				tiles.forEach( function ( tile, i ) {
@@ -327,9 +337,25 @@
 			if ( 'IntersectionObserver' in window ) {
 				new IntersectionObserver( function ( entries ) {
 					visible = entries[ 0 ].isIntersecting;
+					if ( visible && sets > 1 ) { loadSet( ( current + 1 ) % sets ); }
 				}, { threshold: .2 } ).observe( grid );
+			} else {
+				visible = true;
 			}
 			schedule();
+		} );
+	}
+
+	// Pause decorative animations for sections outside the viewport.
+	function pauseOffscreen() {
+		if ( ! ( 'IntersectionObserver' in window ) ) { return; }
+		var io = pauseOffscreen.io || ( pauseOffscreen.io = new IntersectionObserver( function ( entries ) {
+			entries.forEach( function ( e ) { e.target.classList.toggle( 'dr-offscreen', ! e.isIntersecting ); } );
+		}, { rootMargin: '150px 0px' } ) );
+		document.querySelectorAll( '.dr-sec' ).forEach( function ( s ) {
+			if ( s.dataset.drObserved ) { return; }
+			s.dataset.drObserved = '1';
+			io.observe( s );
 		} );
 	}
 
@@ -344,6 +370,7 @@
 		burger();
 		scrollspy();
 		gallerySlides();
+		pauseOffscreen();
 	}
 
 	if ( document.readyState === 'loading' ) {

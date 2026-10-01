@@ -53,6 +53,40 @@ add_action( 'wp_head', function () {
 	echo '<meta name="theme-color" content="#050507">' . "\n";
 }, 1 );
 
+/**
+ * Performance.
+ */
+
+// The theme already loads Archivo + Audiowide (only the weights used); stop Elementor
+// from loading a second, much heavier copy of the same Google Fonts.
+add_filter( 'elementor/frontend/print_google_fonts', '__return_false' );
+
+// Preload the hero photo (a CSS background, so the browser would otherwise find it late).
+add_action( 'wp_head', function () {
+	if ( ! is_front_page() ) {
+		return;
+	}
+	$hero = get_posts( array( 'post_type' => 'attachment', 'post_status' => 'inherit', 'meta_key' => '_dr_source', 'meta_value' => 'dr-home-hero.jpg', 'numberposts' => 1, 'fields' => 'ids' ) );
+	if ( $hero ) {
+		$id = (int) $hero[0];
+		printf(
+			'<link rel="preload" as="image" href="%1$s" imagesrcset="%2$s" imagesizes="100vw" fetchpriority="high">' . "\n",
+			esc_url( wp_get_attachment_image_url( $id, 'full' ) ),
+			esc_attr( (string) wp_get_attachment_image_srcset( $id, 'full' ) )
+		);
+	}
+}, 2 );
+
+// Content images are never wider than half the 1280px layout on desktop, so tell the
+// browser that instead of "100vw" and it downloads a right-sized version.
+add_filter( 'wp_calculate_image_sizes', function ( $sizes, $size ) {
+	$width = is_array( $size ) ? (int) $size[0] : 0;
+	if ( $width > 700 ) {
+		return '(max-width: 767px) 100vw, (max-width: 1280px) 50vw, 640px';
+	}
+	return $sizes;
+}, 10, 2 );
+
 add_filter( 'body_class', function ( $classes ) {
 	$classes[] = 'dr-site';
 	return $classes;
