@@ -640,6 +640,48 @@ body.dr-site #masthead { position: sticky !important; top: 0; z-index: 50; }
 	.dr-site .dr-info__value .elementor-heading-title { white-space: normal; }
 }
 
+/* ---------- Small phones ---------- */
+
+@media (max-width: 767px) {
+	/* Booking a DJ: big, centred cards (2 per row on larger phones, 1 per row on small ones). */
+	.dr-site .dr-tiles { justify-content: center; --dr-tile-gap: 12px; column-gap: var(--dr-tile-gap) !important; row-gap: var(--dr-tile-gap) !important; }
+	.dr-site .dr-tiles > .dr-tile { width: calc((100% - var(--dr-tile-gap)) / 2) !important; max-width: none; flex: 0 0 auto !important; }
+
+	/* "Be sure to contact me" banner: centred text, buttons wrap inside the card. */
+	.dr-site .dr-cta { justify-content: center !important; text-align: center; }
+	.dr-site .dr-cta > .dr-cta__text, .dr-site .dr-cta > .dr-cta__text .elementor-heading-title { text-align: center; width: 100% !important; max-width: none; }
+	.dr-site .dr-cta > .dr-btn-row { width: 100% !important; justify-content: center !important; flex-wrap: wrap !important; }
+
+	/* "Feel the rhythm of the night" on one line. */
+	.dr-site .dr-rhythm .elementor-heading-title { flex-wrap: nowrap; white-space: nowrap; gap: clamp(4px, 1.6vw, 10px); font-size: clamp(14px, 4.6vw, 24.6px); }
+	.dr-site .dr-hp { width: clamp(52px, 17vw, 110px); flex: 0 0 auto; }
+	.dr-site .dr-hp > span { font-size: .6em; }
+
+	/* Footer: everything centred and evenly spaced. */
+	.dr-site .dr-footer__top, .dr-site .dr-footer__bottom { flex-direction: column !important; align-items: center !important; justify-content: center !important; text-align: center; gap: 14px !important; }
+	.dr-site .dr-footer__top > .elementor-element, .dr-site .dr-footer__bottom > .elementor-element { width: 100% !important; max-width: none; }
+	.dr-site .dr-footer .hfe-nav-menu { justify-content: center !important; flex-wrap: wrap; row-gap: 4px; }
+	.dr-site .dr-footer .hfe-nav-menu__layout-horizontal { width: 100%; display: flex; justify-content: center !important; }
+	.dr-site .dr-footer .hfe-nav-menu { margin-left: auto !important; margin-right: auto !important; width: auto; }
+	.dr-site .dr-footer .hfe-copyright-wrapper, .dr-site .dr-footer__copy { text-align: center !important; }
+	.dr-site .dr-footer__logo .hfe-heading, .dr-site .dr-footer__logo .elementor-heading-title { text-align: center; }
+}
+
+@media (max-width: 480px) {
+	.dr-site .dr-tiles > .dr-tile { width: 100% !important; max-width: 340px; }
+}
+
+@media (max-width: 400px) {
+	/* Header: logo, menu button and Book now fit side by side. */
+	.dr-site .dr-header { --gap: 8px 8px; --column-gap: 8px; }
+	.dr-site .dr-header > .e-con-inner { gap: 8px !important; }
+	.dr-site .dr-logo .hfe-heading, .dr-site .dr-logo .elementor-heading-title { font-size: 12px; letter-spacing: .04em; }
+	.dr-site .dr-header .dr-btn .elementor-button { padding: 10px 14px; font-size: 12.5px; word-spacing: 2px; }
+	.dr-site .dr-header__cta { gap: 8px !important; }
+	.dr-site .dr-nav--hfe .hfe-nav-menu__toggle { padding: 6px; }
+	.dr-site .dr-nav--hfe .hfe-nav-menu__toggle svg { width: 18px; height: 18px; }
+}
+
 /* ---------- Motion ---------- */
 
 @keyframes drSmoke { 0% { transform: translate3d(-6%, 2%, 0) scale(1) rotate(0); opacity: .55; } 50% { opacity: 1; } 100% { transform: translate3d(8%, -6%, 0) scale(1.25) rotate(8deg); opacity: .6; } }
