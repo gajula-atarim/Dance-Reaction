@@ -149,7 +149,7 @@ body.dr-site {
 	background: none; box-shadow: none; border-radius: 0; padding: 16px 4px 14px;
 	font-weight: 700; color: var(--dr-cream); border-bottom: 2px solid var(--dr-g2);
 }
-.dr-site .dr-btn--link .elementor-button:hover { color: var(--dr-pink); filter: none; box-shadow: none; border-color: var(--dr-g1); }
+.dr-site .dr-btn--link .elementor-button:hover, .dr-site .dr-btn--link .elementor-button:focus-visible { color: #fff; background: none; filter: none; box-shadow: none; border-image: var(--dr-grad) 1; }
 .dr-site .dr-btn--plain .elementor-button {
 	background: none; box-shadow: none; padding: 10px 4px; font-size: 14.5px; font-weight: 700; color: var(--dr-cream);
 }

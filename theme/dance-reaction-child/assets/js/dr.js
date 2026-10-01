@@ -368,7 +368,6 @@
 		addEq();
 		marquee();
 		burger();
-		scrollspy();
 		gallerySlides();
 		pauseOffscreen();
 	}

@@ -1,6 +1,6 @@
 [
  {
-  "id": "28ff3b4",
+  "id": "5d60625",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -49,7 +49,7 @@
   },
   "elements": [
    {
-    "id": "b6a5a83",
+    "id": "5ffee97",
     "elType": "widget",
     "widgetType": "hfe-site-title",
     "settings": {
@@ -61,7 +61,7 @@
     "elements": []
    },
    {
-    "id": "381c34f",
+    "id": "505b1bb",
     "elType": "widget",
     "widgetType": "navigation-menu",
     "settings": {
@@ -143,7 +143,7 @@
     "elements": []
    },
    {
-    "id": "f191fb7",
+    "id": "25d17ad",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -170,7 +170,7 @@
     },
     "elements": [
      {
-      "id": "fe81965",
+      "id": "88c7882",
       "elType": "widget",
       "widgetType": "button",
       "settings": {
@@ -186,7 +186,7 @@
       "elements": []
      },
      {
-      "id": "1892766",
+      "id": "9743f46",
       "elType": "widget",
       "widgetType": "button",
       "settings": {

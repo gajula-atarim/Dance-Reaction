@@ -375,7 +375,7 @@ def gallery():
         "open_lightbox": "no",
         "gallery_rand": "",
     }, "dr-gallery-show")
-    return section([head, grid, button("View gallery", "#", "dr-btn dr-btn--outline", align="center")],
+    return section([head, grid],
                    "dr-gallery-sec dr-smoke", "gallery", gap_=56, pad=box(140, 48, 140, 48))
 
 
