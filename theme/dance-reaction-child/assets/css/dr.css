@@ -161,6 +161,11 @@ body.dr-site {
 	background: var(--dr-grad); mix-blend-mode: color; opacity: var(--tint, .35); z-index: 1;
 }
 
+/* Two-column rows (Welcome / Price / Booking): equal columns on desktop. */
+@media (min-width: 1025px) {
+	.dr-site .dr-split > .e-con { flex: 1 1 0 !important; width: auto !important; min-width: 0; }
+}
+
 /* Two overlapping photos (Welcome / Price). */
 .dr-site .dr-stack { position: relative; aspect-ratio: 5 / 4; width: 100%; min-width: 0; }
 .dr-site .dr-stack > .elementor-element { position: absolute !important; margin: 0 !important; border-radius: 18px; overflow: hidden; transition: transform .5s var(--dr-ease), box-shadow .4s; }
