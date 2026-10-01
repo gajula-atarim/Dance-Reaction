@@ -464,7 +464,7 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 	background: rgba(244, 241, 234, .1);
 }
 .dr-site .dr-info--call::before { content: "\260E"; background: var(--dr-grad); }
-.dr-site .dr-info--place::before { content: "\2316"; }
+.dr-site .dr-info--place::before { content: "\2316"; background: var(--dr-grad); }
 .dr-site .dr-info > .elementor-element { grid-column: 2; width: auto !important; }
 .dr-site .dr-info__label .elementor-heading-title { font-family: var(--dr-body); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; opacity: .7; }
 .dr-site .dr-info__value .elementor-heading-title { font-size: clamp(17.6px, 1.76vw, 22.9px); white-space: nowrap; }
@@ -644,6 +644,12 @@ body.dr-site #masthead { position: sticky !important; top: 0; z-index: 50; }
 	.dr-form { grid-template-columns: 1fr; }
 	.dr-enquiry .dr-note, .dr-welcome .dr-note { display: none; }
 	.dr-site .dr-info__value .elementor-heading-title { white-space: normal; }
+}
+
+/* Tablets: "Call" and "Based in" boxes side by side. */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.dr-site .dr-info-list { flex-direction: row !important; flex-wrap: nowrap !important; align-items: stretch !important; gap: 14px !important; width: 100%; }
+	.dr-site .dr-info-list > .dr-info { flex: 1 1 0 !important; width: auto !important; max-width: none; min-width: 0; }
 }
 
 /* ---------- Small phones ---------- */
