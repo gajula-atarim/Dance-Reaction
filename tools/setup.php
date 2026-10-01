@@ -146,7 +146,7 @@ try {
 	/* 5. Menus. */
 	$menus = array(
 		'primary' => array( 'Header Menu', array( 'Home' => '/', 'About Me' => '#', 'The Music' => '#', 'Equipment' => '#', 'Contact' => '#' ) ), // '#' until those pages are designed
-		'footer'  => array( 'Footer Menu', array( 'Home Page' => '/', 'About Me' => '/#welcome', 'The Music' => '/#why', 'Equipment' => '/#how', 'Contact' => '/#enquiry', 'Site Map' => '#' ) ),
+		'footer'  => array( 'Footer Menu', array( 'Home Page' => '/', 'About Me' => '#', 'The Music' => '#', 'Equipment' => '#', 'Contact' => '#', 'Site Map' => '#' ) ), // '#' until those pages are designed
 		'legal'   => array( 'Footer Legal', array( 'Standard Terms & Conditions of Hire' => '#', 'Privacy Statement' => '#' ) ),
 	);
 	$locations = get_theme_mod( 'nav_menu_locations', array() );
