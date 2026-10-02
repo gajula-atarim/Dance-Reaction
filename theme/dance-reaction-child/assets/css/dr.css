@@ -667,6 +667,9 @@ body.dr-site #masthead { position: sticky !important; top: 0; z-index: 50; }
 	/* "Hi, thanks for dropping by" on one line (text is ~14.7em wide; side padding 16px each). */
 	.dr-site #welcome .dr-h2 .elementor-heading-title { white-space: nowrap; font-size: min(28px, calc((100vw - 32px) / 15)); }
 
+	/* "Price should be the last thing." on one line (~16.7em wide). */
+	.dr-site #price .dr-h2 .elementor-heading-title { white-space: nowrap; font-size: min(26.4px, calc((100vw - 32px) / 18.5)); }
+
 	/* "Feel the rhythm of the night" on one line. */
 	.dr-site .dr-rhythm .elementor-heading-title { flex-wrap: nowrap; white-space: nowrap; gap: clamp(4px, 1.6vw, 10px); font-size: clamp(14px, 4.6vw, 24.6px); }
 	.dr-site .dr-hp { width: clamp(52px, 17vw, 110px); flex: 0 0 auto; }
