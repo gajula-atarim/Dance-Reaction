@@ -1,0 +1,545 @@
+[
+ {
+  "id": "0edfc0c",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "full",
+   "flex_direction": "column",
+   "flex_justify_content": "center",
+   "padding": {
+    "unit": "px",
+    "top": "0",
+    "right": "0",
+    "bottom": "0",
+    "left": "0",
+    "isLinked": true
+   },
+   "background_background": "classic",
+   "background_image": {
+    "id": "__IMG__dr-contact-hero.jpg",
+    "url": "__IMG__dr-contact-hero.jpg",
+    "size": "",
+    "alt": "",
+    "source": "library"
+   },
+   "background_position": "center center",
+   "background_size": "cover",
+   "background_repeat": "no-repeat",
+   "background_color": "#050507",
+   "css_classes": "dr-sec dr-hero dr-hero--about dr-smoke",
+   "_element_id": "contact-hero"
+  },
+  "elements": [
+   {
+    "id": "c21fe48",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "boxed",
+     "flex_direction": "column",
+     "boxed_width": {
+      "unit": "px",
+      "size": 1280,
+      "sizes": []
+     },
+     "flex_gap": {
+      "column": "22",
+      "row": "22",
+      "isLinked": true,
+      "unit": "px",
+      "size": 22
+     },
+     "flex_justify_content": "center",
+     "flex_align_items": "flex-start",
+     "padding": {
+      "unit": "px",
+      "top": "110",
+      "right": "48",
+      "bottom": "110",
+      "left": "48",
+      "isLinked": false
+     },
+     "padding_tablet": {
+      "unit": "px",
+      "top": "90",
+      "right": "32",
+      "bottom": "90",
+      "left": "32",
+      "isLinked": false
+     },
+     "padding_mobile": {
+      "unit": "px",
+      "top": "56",
+      "right": "16",
+      "bottom": "56",
+      "left": "16",
+      "isLinked": false
+     },
+     "css_classes": "dr-hero-content"
+    },
+    "elements": [
+     {
+      "id": "fd39eb4",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Mobile DJ / MC · Melbourne",
+       "header_size": "div",
+       "_css_classes": "dr-badge"
+      },
+      "elements": []
+     },
+     {
+      "id": "340ef08",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Contact",
+       "header_size": "h1",
+       "_css_classes": "dr-hero-title dr-hero-title--about"
+      },
+      "elements": []
+     },
+     {
+      "id": "3e1268a",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Get in touch",
+       "header_size": "p",
+       "_css_classes": "dr-hero-tag"
+      },
+      "elements": []
+     },
+     {
+      "id": "44b04f9",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "row",
+       "flex_gap": {
+        "column": "12",
+        "row": "12",
+        "isLinked": true,
+        "unit": "px",
+        "size": 12
+       },
+       "flex_align_items": "center",
+       "flex_wrap": "wrap",
+       "padding": {
+        "unit": "px",
+        "top": "6",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+       },
+       "css_classes": "dr-btn-row"
+      },
+      "elements": [
+       {
+        "id": "978a5b7",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Booking enquiry",
+         "link": {
+          "url": "/contact/",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn"
+        },
+        "elements": []
+       },
+       {
+        "id": "e9a5101",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Call 0419 399 374",
+         "link": {
+          "url": "tel:0419399374",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn dr-btn--outline"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "1f0777e",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "padding": {
+    "unit": "px",
+    "top": "130",
+    "right": "48",
+    "bottom": "130",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "css_classes": "dr-sec dr-contact dr-smoke",
+   "_element_id": "contact"
+  },
+  "elements": [
+   {
+    "id": "0669918",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "80",
+      "row": "40",
+      "isLinked": false,
+      "unit": "px",
+      "size": 80
+     },
+     "flex_align_items": "flex-start",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "flex_direction_tablet": "column",
+     "css_classes": "dr-split"
+    },
+    "elements": [
+     {
+      "id": "b1aeb03",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "26",
+        "row": "26",
+        "isLinked": true,
+        "unit": "px",
+        "size": 26
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-split__copy"
+      },
+      "elements": [
+       {
+        "id": "fd7e3d2",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Contact",
+         "header_size": "div",
+         "_css_classes": "dr-eyebrow dr-eyebrow--line"
+        },
+        "elements": []
+       },
+       {
+        "id": "ff8100f",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dance Reaction <span class=\"dr-grad-text\">Mobile Discos</span>",
+         "header_size": "h2",
+         "_css_classes": "dr-h2 dr-h2--lg"
+        },
+        "elements": []
+       },
+       {
+        "id": "61451f2",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "abn: 63 006 859 187",
+         "header_size": "div",
+         "_css_classes": "dr-abn"
+        },
+        "elements": []
+       },
+       {
+        "id": "fb6c3f6",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "12",
+          "row": "12",
+          "isLinked": true,
+          "unit": "px",
+          "size": 12
+         },
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-info-list dr-info-list--stack"
+        },
+        "elements": [
+         {
+          "id": "9d1d8b8",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "html_tag": "a",
+           "link": {
+            "url": "tel:0419399374",
+            "is_external": "",
+            "nofollow": "",
+            "custom_attributes": ""
+           },
+           "css_classes": "dr-info dr-info--call dr-info--row"
+          },
+          "elements": [
+           {
+            "id": "dce5b16",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Mobile",
+             "header_size": "div",
+             "_css_classes": "dr-info__label"
+            },
+            "elements": []
+           },
+           {
+            "id": "5c11d50",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "0419 399 374",
+             "header_size": "div",
+             "_css_classes": "dr-info__value"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "597c41d",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "html_tag": "a",
+           "link": {
+            "url": "mailto:info@dancereaction.com.au",
+            "is_external": "",
+            "nofollow": "",
+            "custom_attributes": ""
+           },
+           "css_classes": "dr-info dr-info--mail dr-info--row"
+          },
+          "elements": [
+           {
+            "id": "dba2eaf",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Email",
+             "header_size": "div",
+             "_css_classes": "dr-info__label"
+            },
+            "elements": []
+           },
+           {
+            "id": "6ef4629",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "info@dancereaction.com.au",
+             "header_size": "div",
+             "_css_classes": "dr-info__value"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "6875b32",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "html_tag": "a",
+           "link": {
+            "url": "https://www.dancereaction.com.au",
+            "is_external": "",
+            "nofollow": "",
+            "custom_attributes": ""
+           },
+           "css_classes": "dr-info dr-info--web dr-info--row"
+          },
+          "elements": [
+           {
+            "id": "1eceeb0",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Web",
+             "header_size": "div",
+             "_css_classes": "dr-info__label"
+            },
+            "elements": []
+           },
+           {
+            "id": "6cf8e5d",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "www.dancereaction.com.au",
+             "header_size": "div",
+             "_css_classes": "dr-info__value"
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "a4fce1d",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-split__form"
+      },
+      "elements": [
+       {
+        "id": "057ed40",
+        "elType": "widget",
+        "widgetType": "shortcode",
+        "settings": {
+         "shortcode": "[dr_booking_form layout=\"contact\" anchor=\"contact\" button=\"Send to Dance reaction\"]",
+         "_css_classes": "dr-form-wrap"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

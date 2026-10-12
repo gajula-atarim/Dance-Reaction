@@ -476,7 +476,7 @@
           "settings": {
            "text": "About Dance Reaction →",
            "link": {
-            "url": "#",
+            "url": "/about/",
             "is_external": "",
             "nofollow": ""
            },

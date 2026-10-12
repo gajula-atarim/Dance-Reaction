@@ -1,6 +1,6 @@
 <?php
 /**
- * Redeploy theme files and the Home / About / Gallery page Elementor data from GitHub without touching media, menus or settings.
+ * Redeploy theme files and the Home / About / Gallery / The Music / Equipment / Contact page Elementor data from GitHub without touching media, menus or settings.
  * (Header/footer are UAE templates: use tools/hfe-setup.php.)
  * Run through Atarim's execute-php with DR_REF defined as the commit to deploy.
  */
@@ -56,8 +56,11 @@ try {
 		'home.json'   => (int) get_option( 'dr_home_page_id' ),
 		'about.json'  => (int) get_option( 'dr_about_page_id' ),
 		'gallery.json' => (int) get_option( 'dr_gallery_page_id' ),
+		'music.json'   => (int) get_option( 'dr_music_page_id' ),
+		'equipment.json' => (int) get_option( 'dr_equipment_page_id' ),
+		'contact.json' => (int) get_option( 'dr_contact_page_id' ),
 	);
-	$targets   = array_filter( $targets ); // About / Gallery are created by tools/about-setup.php / gallery-setup.php.
+	$targets   = array_filter( $targets ); // Inner pages are created by tools/about-setup.php, gallery-setup.php and pages-setup.php.
 	foreach ( $targets as $file => $id ) {
 		$data = json_decode( $fetch( 'elementor/' . $file ), true );
 		if ( ! is_array( $data ) || ! $id ) {

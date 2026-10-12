@@ -106,8 +106,11 @@ body.dr-site {
 .dr-site .dr-eyebrow--line .elementor-heading-title::before { content: ""; width: 28px; height: 2px; background: var(--dr-grad); }
 
 .dr-site .dr-h2 .elementor-heading-title { font-size: clamp(28px, 3.87vw, 49.3px); line-height: 1.05; }
-.dr-site .dr-h2--md .elementor-heading-title { font-size: clamp(26.4px, 3.4vw, 47.5px); line-height: 1.08; }
-.dr-site .dr-h2--xl .elementor-heading-title { font-size: clamp(34px, 4.9vw, 66.9px); line-height: 1; }
+.dr-site .dr-h2--md .elementor-heading-title { font-size: clamp(26.4px, 3.34vw, 45.8px); line-height: 1.08; }
+.dr-site .dr-h2--xl .elementor-heading-title { font-size: clamp(35.2px, 4.93vw, 66.9px); line-height: 1; }
+.dr-site .dr-why-head .dr-h2--md .elementor-heading-title { font-size: clamp(26.4px, 3.4vw, 47.5px); }
+.dr-site .dr-events .dr-h2--xl .elementor-heading-title { font-size: clamp(31.7px, 4.75vw, 63.4px); }
+.dr-site .dr-quotes-head .dr-h2 .elementor-heading-title { font-size: clamp(28.2px, 4.05vw, 52.8px); }
 
 .dr-site .dr-body-lg { font-size: clamp(16.5px, 1.32vw, 19px); line-height: 1.65; opacity: .9; }
 .dr-site .dr-body-lg p { text-wrap: pretty; }
@@ -207,7 +210,7 @@ body.dr-site {
 .dr-eq i:nth-child(4) { animation-duration: .94s; animation-delay: .05s; }
 
 .dr-site .dr-hero-title .elementor-heading-title {
-	font-size: clamp(34px, 4.58vw, 68.6px); line-height: 1.05; letter-spacing: .02em; text-transform: uppercase;
+	font-size: clamp(22.9px, 4.58vw, 68.6px); line-height: 1.05; letter-spacing: .02em; text-transform: uppercase;
 	text-shadow: 0 0 40px rgba(224, 82, 216, .45);
 }
 .dr-site .dr-hero-sub { margin-top: -6px !important; }
@@ -490,7 +493,7 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 .dr-form input[type="date"] { color-scheme: dark; }
 .dr-form__submit {
 	height: 58px; border: 0; border-radius: var(--dr-radius-btn); cursor: pointer;
-	background: var(--dr-grad); color: #fff; font: 500 15px var(--dr-body);
+	background: var(--dr-grad); color: #fff; font: 500 14.1px var(--dr-body);
 	box-shadow: 0 16px 40px -18px var(--dr-g1); transition: transform .25s var(--dr-ease), filter .25s;
 }
 .dr-form__submit:hover, .dr-form__submit:focus { transform: translateY(-2px); filter: brightness(1.12); background: linear-gradient(100deg, var(--dr-g3), var(--dr-g2) 50%, var(--dr-g1)); color: #fff; }
@@ -609,7 +612,7 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 .dr-site .dr-neon > .elementor-element { position: relative; z-index: 1; }
 .dr-site .dr-neon__kicker .elementor-heading-title { font-family: var(--dr-body); font-size: clamp(13px, 1.3vw, 16px); font-weight: 700; letter-spacing: .24em; text-transform: uppercase; line-height: 1.4; }
 .dr-site .dr-neon__title .elementor-heading-title {
-	font-size: clamp(56px, 13vw, 190px); line-height: .95; text-transform: uppercase; white-space: nowrap;
+	font-size: clamp(64px, 13vw, 190px); line-height: .95; text-transform: uppercase; white-space: nowrap;
 	text-shadow: 0 0 6px #fff, 0 0 22px var(--dr-g1), 0 0 48px var(--dr-g1), 0 0 90px var(--dr-g3);
 	animation: drNeon 4s linear infinite;
 }
@@ -679,8 +682,10 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 	.dr-site .dr-timeline { padding-left: 0; }
 	.dr-site .dr-timeline > .dr-step:not(:last-child) .dr-step__text::after { content: none; }
 	.dr-site .dr-neon__kicker .elementor-heading-title { letter-spacing: .16em; }
+	.dr-site .dr-neon__title .elementor-heading-title { white-space: normal; }
 	.dr-site .dr-story { --gap: 64px 0px; --row-gap: 64px; }
-	#about-hero .dr-note, #gallery-hero .dr-note, #photos .dr-note, #aim .dr-note { display: none; }
+	#about-hero .dr-note, #gallery-hero .dr-note, #music-hero .dr-note, #equip-hero .dr-note, #contact-hero .dr-note,
+	#photos .dr-note, #aim .dr-note, #library .dr-note, #intro .dr-note, #contact .dr-note { display: none; }
 }
 
 @keyframes drSpin { to { transform: rotate(360deg); } }
@@ -715,6 +720,139 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 	.dr-site .dr-masonry > .dr-mtile { margin-bottom: 10px !important; border-radius: 14px; }
 	.dr-site .dr-masonry > .dr-mtile--alt { border-radius: 24px 6px 32px 4px; }
 }
+
+/* ---------- Shared inner-page blocks (The Music / Equipment / Contact) ---------- */
+
+/* Collage mirrored: plate tilts the other way, round photo on the left (Equipment → The gear). */
+.dr-site .dr-collage--flip::before { transform: rotate(4deg); }
+.dr-site .dr-collage--flip > .dr-collage__disc { right: auto; left: -8%; }
+
+/* Neon panel title sizes. */
+.dr-site .dr-neon__title--md .elementor-heading-title { font-size: clamp(48px, 9vw, 130px); white-space: normal; text-wrap: balance; }
+.dr-site .dr-neon__title--sm .elementor-heading-title { font-size: clamp(40px, 8vw, 112px); line-height: 1; white-space: normal; text-wrap: balance; }
+
+/* Big outlined numbers: "25+" and "50–400" (the part in a <span> is solid pink). */
+.dr-site .dr-bignum .elementor-heading-title {
+	font-size: clamp(130px, 20vw, 280px); line-height: .85; white-space: nowrap;
+	color: transparent; -webkit-text-fill-color: transparent; -webkit-text-stroke: 2px var(--dr-g1); text-shadow: 0 0 40px rgba(224, 82, 216, .45);
+}
+.dr-site .dr-bignum .elementor-heading-title span { -webkit-text-stroke: 0; color: var(--dr-pink); -webkit-text-fill-color: var(--dr-pink); }
+.dr-site .dr-bignum--md .elementor-heading-title { font-size: clamp(48px, 7vw, 104px); line-height: .9; text-shadow: 0 0 34px rgba(224, 82, 216, .45); }
+.dr-site .dr-bignum__label .elementor-heading-title { font-size: clamp(16px, 1.6vw, 20px); letter-spacing: .06em; }
+
+/* Genre ticker (The Music). Items are Heading widgets; dr.js loops them like the testimonials. */
+.dr-site .dr-ticker {
+	width: 100vw !important; max-width: 100vw !important; margin-left: calc(50% - 50vw) !important; margin-right: calc(50% - 50vw) !important;
+	padding: 22px 0 !important; border-top: 1px solid rgba(244, 241, 234, .12); border-bottom: 1px solid rgba(244, 241, 234, .12);
+	-webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+.dr-site .dr-ticker .dr-marquee__track { padding: 0; align-items: center; }
+.dr-site .dr-ticker .dr-ticker__item { flex: 0 0 auto !important; width: auto !important; }
+.dr-site .dr-ticker__item .elementor-heading-title { display: flex; align-items: center; gap: 12px; font-size: clamp(20px, 2.4vw, 32px); line-height: 1.2; white-space: nowrap; }
+.dr-site .dr-ticker__item .elementor-heading-title::after { content: "\266A"; color: var(--dr-pink); font-size: .8em; }
+
+/* Big centred quote (The Music). */
+.dr-site .dr-bigquote { max-width: 960px !important; margin: 0 auto; }
+.dr-site .dr-bigquote .elementor-heading-title { font-size: clamp(22px, 3vw, 40px); line-height: 1.25; text-wrap: balance; }
+.dr-site .dr-bigquote .elementor-heading-title::before {
+	content: "\201C"; display: block; height: 44px; margin-bottom: 18px; font-size: 90px; line-height: .9;
+	background: var(--dr-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* Two feature panels side by side (dark with gradient border / solid gradient with rings). */
+@media (min-width: 1025px) { .dr-site .dr-panels > .e-con { flex: 1 1 0 !important; width: auto !important; min-width: 0; } }
+.dr-site .dr-panel {
+	position: relative; overflow: hidden; isolation: isolate; border-radius: 36px 8px 52px 6px; border: 1.5px solid transparent;
+	background: linear-gradient(var(--dr-panel), var(--dr-panel)) padding-box,
+		linear-gradient(140deg, rgba(224, 82, 216, .8), rgba(61, 79, 232, .3) 60%, rgba(255, 255, 255, .08)) border-box;
+	box-shadow: 0 30px 70px -30px rgba(148, 68, 220, .6); transition: transform .5s var(--dr-ease);
+}
+.dr-site .dr-panel:hover { transform: translateY(-6px); }
+.dr-site .dr-panel--grad { background: var(--dr-grad); border: 0; box-shadow: 0 40px 90px -30px rgba(224, 82, 216, .7); }
+.dr-site .dr-panel--grad::before {
+	content: ""; position: absolute; left: auto; right: -30px; top: -30px; bottom: auto; width: 200px; height: 200px; border-radius: 50%; z-index: 0; pointer-events: none;
+	background: repeating-radial-gradient(circle, rgba(255, 255, 255, .14) 0 2px, transparent 2px 9px);
+}
+.dr-site .dr-panel > .elementor-element { position: relative; z-index: 1; }
+.dr-site .dr-panel--grad .elementor-widget-text-editor { color: #fff; opacity: 1; }
+.dr-site .dr-panel__title .elementor-heading-title { font-size: clamp(22px, 2.4vw, 30px); line-height: 1.15; }
+.dr-site .dr-panel__title--lg .elementor-heading-title { font-size: clamp(24px, 2.6vw, 34px); }
+.dr-site .dr-panel .dr-btn { margin-top: auto; }
+.dr-site .dr-panel .dr-btn--dark .elementor-button:hover { background: var(--dr-ink); color: var(--dr-pink); }
+.dr-site .dr-panel > .dr-neon__bars { margin-top: 8px; }
+.dr-bars--sm { height: 56px; gap: 4px; -webkit-mask: none; mask: none; opacity: .9; }
+
+/* "Reading the crowd" tip cards. */
+@media (min-width: 1025px) { .dr-site .dr-tips > .dr-tip { flex: 1 1 0 !important; width: auto !important; min-width: 0; } }
+.dr-site .dr-tip {
+	border-radius: var(--dr-radius-btn); border: 1.5px solid transparent; transition: transform .5s var(--dr-ease);
+	background: linear-gradient(var(--dr-panel), var(--dr-panel)) padding-box,
+		linear-gradient(140deg, rgba(224, 82, 216, .8), rgba(61, 79, 232, .3) 60%, rgba(255, 255, 255, .08)) border-box;
+}
+.dr-site .dr-tip:hover { transform: translateY(-6px); }
+.dr-site .dr-tip--grad { background: var(--dr-grad); border: 0; box-shadow: 0 30px 70px -30px rgba(224, 82, 216, .7); }
+.dr-site .dr-tip__label .elementor-heading-title { font-size: 13px; color: var(--dr-pink); line-height: 1.4; }
+.dr-site .dr-tip--grad .dr-tip__label .elementor-heading-title, .dr-site .dr-tip--grad .elementor-widget-text-editor { color: #fff; opacity: 1; }
+
+/* Equipment intro statement. */
+.dr-site .dr-statement .elementor-heading-title { font-size: clamp(24px, 3.2vw, 42px); line-height: 1.2; text-wrap: balance; }
+
+/* Numbered lists in a gradient-bordered box (Quality and reliability / The gear). */
+.dr-site .dr-checklist {
+	border-radius: 20px 6px 28px 4px; border: 1.5px solid transparent; box-shadow: 0 30px 70px -30px rgba(148, 68, 220, .6);
+	background: linear-gradient(var(--dr-panel), var(--dr-panel)) padding-box,
+		linear-gradient(140deg, rgba(224, 82, 216, .8), rgba(61, 79, 232, .3) 60%, rgba(255, 255, 255, .08)) border-box;
+}
+.dr-site .dr-check {
+	display: grid !important; grid-template-columns: auto 1fr; column-gap: 16px; align-items: center;
+	padding: 12px 16px !important; border-radius: 12px 3px 16px 3px; background: rgba(244, 241, 234, .035); border: 1px solid rgba(244, 241, 234, .07);
+}
+.dr-site .dr-check > .elementor-element { width: auto !important; }
+.dr-site .dr-check__num .elementor-heading-title { font-size: 13px; color: var(--dr-pink); line-height: 1.4; }
+.dr-site .dr-check__text .elementor-heading-title { font-family: var(--dr-body); font-size: clamp(14.5px, 1.25vw, 16px); line-height: 1.4; }
+.dr-site .dr-checklist--gear .dr-check { grid-template-columns: auto 1fr auto; padding: 14px 16px !important; }
+.dr-site .dr-checklist--gear .dr-check__text .elementor-heading-title { font-family: var(--dr-head); font-size: clamp(14px, 1.3vw, 16.5px); line-height: 1.35; }
+.dr-site .dr-checklist--gear .dr-check::after {
+	content: ""; position: relative; inset: auto; width: 9px; height: 9px; border-radius: 50%; background: var(--dr-pink); box-shadow: 0 0 10px var(--dr-g1);
+	animation: drLed 1.2s ease-in-out infinite;
+}
+.dr-site .dr-checklist--gear .dr-check:nth-child(2)::after { animation-duration: 1.5s; animation-delay: -.4s; }
+.dr-site .dr-checklist--gear .dr-check:nth-child(3)::after { animation-duration: 1.8s; animation-delay: -.8s; }
+.dr-site .dr-checklist--gear .dr-check:nth-child(4)::after { animation-duration: 2.1s; animation-delay: -1.2s; }
+.dr-site .dr-checklist--gear .dr-check:nth-child(5)::after { animation-duration: 2.4s; animation-delay: -1.6s; }
+.dr-site .dr-checklist--gear .dr-check:nth-child(6)::after { animation-duration: 2.7s; animation-delay: -2s; }
+
+/* Contact. */
+.dr-site .dr-contact {
+	background: radial-gradient(ellipse 55% 60% at 15% 30%, rgba(148, 68, 220, .22), transparent 70%),
+		radial-gradient(ellipse 45% 45% at 90% 75%, rgba(61, 79, 232, .16), transparent 70%), var(--dr-ink);
+}
+.dr-site .dr-abn .elementor-heading-title { font-family: var(--dr-body); font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; opacity: .75; }
+.dr-site .dr-info-list--stack > .dr-info { max-width: none; border-radius: var(--dr-radius-btn); }
+.dr-site .dr-info--row .dr-info__value .elementor-heading-title { font-size: clamp(15px, 1.5vw, 19px); white-space: normal; overflow-wrap: anywhere; }
+.dr-site .dr-info--mail::before { content: "\2709"; background: var(--dr-grad); }
+.dr-site .dr-info--web::before { content: "\2302"; background: var(--dr-grad); }
+.dr-form__hint { grid-column: 1 / -1; margin: 0; font-size: 12px; opacity: .75; text-transform: none; letter-spacing: 0; }
+.dr-form__field em { font-style: normal; color: var(--dr-pink); }
+
+.dr-offscreen .dr-checklist--gear .dr-check::after { animation-play-state: paused !important; }
+
+@media (max-width: 1024px) {
+	.dr-site .dr-years { align-items: center !important; }
+	.dr-site .dr-years .elementor-heading-title { text-align: center; }
+}
+@media (max-width: 767px) {
+	.dr-site .dr-bignum .elementor-heading-title { font-size: min(130px, calc((100vw - 32px) / 2.45)); }
+	.dr-site .dr-bignum--md .elementor-heading-title { font-size: min(48px, calc((100vw - 96px) / 6.2)); }
+	.dr-site .dr-collage--flip > .dr-collage__disc { left: -4%; }
+	.dr-site .dr-tip { padding: 24px !important; }
+	/* Tablets & phones: "Call" / "Based in" row rule must not affect the stacked contact list. */
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.dr-site .dr-info-list--stack { flex-direction: column !important; }
+}
+
+@keyframes drLed { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
 
 /* ---------- Header ---------- */
 

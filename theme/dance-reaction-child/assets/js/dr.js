@@ -66,6 +66,29 @@
 			{ t: 'note', ch: '♪', left: '3%', top: '6%', size: 38, color: '#F08BEA', delay: 1, dur: 8 },
 			{ t: 'flare', right: '4%', top: '2%', size: 64, delay: .6 }
 		],
+		'music-hero': [
+			{ t: 'flare', left: '62%', top: '22%', size: 70 },
+			{ t: 'note', ch: '♫', right: '8%', bottom: '18%', size: 44, color: P + '.6)', delay: 1 }
+		],
+		'equip-hero': [
+			{ t: 'flare', left: '62%', top: '22%', size: 70 },
+			{ t: 'note', ch: '♫', right: '8%', bottom: '18%', size: 44, color: P + '.6)', delay: 1 }
+		],
+		'contact-hero': [
+			{ t: 'flare', left: '62%', top: '22%', size: 70 },
+			{ t: 'note', ch: '♫', right: '8%', bottom: '18%', size: 44, color: P + '.6)', delay: 1 }
+		],
+		library: [
+			{ t: 'note', ch: '𝄞', right: '5%', top: '8%', size: 48, color: P + '.55)', dur: 8 },
+			{ t: 'note', ch: '♫', left: '4%', bottom: '30%', size: 36, color: 'rgba(169,180,255,.6)', delay: 1, dur: 7 }
+		],
+		intro: [
+			{ t: 'note', ch: '𝄞', right: '5%', top: '8%', size: 48, color: P + '.55)', dur: 8 }
+		],
+		contact: [
+			{ t: 'dots', left: '-60px', bottom: '-60px', size: 240, a: .2, dur: 11 },
+			{ t: 'note', ch: '𝄞', right: '5%', top: '8%', size: 44, color: P + '.55)', dur: 8 }
+		],
 		family: [
 			{ t: 'note', ch: '♪', left: '3%', top: '8%', size: 44, color: '#F08BEA', delay: 1.5, dur: 8 },
 			{ t: 'note', ch: '♫', right: '4%', top: '6%', size: 34, color: 'rgba(169,180,255,.7)', dur: 7 }
@@ -171,7 +194,7 @@
 			var track = el( 'div', 'dr-marquee__track' );
 			track.style.gap = gap + 'px';
 			track.style.setProperty( '--dr-marquee-gap', gap + 'px' );
-			track.style.setProperty( '--dr-marquee-speed', Math.max( 30, cards.length * 9 ) + 's' );
+			track.style.setProperty( '--dr-marquee-speed', ( box.classList.contains( 'dr-ticker' ) ? Math.max( 20, cards.length * 3.5 ) : Math.max( 30, cards.length * 9 ) ) + 's' );
 
 			cards.forEach( function ( c ) { track.appendChild( c ); } );
 			cards.forEach( function ( c ) {

@@ -192,7 +192,7 @@
       "settings": {
        "text": "Book now",
        "link": {
-        "url": "/#enquiry",
+        "url": "/contact/",
         "is_external": "",
         "nofollow": ""
        },

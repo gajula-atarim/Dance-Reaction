@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Elementor JSON for the Dance Reaction pages (Home, About, Gallery), header and footer.
+"""Build the Elementor JSON for the Dance Reaction pages (Home, About, Gallery, The Music, Equipment, Contact), header and footer.
 
 Output goes to elementor/*.json. Images are referenced with placeholders
 ({"id": "__IMG__<file>", "url": "__IMG__<file>"}) that tools/setup.php swaps for
@@ -224,7 +224,7 @@ def welcome():
              "<p>So what you will get here, is an uncomplicated honest look at what Dance Reaction is about, what I do, "
              "and how I make it work for your event.</p>", "dr-body-lg"),
         btn_row([button("Get in touch", "#enquiry"),
-                 button("About Dance Reaction →", "#", "dr-btn dr-btn--link")]),
+                 button("About Dance Reaction →", "/about/", "dr-btn dr-btn--link")]),
     ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24, justify="center")
 
     row = con([stack("dr-home-dj.jpg", "DJ playing a set under neon lights",
@@ -356,7 +356,7 @@ def testimonials():
     return section([head, strip], "dr-testimonials dr-smoke", "testimonials", bg=bg_color("#050507"), gap_=56)
 
 
-def gallery():
+def gallery(view=False):
     head = con([
         heading('Feel the <span class="dr-hp"><span>rhythm</span></span> of the night', "dr-rhythm", "h2", align="center"),
         text("<p>Weddings, corporate dinners, birthdays and any other type of event.</p>", "dr-muted", align="center"),
@@ -375,8 +375,10 @@ def gallery():
         "open_lightbox": "no",
         "gallery_rand": "",
     }, "dr-gallery-show")
-    return section([head, grid],
-                   "dr-gallery-sec dr-smoke", "gallery", gap_=56, pad=box(140, 48, 140, 48))
+    parts = [head, grid]
+    if view:  # The Home page has no "View gallery" button (removed on request); the other pages follow the design.
+        parts.append(btn_row([button("View gallery", "/gallery/", "dr-btn dr-btn--outline")], justify="center"))
+    return section(parts, "dr-gallery-sec dr-smoke", "gallery", gap_=56, pad=box(140, 48, 140, 48))
 
 
 def enquiry():
@@ -404,7 +406,7 @@ def about_hero():
         heading("Mobile DJ / MC · Melbourne", "dr-badge", "div"),
         heading("About Me", "dr-hero-title dr-hero-title--about", "h1"),
         heading("All things to all events", "dr-hero-tag", "p"),
-        btn_row([button("Booking enquiry", "/#enquiry"),
+        btn_row([button("Booking enquiry", "/contact/"),
                  button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")], mt=6),
     ], "dr-hero-content", boxed=True, align="flex-start", justify="center", gap_=22,
         pad=box(110, 48, 110, 48), pad_t=box(90, 32, 90, 32), pad_m=box(56, 16, 56, 16))
@@ -506,7 +508,7 @@ def dj_style():
              "style to suit the event and demographic.</p>"
              "<p>I think it is fair to say, I believe with my years of experience and various types of functions I can "
              "be all things to all events.</p>", "dr-body-lg"),
-        btn_row([button("Get in touch", "/#enquiry"),
+        btn_row([button("Get in touch", "/contact/"),
                  button("Back to home →", "/", "dr-btn dr-btn--link")]),
     ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24, justify="center")
     row = con([stack("dr-about-c.jpg", "DJ performing for a crowd", "dr-about-d.jpg", "Party lights over the dance floor"),
@@ -528,7 +530,7 @@ def gallery_hero():
         heading("Mobile DJ / MC · Melbourne", "dr-badge", "div"),
         heading("Gallery", "dr-hero-title dr-hero-title--about", "h1"),
         heading("Feel the rhythm of the night", "dr-hero-tag", "p"),
-        btn_row([button("Booking enquiry", "/#enquiry"),
+        btn_row([button("Booking enquiry", "/contact/"),
                  button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")], mt=6),
     ], "dr-hero-content", boxed=True, align="flex-start", justify="center", gap_=22,
         pad=box(110, 48, 110, 48), pad_t=box(90, 32, 90, 32), pad_m=box(56, 16, 56, 16))
@@ -561,10 +563,245 @@ def photo_wall():
                 align="center"),
     ], "dr-photos-head", align="center", gap_=16)
     wall = con(tiles, "dr-masonry")
-    ctas = btn_row([button("Book your DJ", "/#enquiry"),
+    ctas = btn_row([button("Book your DJ", "/contact/"),
                     button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")], justify="center")
     return section([head, wall, ctas], "dr-photos dr-smoke", "photos", gap_=56, pad=box(130, 48, 130, 48),
                    pad_t=box(96, 32, 96, 32), pad_m=box(72, 16, 72, 16))
+
+
+# ---------------------------------------------------------------- Shared blocks for the inner pages
+
+CONTACT = "/contact/"
+
+
+def page_hero(sid, title, tag, pic):
+    content = con([
+        heading("Mobile DJ / MC · Melbourne", "dr-badge", "div"),
+        heading(title, "dr-hero-title dr-hero-title--about", "h1"),
+        heading(tag, "dr-hero-tag", "p"),
+        btn_row([button("Booking enquiry", CONTACT),
+                 button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")], mt=6),
+    ], "dr-hero-content", boxed=True, align="flex-start", justify="center", gap_=22,
+        pad=box(110, 48, 110, 48), pad_t=box(90, 32, 90, 32), pad_m=box(56, 16, 56, 16))
+    return con([content], "dr-sec dr-hero dr-hero--about dr-smoke", sid, inner=False, justify="center",
+               bg={**bg_image(pic), "background_color": "#050507"})
+
+
+def collage(a, a_alt, b, b_alt, flip=False):
+    """Tilted gradient plate, a main photo and a round inset photo (About / Music / Equipment)."""
+    return con([image(a, a_alt, "dr-collage__main dr-fill"), image(b, b_alt, "dr-collage__disc dr-fill")],
+               "dr-collage" + (" dr-collage--flip" if flip else ""), width=50, width_t=100, width_m=100)
+
+
+def eq_bars(n=36, cls="dr-bars"):
+    bars = "".join(f'<i style="--h:{30 + (i * 29) % 62}%;--d:{round(.6 + (i * .1) % 1, 2)}s;--t:{round((i * .1) % 1.6, 2)}s"></i>'
+                   for i in range(n))
+    return html(f'<div class="{cls}" aria-hidden="true">{bars}</div>', "dr-neon__bars")
+
+
+def neon(kicker, title, body=None, size=""):
+    kids = [heading(kicker, "dr-neon__kicker", "div", align="center"),
+            heading(title, "dr-neon__title" + (f" dr-neon__title--{size}" if size else ""), "p", align="center")]
+    if body:
+        kids.append(text(f"<p>{body}</p>", "dr-body-lg dr-neon__text", align="center"))
+    kids.append(eq_bars())
+    return con(kids, "dr-neon", align="center", gap_=18, pad=box(96, 56, 0, 56), pad_t=box(72, 32, 0, 32),
+               pad_m=box(48, 20, 0, 20))
+
+
+def panel(eyebrow, title, body, extra=None, grad=False, title_cls=""):
+    kids = [heading(eyebrow, "dr-eyebrow" + (" dr-eyebrow--light" if grad else ""), "div"),
+            heading(title, ("dr-panel__title " + title_cls).strip(), "h3"),
+            text(f"<p>{body}</p>", "dr-body-lg")]
+    if extra:
+        kids.append(extra)
+    return con(kids, "dr-panel" + (" dr-panel--grad" if grad else ""), width=50, width_t=100, width_m=100, gap_=20,
+               justify="space-between" if grad else "flex-start", pad=box(48, 48, 48, 48), pad_t=box(36, 32, 36, 32),
+               pad_m=box(28, 24, 28, 24))
+
+
+def checklist(items, gear=False):
+    rows = [con([heading(f"{n:02d}", "dr-check__num", "div"), heading(t, "dr-check__text", "p")], "dr-check")
+            for n, t in enumerate(items, 1)]
+    return con(rows, "dr-checklist" + (" dr-checklist--gear" if gear else ""), gap_=6, pad=box(8))
+
+
+def cta_pair(label="Book your DJ"):
+    return btn_row([button(label, CONTACT), button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")], justify="center")
+
+
+# ---------------------------------------------------------------- The Music page
+
+GENRES = ["Swing", "Rock ’n’ Roll", "60s", "70s Disco", "80s", "90s", "2000s", "Today’s dance hits"]
+
+
+def music_library():
+    years = con([heading('25<span>+</span>', "dr-bignum", "div"),
+                 heading("Years in the entertainment industry", "dr-bignum__label", "p")],
+                "dr-years", width=50, width_t=100, width_m=100, gap_=6, align="flex-start", justify="center")
+    copy = con([
+        heading("The music library", "dr-eyebrow", "div"),
+        heading('All the music <span class="dr-grad-text">you require</span>', "dr-h2 dr-h2--lg", "h2"),
+        text("<p>The Dance Reaction music library, is the result of over twenty five years in the entertainment "
+             "industry, and I'm confident, that you will find all the music you require from the swing era through to "
+             "the current dance hits of today.</p>", "dr-body-lg"),
+    ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=22, justify="center")
+    row = con([years, copy], "dr-split", direction="row", dir_t="column", gap_=gap(88, 40), align="center")
+    ticker = con([heading(g, "dr-ticker__item", "div") for g in GENRES], "dr-marquee dr-ticker", direction="row",
+                 wrap="nowrap", gap_=44, align="center")
+    return section([row, ticker], "dr-library dr-smoke", "library", gap_=gap(0, 90), pad=box(140, 48, 100, 48),
+                   pad_t=box(100, 32, 80, 32), pad_m=box(80, 16, 64, 16))
+
+
+def music_list():
+    quote = heading('For the most part, inexperience and personal music tastes, '
+                    '<span class="dr-grad-text">obscure the success of an event.</span>', "dr-bigquote", "p",
+                    align="center")
+    cards = con([
+        panel("The music list", "Built on what fills the floor",
+              "To simplify the whole process, I've compiled a music list for you, that is not made up of my personal "
+              "choices, but by the averages of all the successful songs played and requested at every event I perform at.",
+              eq_bars(28, "dr-bars dr-bars--sm")),
+        panel("Online music library", "Fully searchable",
+              "Use it in conjunction with Dance Reaction's fully searchable online music library, to further satisfy "
+              "your individual requirements.",
+              button("Search the music library →", "#", "dr-btn dr-btn--dark"), grad=True),
+    ], "dr-panels", direction="row", dir_t="column", gap_=32, align="stretch")
+    return section([quote, cards], "dr-list dr-smoke", "list", gap_=72, pad=box(130, 48, 130, 48),
+                   pad_t=box(96, 32, 96, 32), pad_m=box(72, 16, 72, 16), bg=bg_color("#050507"))
+
+
+def music_requests():
+    copy = con([
+        heading("Your music, your guests", "dr-eyebrow", "div"),
+        heading('The music you <span class="dr-grad-text">want and need</span> to hear', "dr-h2 dr-h2--lg", "h2"),
+        text("<p>My aim is to always play the music both you and your guests want, and need to hear, and as well as "
+             "accommodating your favourite music Your guests are encouraged to request their choices throughout the "
+             "event, and at the same time I will bear in mind your personal wishes, and apply professional discretion "
+             "with regard to any requests made.</p>", "dr-body-lg"),
+        btn_row([button("Booking enquiry", CONTACT), button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")]),
+    ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24, justify="center")
+    row = con([collage("dr-about-b.jpg", "Hands on a DJ controller", "dr-about-a.jpg", "DJ mixing on the decks"), copy],
+              "dr-split", direction="row", dir_t="column", gap_=gap(100, 56), align="center")
+    return section([row], "dr-requests dr-smoke", "requests", pad=box(130, 48, 130, 48), pad_t=box(110, 32, 110, 32),
+                   pad_m=box(80, 16, 80, 16))
+
+
+def music_crowd():
+    tips = [("01 · Working well", "For example, if a particular music style or era is working well, I will continue to "
+             "play more of these songs.", False),
+            ("02 · Not working", "If, on the other hand, a particular genre of music is not working so well, I will move "
+             "on and try another.", False),
+            ("03 · The art of it", "The art of this, is that I will spot small tell-tale signs, and adjust the music "
+             "early, ensuring you of a packed dancefloor at all times.", True)]
+    cards = con([con([heading(t, "dr-tip__label", "div"), text(f"<p>{b}</p>", "dr-body-lg")],
+                     "dr-tip" + (" dr-tip--grad" if g else ""), gap_=14, pad=box(36), pad_t=box(28), pad_m=box(24))
+                 for t, b, g in tips], "dr-tips", direction="row", dir_t="column", gap_=24, align="stretch")
+    return section([
+        neon("The right music at the right time", "Reading the crowd",
+             "Ensuring the right music is played at the right time, is called reading the crowd. I constantly monitor "
+             "the dance floor for the crowd reactions to the music being played.", size="md"),
+        cards, cta_pair(),
+    ], "dr-crowd", "crowd", gap_=64, pad=box(130, 48, 130, 48), pad_t=box(96, 32, 96, 32), pad_m=box(72, 16, 72, 16),
+        bg=bg_color("#050507"))
+
+
+# ---------------------------------------------------------------- Equipment page
+
+STANDARDS = ["Clean and regularly maintained components and media",
+             "Brands with a proven track record of performance and reliability",
+             "A professional standard of presentation",
+             "Clear, quality sound for both vocal, and full range music applications",
+             "Back up contingencies - you never know!",
+             "tested &amp; tagged equipment as required by law, and by qualified persons",
+             "roadcased components", "industry standard rigging", "safe wiring practices",
+             "restricted access to equipment"]
+GEAR = ["Denon cd/mp3/midi players", "Wireless Mic Systems", "DBX compressior/limiter",
+        "HK Linier3 1000 Active Speakers", "HK Linier3 1000 Active Sub Speakers",
+        "DMX Controlled &amp; Sound Activated lighting"]
+
+
+def equip_intro():
+    left = con([
+        heading("My gear", "dr-eyebrow", "div"),
+        heading('Possibly one of the most important, yet overlooked decisions made in the planning of any event, is '
+                '<span class="dr-grad-text">the equipment package supplied.</span>', "dr-statement", "p"),
+    ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=22)
+    right = con([text("<p>The equipment, will carry a good percentage of the success of your function, squarely on its "
+                      "capacity to perform, and perform to a standard.</p>", "dr-body-lg")],
+                "dr-split__copy", width=50, width_t=100, width_m=100)
+    row = con([left, right], "dr-split", direction="row", dir_t="column", gap_=gap(80, 32), align="flex-end")
+    return section([row, neon("Demand quality, and reliability in the equipment you are supplied.",
+                              "Your event depends on it.", size="sm")],
+                   "dr-intro dr-smoke", "intro", gap_=gap(0, 96), pad=box(140, 48, 140, 48), pad_t=box(100, 32, 100, 32),
+                   pad_m=box(80, 16, 80, 16))
+
+
+def equip_standards():
+    copy = con([heading("What you can expect", "dr-eyebrow", "div"),
+                heading('Quality and <span class="dr-grad-text">reliability</span>', "dr-h2 dr-h2--lg", "h2"),
+                checklist(STANDARDS)],
+               "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24, justify="center")
+    row = con([collage("dr-equip-std.jpg", "DJ equipment set up for an event", "dr-equip-hero.jpg",
+                       "Mixer and lighting controls"), copy],
+              "dr-split", direction="row", dir_t="column", gap_=gap(100, 56), align="center")
+    return section([row], "dr-standards dr-smoke", "standards", pad=box(130, 48, 130, 48), pad_t=box(110, 32, 110, 32),
+                   pad_m=box(80, 16, 80, 16))
+
+
+def equip_gear():
+    copy = con([heading("The system", "dr-eyebrow", "div"),
+                heading('The <span class="dr-grad-text">gear</span>', "dr-h2 dr-h2--lg", "h2"),
+                checklist(GEAR, gear=True),
+                text("<p>My system comes fully self contained. I don’t require any extra equipment from the venue "
+                     "(except 240v power points)</p>", "dr-body-lg")],
+               "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24, justify="center")
+    row = con([copy, collage("dr-equip-a.jpg", "Speakers and lighting at a venue", "dr-music-hero.jpg",
+                             "Dance floor lights", flip=True)],
+              "dr-split", direction="row", dir_t="column-reverse", gap_=gap(100, 56), align="center")
+    return section([row], "dr-gear dr-smoke", "gear", pad=box(130, 48, 130, 48), pad_t=box(110, 32, 110, 32),
+                   pad_m=box(80, 16, 80, 16))
+
+
+def equip_capacity():
+    guests = con([
+        heading("Guest lists", "dr-eyebrow", "div"),
+        heading('50<span>–</span>400', "dr-bignum dr-bignum--md", "div"),
+        text("<p>This system suits events catering guest lists from 50, up to 400 people, without over driving the audio "
+             "system and keeping the sound quality at a premium, while providing enough lighting to keep the dance floor "
+             "buzzing all night.</p>", "dr-body-lg"),
+    ], "dr-panel", width=50, width_t=100, width_m=100, gap_=22, pad=box(48), pad_t=box(36, 32, 36, 32),
+        pad_m=box(28, 24, 28, 24))
+    more = panel("Custom package · POA", "Need more?",
+                 "Should your event require more, then I am more than happy to arrange a 'custom' package to suit your "
+                 "individual needs - POA.", button("Ask about a custom package →", CONTACT, "dr-btn dr-btn--dark"),
+                 grad=True, title_cls="dr-panel__title--lg")
+    cards = con([guests, more], "dr-panels", direction="row", dir_t="column", gap_=32, align="stretch")
+    return section([cards, cta_pair()], "dr-capacity", "capacity", gap_=32, pad=box(130, 48, 130, 48),
+                   pad_t=box(96, 32, 96, 32), pad_m=box(72, 16, 72, 16), bg=bg_color("#050507"))
+
+
+# ---------------------------------------------------------------- Contact page
+
+def contact_section():
+    left = con([
+        heading("Contact", "dr-eyebrow dr-eyebrow--line", "div"),
+        heading('Dance Reaction <span class="dr-grad-text">Mobile Discos</span>', "dr-h2 dr-h2--lg", "h2"),
+        heading("abn: 63 006 859 187", "dr-abn", "div"),
+        con([
+            con([heading("Mobile", "dr-info__label", "div"), heading(PHONE, "dr-info__value", "div")],
+                "dr-info dr-info--call dr-info--row", tag="a", link=TEL),
+            con([heading("Email", "dr-info__label", "div"), heading("info@dancereaction.com.au", "dr-info__value", "div")],
+                "dr-info dr-info--mail dr-info--row", tag="a", link="mailto:info@dancereaction.com.au"),
+            con([heading("Web", "dr-info__label", "div"), heading("www.dancereaction.com.au", "dr-info__value", "div")],
+                "dr-info dr-info--web dr-info--row", tag="a", link="https://www.dancereaction.com.au"),
+        ], "dr-info-list dr-info-list--stack", gap_=12),
+    ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=26)
+    right = con([shortcode('[dr_booking_form layout="contact" anchor="contact" button="Send to Dance reaction"]',
+                           "dr-form-wrap")], "dr-split__form", width=50, width_t=100, width_m=100)
+    row = con([left, right], "dr-split", direction="row", dir_t="column", gap_=gap(80, 40), align="flex-start")
+    return section([row], "dr-contact dr-smoke", "contact", pad=box(130, 48, 130, 48), pad_t=box(96, 32, 96, 32),
+                   pad_m=box(72, 16, 72, 16))
 
 
 # ---------------------------------------------------------------- UAE (Header Footer Elementor) templates
@@ -628,7 +865,7 @@ def hfe_header_tpl():
         hfe_nav("header-menu", "dr-nav dr-nav--hfe", dropdown="tablet"),
         con([
             button(PHONE, TEL, "dr-btn dr-btn--plain"),
-            button("Book now", "/#enquiry"),
+            button("Book now", "/contact/"),
         ], "dr-header__cta", direction="row", align="center", gap_=12, wrap="nowrap"),
     ], "dr-header", boxed=True, direction="row", justify="space-between", align="center", gap_=20, wrap="nowrap",
         pad=box(14, 48, 14, 48), pad_t=box(12, 32, 12, 32), pad_m=box(10, 16, 10, 16), inner=False)]
@@ -657,8 +894,17 @@ def main():
         "home.json": [hero(), welcome(), why(), price(), how(), events(), testimonials(), gallery(), enquiry()],
         "hfe-header.json": hfe_header_tpl(),
         "hfe-footer.json": hfe_footer_tpl(),
-        "about.json": [about_hero(), family(), story(), aim(), dj_style(), testimonials(), gallery()],
+        "about.json": [about_hero(), family(), story(), aim(), dj_style(), testimonials(), gallery(view=True)],
         "gallery.json": [gallery_hero(), photo_wall(), testimonials()],
+        "music.json": [page_hero("music-hero", "The Music", "From the swing era to the dance hits of today",
+                                 "dr-music-hero.jpg"),
+                       music_library(), music_list(), music_requests(), music_crowd(), testimonials(),
+                       gallery(view=True)],
+        "equipment.json": [page_hero("equip-hero", "Equipment", "My gear", "dr-equip-hero.jpg"),
+                           equip_intro(), equip_standards(), equip_gear(), equip_capacity(), testimonials(),
+                           gallery(view=True)],
+        "contact.json": [page_hero("contact-hero", "Contact", "Get in touch", "dr-contact-hero.jpg"),
+                         contact_section()],
     }
     for name, data in pages.items():
         with open(os.path.join(OUT, name), "w") as f:

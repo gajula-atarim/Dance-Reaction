@@ -146,7 +146,7 @@
         "settings": {
          "text": "Booking enquiry",
          "link": {
-          "url": "/#enquiry",
+          "url": "/contact/",
           "is_external": "",
           "nofollow": ""
          },
@@ -1529,7 +1529,7 @@
           "settings": {
            "text": "Get in touch",
            "link": {
-            "url": "/#enquiry",
+            "url": "/contact/",
             "is_external": "",
             "nofollow": ""
            },
@@ -2479,7 +2479,7 @@
   ]
  },
  {
-  "id": "fc362e6",
+  "id": "b37b4bd",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -2671,6 +2671,52 @@
      "_css_classes": "dr-gallery-show"
     },
     "elements": []
+   },
+   {
+    "id": "2adf982",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "12",
+      "row": "12",
+      "isLinked": true,
+      "unit": "px",
+      "size": 12
+     },
+     "flex_justify_content": "center",
+     "flex_align_items": "center",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-btn-row"
+    },
+    "elements": [
+     {
+      "id": "2ecb274",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "View gallery",
+       "link": {
+        "url": "/gallery/",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "size": "sm",
+       "_css_classes": "dr-btn dr-btn--outline"
+      },
+      "elements": []
+     }
+    ]
    }
   ]
  }

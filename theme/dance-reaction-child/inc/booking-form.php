@@ -10,6 +10,8 @@
  *   to      Recipient email.
  *   button  Submit button label.
  *   types   Comma-separated event types for the dropdown.
+ *   layout  "booking" (default) or "contact" (Full name, Email, Phone, Comments — all required).
+ *   anchor  Section ID to scroll back to after sending (default "enquiry").
  *
  * @package DanceReaction
  */
@@ -22,6 +24,8 @@ add_shortcode( 'dr_booking_form', function ( $atts ) {
 			'to'     => '',
 			'button' => __( 'Send booking enquiry', 'dance-reaction' ),
 			'types'  => 'Wedding, Corporate dinner, Birthday, Other event',
+			'layout' => 'booking',
+			'anchor' => 'enquiry',
 		),
 		$atts,
 		'dr_booking_form'
@@ -43,8 +47,17 @@ add_shortcode( 'dr_booking_form', function ( $atts ) {
 		<input type="hidden" name="dr_to" value="<?php echo esc_attr( $atts['to'] ? wp_hash( $atts['to'] ) . '|' . $atts['to'] : '' ); ?>">
 		<?php wp_nonce_field( 'dr_booking_enquiry', 'dr_nonce' ); ?>
 		<input type="hidden" name="dr_redirect" value="<?php echo esc_url( get_permalink() ?: home_url( '/' ) ); ?>">
+		<input type="hidden" name="dr_anchor" value="<?php echo esc_attr( sanitize_html_class( $atts['anchor'] ) ); ?>">
+		<input type="hidden" name="dr_layout" value="<?php echo 'contact' === $atts['layout'] ? 'contact' : 'booking'; ?>">
 		<div class="dr-form__hp" aria-hidden="true"><label>Website<input type="text" name="dr_website" tabindex="-1" autocomplete="off"></label></div>
 
+		<?php if ( 'contact' === $atts['layout'] ) : ?>
+		<p class="dr-form__hint"><?php esc_html_e( 'All fields are required', 'dance-reaction' ); ?></p>
+		<label class="dr-form__field dr-form__field--full"><span><?php esc_html_e( 'Full Name', 'dance-reaction' ); ?><em> *</em></span><input type="text" name="dr_name" autocomplete="name" required></label>
+		<label class="dr-form__field"><span><?php esc_html_e( 'Email', 'dance-reaction' ); ?><em> *</em></span><input type="email" name="dr_email" autocomplete="email" required></label>
+		<label class="dr-form__field"><span><?php esc_html_e( 'Phone', 'dance-reaction' ); ?><em> *</em></span><input type="tel" name="dr_phone" autocomplete="tel" required></label>
+		<label class="dr-form__field dr-form__field--full"><span><?php esc_html_e( 'Comments', 'dance-reaction' ); ?><em> *</em></span><textarea name="dr_message" rows="5" required></textarea></label>
+		<?php else : ?>
 		<label class="dr-form__field"><span><?php esc_html_e( 'Name', 'dance-reaction' ); ?></span><input type="text" name="dr_name" autocomplete="name" required></label>
 		<label class="dr-form__field"><span><?php esc_html_e( 'Phone', 'dance-reaction' ); ?></span><input type="tel" name="dr_phone" autocomplete="tel"></label>
 		<label class="dr-form__field dr-form__field--full"><span><?php esc_html_e( 'Email', 'dance-reaction' ); ?></span><input type="email" name="dr_email" autocomplete="email" required></label>
@@ -57,6 +70,7 @@ add_shortcode( 'dr_booking_form', function ( $atts ) {
 		</label>
 		<label class="dr-form__field"><span><?php esc_html_e( 'Event date', 'dance-reaction' ); ?></span><input type="date" name="dr_date"></label>
 		<label class="dr-form__field dr-form__field--full"><span><?php esc_html_e( 'Message', 'dance-reaction' ); ?></span><textarea name="dr_message" rows="3"></textarea></label>
+		<?php endif; ?>
 		<button type="submit" class="dr-form__submit"><?php echo esc_html( $atts['button'] ); ?></button>
 	</form>
 	<?php
@@ -69,9 +83,11 @@ add_shortcode( 'dr_booking_form', function ( $atts ) {
 function dr_handle_booking_enquiry() {
 	$redirect = isset( $_POST['dr_redirect'] ) ? esc_url_raw( wp_unslash( $_POST['dr_redirect'] ) ) : home_url( '/' );
 	$redirect = wp_validate_redirect( $redirect, home_url( '/' ) );
+	$anchor   = '#' . ( isset( $_POST['dr_anchor'] ) ? sanitize_html_class( wp_unslash( $_POST['dr_anchor'] ) ) : 'enquiry' );
+	$contact  = isset( $_POST['dr_layout'] ) && 'contact' === $_POST['dr_layout'];
 
 	$fail = function () use ( $redirect ) {
-		wp_safe_redirect( add_query_arg( 'enquiry', 'error', $redirect ) . '#enquiry' );
+		wp_safe_redirect( add_query_arg( 'enquiry', 'error', $redirect ) . $anchor );
 		exit;
 	};
 
@@ -84,7 +100,7 @@ function dr_handle_booking_enquiry() {
 
 	// Honeypot: bots fill every field.
 	if ( ! empty( $_POST['dr_website'] ) ) {
-		wp_safe_redirect( add_query_arg( 'enquiry', 'sent', $redirect ) . '#enquiry' );
+		wp_safe_redirect( add_query_arg( 'enquiry', 'sent', $redirect ) . $anchor );
 		exit;
 	}
 
@@ -95,7 +111,7 @@ function dr_handle_booking_enquiry() {
 	$date    = sanitize_text_field( wp_unslash( $_POST['dr_date'] ?? '' ) );
 	$message = sanitize_textarea_field( wp_unslash( $_POST['dr_message'] ?? '' ) );
 
-	if ( '' === $name || ! is_email( $email ) ) {
+	if ( '' === $name || ! is_email( $email ) || ( $contact && ( '' === $phone || '' === $message ) ) ) {
 		$fail();
 	}
 
@@ -108,8 +124,11 @@ function dr_handle_booking_enquiry() {
 		}
 	}
 
-	$subject = sprintf( '[%s] Booking enquiry: %s%s', wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES ), $type, $date ? ' — ' . $date : '' );
-	$body    = implode(
+	$site    = wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES );
+	$subject = $contact
+		? sprintf( '[%s] Contact form: %s', $site, $name )
+		: sprintf( '[%s] Booking enquiry: %s%s', $site, $type, $date ? ' — ' . $date : '' );
+	$body    = $contact ? implode( "\n", array( 'Name: ' . $name, 'Email: ' . $email, 'Phone: ' . $phone, '', 'Comments:', $message ) ) : implode(
 		"\n",
 		array(
 			'Name: ' . $name,
@@ -134,7 +153,7 @@ function dr_handle_booking_enquiry() {
 	 */
 	do_action( 'dr_booking_enquiry_submitted', compact( 'name', 'phone', 'email', 'type', 'date', 'message' ), $sent );
 
-	wp_safe_redirect( add_query_arg( 'enquiry', $sent ? 'sent' : 'error', $redirect ) . '#enquiry' );
+	wp_safe_redirect( add_query_arg( 'enquiry', $sent ? 'sent' : 'error', $redirect ) . $anchor );
 	exit;
 }
 add_action( 'admin_post_dr_booking_enquiry', 'dr_handle_booking_enquiry' );

@@ -1,0 +1,3096 @@
+[
+ {
+  "id": "3b6d1ac",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "full",
+   "flex_direction": "column",
+   "flex_justify_content": "center",
+   "padding": {
+    "unit": "px",
+    "top": "0",
+    "right": "0",
+    "bottom": "0",
+    "left": "0",
+    "isLinked": true
+   },
+   "background_background": "classic",
+   "background_image": {
+    "id": "__IMG__dr-equip-hero.jpg",
+    "url": "__IMG__dr-equip-hero.jpg",
+    "size": "",
+    "alt": "",
+    "source": "library"
+   },
+   "background_position": "center center",
+   "background_size": "cover",
+   "background_repeat": "no-repeat",
+   "background_color": "#050507",
+   "css_classes": "dr-sec dr-hero dr-hero--about dr-smoke",
+   "_element_id": "equip-hero"
+  },
+  "elements": [
+   {
+    "id": "183564e",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "boxed",
+     "flex_direction": "column",
+     "boxed_width": {
+      "unit": "px",
+      "size": 1280,
+      "sizes": []
+     },
+     "flex_gap": {
+      "column": "22",
+      "row": "22",
+      "isLinked": true,
+      "unit": "px",
+      "size": 22
+     },
+     "flex_justify_content": "center",
+     "flex_align_items": "flex-start",
+     "padding": {
+      "unit": "px",
+      "top": "110",
+      "right": "48",
+      "bottom": "110",
+      "left": "48",
+      "isLinked": false
+     },
+     "padding_tablet": {
+      "unit": "px",
+      "top": "90",
+      "right": "32",
+      "bottom": "90",
+      "left": "32",
+      "isLinked": false
+     },
+     "padding_mobile": {
+      "unit": "px",
+      "top": "56",
+      "right": "16",
+      "bottom": "56",
+      "left": "16",
+      "isLinked": false
+     },
+     "css_classes": "dr-hero-content"
+    },
+    "elements": [
+     {
+      "id": "1707219",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Mobile DJ / MC · Melbourne",
+       "header_size": "div",
+       "_css_classes": "dr-badge"
+      },
+      "elements": []
+     },
+     {
+      "id": "ae14e78",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Equipment",
+       "header_size": "h1",
+       "_css_classes": "dr-hero-title dr-hero-title--about"
+      },
+      "elements": []
+     },
+     {
+      "id": "683b431",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "My gear",
+       "header_size": "p",
+       "_css_classes": "dr-hero-tag"
+      },
+      "elements": []
+     },
+     {
+      "id": "e5a20e4",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "row",
+       "flex_gap": {
+        "column": "12",
+        "row": "12",
+        "isLinked": true,
+        "unit": "px",
+        "size": 12
+       },
+       "flex_align_items": "center",
+       "flex_wrap": "wrap",
+       "padding": {
+        "unit": "px",
+        "top": "6",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+       },
+       "css_classes": "dr-btn-row"
+      },
+      "elements": [
+       {
+        "id": "18bd0fe",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Booking enquiry",
+         "link": {
+          "url": "/contact/",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn"
+        },
+        "elements": []
+       },
+       {
+        "id": "67ce2fa",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Call 0419 399 374",
+         "link": {
+          "url": "tel:0419399374",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn dr-btn--outline"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c390cac",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "0",
+    "row": "96",
+    "isLinked": false,
+    "unit": "px",
+    "size": 0
+   },
+   "padding": {
+    "unit": "px",
+    "top": "140",
+    "right": "48",
+    "bottom": "140",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "100",
+    "right": "32",
+    "bottom": "100",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "80",
+    "right": "16",
+    "bottom": "80",
+    "left": "16",
+    "isLinked": false
+   },
+   "css_classes": "dr-sec dr-intro dr-smoke",
+   "_element_id": "intro"
+  },
+  "elements": [
+   {
+    "id": "468d5d6",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "80",
+      "row": "32",
+      "isLinked": false,
+      "unit": "px",
+      "size": 80
+     },
+     "flex_align_items": "flex-end",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "flex_direction_tablet": "column",
+     "css_classes": "dr-split"
+    },
+    "elements": [
+     {
+      "id": "50a8502",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "22",
+        "row": "22",
+        "isLinked": true,
+        "unit": "px",
+        "size": 22
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-split__copy"
+      },
+      "elements": [
+       {
+        "id": "6b28927",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "My gear",
+         "header_size": "div",
+         "_css_classes": "dr-eyebrow"
+        },
+        "elements": []
+       },
+       {
+        "id": "5c0759a",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Possibly one of the most important, yet overlooked decisions made in the planning of any event, is <span class=\"dr-grad-text\">the equipment package supplied.</span>",
+         "header_size": "p",
+         "_css_classes": "dr-statement"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "6252b84",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-split__copy"
+      },
+      "elements": [
+       {
+        "id": "668993b",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>The equipment, will carry a good percentage of the success of your function, squarely on its capacity to perform, and perform to a standard.</p>",
+         "_css_classes": "dr-body-lg"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "8042d29",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "18",
+      "row": "18",
+      "isLinked": true,
+      "unit": "px",
+      "size": 18
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "96",
+      "right": "56",
+      "bottom": "0",
+      "left": "56",
+      "isLinked": false
+     },
+     "padding_tablet": {
+      "unit": "px",
+      "top": "72",
+      "right": "32",
+      "bottom": "0",
+      "left": "32",
+      "isLinked": false
+     },
+     "padding_mobile": {
+      "unit": "px",
+      "top": "48",
+      "right": "20",
+      "bottom": "0",
+      "left": "20",
+      "isLinked": false
+     },
+     "css_classes": "dr-neon"
+    },
+    "elements": [
+     {
+      "id": "1c19454",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Demand quality, and reliability in the equipment you are supplied.",
+       "header_size": "div",
+       "align": "center",
+       "_css_classes": "dr-neon__kicker"
+      },
+      "elements": []
+     },
+     {
+      "id": "f615e67",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Your event depends on it.",
+       "header_size": "p",
+       "align": "center",
+       "_css_classes": "dr-neon__title dr-neon__title--sm"
+      },
+      "elements": []
+     },
+     {
+      "id": "4fa8704",
+      "elType": "widget",
+      "widgetType": "html",
+      "settings": {
+       "html": "<div class=\"dr-bars\" aria-hidden=\"true\"><i style=\"--h:30%;--d:0.6s;--t:0.0s\"></i><i style=\"--h:59%;--d:0.7s;--t:0.1s\"></i><i style=\"--h:88%;--d:0.8s;--t:0.2s\"></i><i style=\"--h:55%;--d:0.9s;--t:0.3s\"></i><i style=\"--h:84%;--d:1.0s;--t:0.4s\"></i><i style=\"--h:51%;--d:1.1s;--t:0.5s\"></i><i style=\"--h:80%;--d:1.2s;--t:0.6s\"></i><i style=\"--h:47%;--d:1.3s;--t:0.7s\"></i><i style=\"--h:76%;--d:1.4s;--t:0.8s\"></i><i style=\"--h:43%;--d:1.5s;--t:0.9s\"></i><i style=\"--h:72%;--d:0.6s;--t:1.0s\"></i><i style=\"--h:39%;--d:0.7s;--t:1.1s\"></i><i style=\"--h:68%;--d:0.8s;--t:1.2s\"></i><i style=\"--h:35%;--d:0.9s;--t:1.3s\"></i><i style=\"--h:64%;--d:1.0s;--t:1.4s\"></i><i style=\"--h:31%;--d:1.1s;--t:1.5s\"></i><i style=\"--h:60%;--d:1.2s;--t:0.0s\"></i><i style=\"--h:89%;--d:1.3s;--t:0.1s\"></i><i style=\"--h:56%;--d:1.4s;--t:0.2s\"></i><i style=\"--h:85%;--d:1.5s;--t:0.3s\"></i><i style=\"--h:52%;--d:0.6s;--t:0.4s\"></i><i style=\"--h:81%;--d:0.7s;--t:0.5s\"></i><i style=\"--h:48%;--d:0.8s;--t:0.6s\"></i><i style=\"--h:77%;--d:0.9s;--t:0.7s\"></i><i style=\"--h:44%;--d:1.0s;--t:0.8s\"></i><i style=\"--h:73%;--d:1.1s;--t:0.9s\"></i><i style=\"--h:40%;--d:1.2s;--t:1.0s\"></i><i style=\"--h:69%;--d:1.3s;--t:1.1s\"></i><i style=\"--h:36%;--d:1.4s;--t:1.2s\"></i><i style=\"--h:65%;--d:1.5s;--t:1.3s\"></i><i style=\"--h:32%;--d:0.6s;--t:1.4s\"></i><i style=\"--h:61%;--d:0.7s;--t:1.5s\"></i><i style=\"--h:90%;--d:0.8s;--t:0.0s\"></i><i style=\"--h:57%;--d:0.9s;--t:0.1s\"></i><i style=\"--h:86%;--d:1.0s;--t:0.2s\"></i><i style=\"--h:53%;--d:1.1s;--t:0.3s\"></i></div>",
+       "_css_classes": "dr-neon__bars"
+      },
+      "elements": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "af090f9",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "padding": {
+    "unit": "px",
+    "top": "130",
+    "right": "48",
+    "bottom": "130",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "110",
+    "right": "32",
+    "bottom": "110",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "80",
+    "right": "16",
+    "bottom": "80",
+    "left": "16",
+    "isLinked": false
+   },
+   "css_classes": "dr-sec dr-standards dr-smoke",
+   "_element_id": "standards"
+  },
+  "elements": [
+   {
+    "id": "5c9e0e9",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "100",
+      "row": "56",
+      "isLinked": false,
+      "unit": "px",
+      "size": 100
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "flex_direction_tablet": "column",
+     "css_classes": "dr-split"
+    },
+    "elements": [
+     {
+      "id": "06b0651",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-collage"
+      },
+      "elements": [
+       {
+        "id": "fc48f3e",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "id": "__IMG__dr-equip-std.jpg",
+          "url": "__IMG__dr-equip-std.jpg",
+          "size": "",
+          "alt": "DJ equipment set up for an event",
+          "source": "library"
+         },
+         "image_size": "full",
+         "caption_source": "none",
+         "link_to": "none",
+         "_css_classes": "dr-collage__main dr-fill"
+        },
+        "elements": []
+       },
+       {
+        "id": "137ef03",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "id": "__IMG__dr-equip-hero.jpg",
+          "url": "__IMG__dr-equip-hero.jpg",
+          "size": "",
+          "alt": "Mixer and lighting controls",
+          "source": "library"
+         },
+         "image_size": "full",
+         "caption_source": "none",
+         "link_to": "none",
+         "_css_classes": "dr-collage__disc dr-fill"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "7fc0ff8",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "24",
+        "row": "24",
+        "isLinked": true,
+        "unit": "px",
+        "size": 24
+       },
+       "flex_justify_content": "center",
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-split__copy"
+      },
+      "elements": [
+       {
+        "id": "2cb1f40",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "What you can expect",
+         "header_size": "div",
+         "_css_classes": "dr-eyebrow"
+        },
+        "elements": []
+       },
+       {
+        "id": "558c6f0",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Quality and <span class=\"dr-grad-text\">reliability</span>",
+         "header_size": "h2",
+         "_css_classes": "dr-h2 dr-h2--lg"
+        },
+        "elements": []
+       },
+       {
+        "id": "5c5925a",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "6",
+          "row": "6",
+          "isLinked": true,
+          "unit": "px",
+          "size": 6
+         },
+         "padding": {
+          "unit": "px",
+          "top": "8",
+          "right": "8",
+          "bottom": "8",
+          "left": "8",
+          "isLinked": true
+         },
+         "css_classes": "dr-checklist"
+        },
+        "elements": [
+         {
+          "id": "c29d63f",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "22ae9c3",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "01",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "d81b351",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Clean and regularly maintained components and media",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "e7fc099",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "b5e25a3",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "02",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "c33617c",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Brands with a proven track record of performance and reliability",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "bbbf231",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "50888b2",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "03",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "6faa554",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "A professional standard of presentation",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "19ad41f",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "5aa1098",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "04",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "2eba243",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Clear, quality sound for both vocal, and full range music applications",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "ec59606",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "b7df492",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "05",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "45e8857",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Back up contingencies - you never know!",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "f2b2119",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "a026008",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "06",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "a51394a",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "tested &amp; tagged equipment as required by law, and by qualified persons",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "7b1c7b4",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "7887719",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "07",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "67c7a38",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "roadcased components",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "b2f10c6",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "7814d76",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "08",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "13c44ed",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "industry standard rigging",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "066b97d",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "3e867fd",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "09",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "387df15",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "safe wiring practices",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "f6033c9",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "4cf0e37",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "10",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "4bd2178",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "restricted access to equipment",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a488cbb",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "padding": {
+    "unit": "px",
+    "top": "130",
+    "right": "48",
+    "bottom": "130",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "110",
+    "right": "32",
+    "bottom": "110",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "80",
+    "right": "16",
+    "bottom": "80",
+    "left": "16",
+    "isLinked": false
+   },
+   "css_classes": "dr-sec dr-gear dr-smoke",
+   "_element_id": "gear"
+  },
+  "elements": [
+   {
+    "id": "4b50d4d",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "100",
+      "row": "56",
+      "isLinked": false,
+      "unit": "px",
+      "size": 100
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "flex_direction_tablet": "column-reverse",
+     "css_classes": "dr-split"
+    },
+    "elements": [
+     {
+      "id": "a22f3ac",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "24",
+        "row": "24",
+        "isLinked": true,
+        "unit": "px",
+        "size": 24
+       },
+       "flex_justify_content": "center",
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-split__copy"
+      },
+      "elements": [
+       {
+        "id": "c8465a1",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "The system",
+         "header_size": "div",
+         "_css_classes": "dr-eyebrow"
+        },
+        "elements": []
+       },
+       {
+        "id": "52e2994",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "The <span class=\"dr-grad-text\">gear</span>",
+         "header_size": "h2",
+         "_css_classes": "dr-h2 dr-h2--lg"
+        },
+        "elements": []
+       },
+       {
+        "id": "af6443f",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "flex_gap": {
+          "column": "6",
+          "row": "6",
+          "isLinked": true,
+          "unit": "px",
+          "size": 6
+         },
+         "padding": {
+          "unit": "px",
+          "top": "8",
+          "right": "8",
+          "bottom": "8",
+          "left": "8",
+          "isLinked": true
+         },
+         "css_classes": "dr-checklist dr-checklist--gear"
+        },
+        "elements": [
+         {
+          "id": "1ff3c1b",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "62be434",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "01",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "976bbf6",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Denon cd/mp3/midi players",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "cd7bfe7",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "134df98",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "02",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "3f352cc",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "Wireless Mic Systems",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "7ff4d57",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "fd0aa71",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "03",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "485c387",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "DBX compressior/limiter",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "2af1a68",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "1e0c91d",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "04",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "ff321c6",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "HK Linier3 1000 Active Speakers",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "d15c0c1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "81bd47a",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "05",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "dffa262",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "HK Linier3 1000 Active Sub Speakers",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         },
+         {
+          "id": "f8541ac",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+           "content_width": "full",
+           "flex_direction": "column",
+           "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+           },
+           "css_classes": "dr-check"
+          },
+          "elements": [
+           {
+            "id": "281a697",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "06",
+             "header_size": "div",
+             "_css_classes": "dr-check__num"
+            },
+            "elements": []
+           },
+           {
+            "id": "b600b72",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+             "title": "DMX Controlled &amp; Sound Activated lighting",
+             "header_size": "p",
+             "_css_classes": "dr-check__text"
+            },
+            "elements": []
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "id": "697926f",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>My system comes fully self contained. I don’t require any extra equipment from the venue (except 240v power points)</p>",
+         "_css_classes": "dr-body-lg"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "c8bde4f",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+       },
+       "css_classes": "dr-collage dr-collage--flip"
+      },
+      "elements": [
+       {
+        "id": "aa2000a",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "id": "__IMG__dr-equip-a.jpg",
+          "url": "__IMG__dr-equip-a.jpg",
+          "size": "",
+          "alt": "Speakers and lighting at a venue",
+          "source": "library"
+         },
+         "image_size": "full",
+         "caption_source": "none",
+         "link_to": "none",
+         "_css_classes": "dr-collage__main dr-fill"
+        },
+        "elements": []
+       },
+       {
+        "id": "6bd5ef4",
+        "elType": "widget",
+        "widgetType": "image",
+        "settings": {
+         "image": {
+          "id": "__IMG__dr-music-hero.jpg",
+          "url": "__IMG__dr-music-hero.jpg",
+          "size": "",
+          "alt": "Dance floor lights",
+          "source": "library"
+         },
+         "image_size": "full",
+         "caption_source": "none",
+         "link_to": "none",
+         "_css_classes": "dr-collage__disc dr-fill"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "e211a0e",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "32",
+    "row": "32",
+    "isLinked": true,
+    "unit": "px",
+    "size": 32
+   },
+   "padding": {
+    "unit": "px",
+    "top": "130",
+    "right": "48",
+    "bottom": "130",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "classic",
+   "background_color": "#050507",
+   "css_classes": "dr-sec dr-capacity",
+   "_element_id": "capacity"
+  },
+  "elements": [
+   {
+    "id": "1540903",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "32",
+      "row": "32",
+      "isLinked": true,
+      "unit": "px",
+      "size": 32
+     },
+     "flex_align_items": "stretch",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "flex_direction_tablet": "column",
+     "css_classes": "dr-panels"
+    },
+    "elements": [
+     {
+      "id": "15a70bf",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "22",
+        "row": "22",
+        "isLinked": true,
+        "unit": "px",
+        "size": 22
+       },
+       "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "48",
+        "bottom": "48",
+        "left": "48",
+        "isLinked": true
+       },
+       "padding_tablet": {
+        "unit": "px",
+        "top": "36",
+        "right": "32",
+        "bottom": "36",
+        "left": "32",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "24",
+        "bottom": "28",
+        "left": "24",
+        "isLinked": false
+       },
+       "css_classes": "dr-panel"
+      },
+      "elements": [
+       {
+        "id": "800a744",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Guest lists",
+         "header_size": "div",
+         "_css_classes": "dr-eyebrow"
+        },
+        "elements": []
+       },
+       {
+        "id": "90262cd",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "50<span>–</span>400",
+         "header_size": "div",
+         "_css_classes": "dr-bignum dr-bignum--md"
+        },
+        "elements": []
+       },
+       {
+        "id": "1eae796",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>This system suits events catering guest lists from 50, up to 400 people, without over driving the audio system and keeping the sound quality at a premium, while providing enough lighting to keep the dance floor buzzing all night.</p>",
+         "_css_classes": "dr-body-lg"
+        },
+        "elements": []
+       }
+      ]
+     },
+     {
+      "id": "b0c7191",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "width": {
+        "unit": "%",
+        "size": 50,
+        "sizes": []
+       },
+       "width_tablet": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "width_mobile": {
+        "unit": "%",
+        "size": 100,
+        "sizes": []
+       },
+       "flex_gap": {
+        "column": "20",
+        "row": "20",
+        "isLinked": true,
+        "unit": "px",
+        "size": 20
+       },
+       "flex_justify_content": "space-between",
+       "padding": {
+        "unit": "px",
+        "top": "48",
+        "right": "48",
+        "bottom": "48",
+        "left": "48",
+        "isLinked": true
+       },
+       "padding_tablet": {
+        "unit": "px",
+        "top": "36",
+        "right": "32",
+        "bottom": "36",
+        "left": "32",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "24",
+        "bottom": "28",
+        "left": "24",
+        "isLinked": false
+       },
+       "css_classes": "dr-panel dr-panel--grad"
+      },
+      "elements": [
+       {
+        "id": "2a1e1dc",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Custom package · POA",
+         "header_size": "div",
+         "_css_classes": "dr-eyebrow dr-eyebrow--light"
+        },
+        "elements": []
+       },
+       {
+        "id": "c857c5b",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Need more?",
+         "header_size": "h3",
+         "_css_classes": "dr-panel__title dr-panel__title--lg"
+        },
+        "elements": []
+       },
+       {
+        "id": "3787a65",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Should your event require more, then I am more than happy to arrange a 'custom' package to suit your individual needs - POA.</p>",
+         "_css_classes": "dr-body-lg"
+        },
+        "elements": []
+       },
+       {
+        "id": "0dd4b4e",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Ask about a custom package →",
+         "link": {
+          "url": "/contact/",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn dr-btn--dark"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "1a8ef23",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "12",
+      "row": "12",
+      "isLinked": true,
+      "unit": "px",
+      "size": 12
+     },
+     "flex_justify_content": "center",
+     "flex_align_items": "center",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-btn-row"
+    },
+    "elements": [
+     {
+      "id": "8655a1c",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "Book your DJ",
+       "link": {
+        "url": "/contact/",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "size": "sm",
+       "_css_classes": "dr-btn"
+      },
+      "elements": []
+     },
+     {
+      "id": "ff3bf42",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "Call 0419 399 374",
+       "link": {
+        "url": "tel:0419399374",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "size": "sm",
+       "_css_classes": "dr-btn dr-btn--outline"
+      },
+      "elements": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "427816f",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "56",
+    "row": "56",
+    "isLinked": true,
+    "unit": "px",
+    "size": 56
+   },
+   "padding": {
+    "unit": "px",
+    "top": "120",
+    "right": "48",
+    "bottom": "120",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "classic",
+   "background_color": "#050507",
+   "css_classes": "dr-sec dr-testimonials dr-smoke",
+   "_element_id": "testimonials"
+  },
+  "elements": [
+   {
+    "id": "43c10fb",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "14",
+      "row": "14",
+      "isLinked": true,
+      "unit": "px",
+      "size": 14
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-quotes-head"
+    },
+    "elements": [
+     {
+      "id": "648013a",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Testimonials",
+       "header_size": "div",
+       "align": "center",
+       "_css_classes": "dr-eyebrow"
+      },
+      "elements": []
+     },
+     {
+      "id": "1e260ed",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "What they say",
+       "header_size": "h2",
+       "align": "center",
+       "_css_classes": "dr-h2"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "a128f5e",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "24",
+      "row": "24",
+      "isLinked": true,
+      "unit": "px",
+      "size": 24
+     },
+     "flex_align_items": "stretch",
+     "flex_wrap": "nowrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-marquee"
+    },
+    "elements": [
+     {
+      "id": "072223a",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "485e715",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "4a26e14",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Thank you for all your help at our wedding at the zoo. With your experience and professionalism we enjoyed our reception knowing you were in control giving us one less thing to worry about.</p><p>Thanks again,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "80fe75e",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "a273c53",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Robert and Sharon",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "b937377",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "14949a0",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "3094b2a",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "c90e303",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>A big thank you for the sensational job you did at our wedding at the Brighton Savoy. Both Stewart and I, as well as our guests, loved the variety of music you played which was evident by the number of people on the dance floor. We definitely recommend you to our friends.</p><p>Regards,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "515a92d",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "a6c4879",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Melinda and Stewart",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "a2f092e",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "4d0c1e5",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "8bcb1e8",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "a484f0e",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Thank you for doing a fantastic job as DJ/MC at our wedding. The music was great and your professionalism appreciated. All our Guests tell us they had a fantastic time. We know we certainly did. We could have easily partied on for a few hours more.</p><p>Thanks once again,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "97abdee",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "c94a710",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Leonie and Romeo",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "f45552b",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "9b7875e",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "98b05fa",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "61305c2",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>I just wanted to say a big thank you for all your musical entertainment at my 21st birthday. The music couldn't have been better. I've passed your name on to many of my friends.</p><p>Thanks again,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "5a9a3e0",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "1e0d6a9",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Samantha",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "09c382f",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "21st Birthday",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "6d255d1",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "300ec34",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "adb796c",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Just a note to say thank you for all your efforts at our staff ball at the Regent Hotel. The evening was a great success and the dance floor was at capacity level throughout the night. Your selection of music suited all the different age groups within our company, and I have had many of our staff comment on the DJ and the music.</p><p>Thanks,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "aa237e9",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "ba4597d",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Peta",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "eab06ad",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Staff ball",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "4404af4",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "a02ba0f",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "1d15932",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>On behalf of my wife and myself, I sincerely thank you for the wonderful job by you on the occasion of our wedding at the Royal Melbourne Zoo. Your professionalism and ability to put both of us at ease on such an important day in our lives, was truly outstanding.</p><p>Thank you, thank you, thank you.</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "d6d7994",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "582ed23",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Ian and Debbie",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "1508740",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "d7343e7",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "68c3cad",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "95e58e0",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Please accept our sincere thanks for your entertainment at our wedding. Everyone at the function had a fantastic time.</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "79f6368",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "79336fe",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Anthony and Naomi",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "0ff71a4",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "7c4487c",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "a03ae53",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "e8d866a",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>It was really helpful having you take care of the music for our wedding reception. The night was a total success. Your MC/DJ skills and timing made the night.</p><p>Thanks heaps for a really professional service,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "270fdd3",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "ada8155",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Yran & George",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "9f6ac9e",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "5b25487",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "56",
+    "row": "56",
+    "isLinked": true,
+    "unit": "px",
+    "size": 56
+   },
+   "padding": {
+    "unit": "px",
+    "top": "140",
+    "right": "48",
+    "bottom": "140",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "css_classes": "dr-sec dr-gallery-sec dr-smoke",
+   "_element_id": "gallery"
+  },
+  "elements": [
+   {
+    "id": "e4763d8",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "18",
+      "row": "18",
+      "isLinked": true,
+      "unit": "px",
+      "size": 18
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-gallery-head"
+    },
+    "elements": [
+     {
+      "id": "db46884",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Feel the <span class=\"dr-hp\"><span>rhythm</span></span> of the night",
+       "header_size": "h2",
+       "align": "center",
+       "_css_classes": "dr-rhythm"
+      },
+      "elements": []
+     },
+     {
+      "id": "3b28dd8",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>Weddings, corporate dinners, birthdays and any other type of event.</p>",
+       "align": "center",
+       "_css_classes": "dr-muted"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "92ea16e",
+    "elType": "widget",
+    "widgetType": "image-gallery",
+    "settings": {
+     "wp_gallery": [
+      {
+       "id": 80,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_31.jpg"
+      },
+      {
+       "id": 81,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_30.jpg"
+      },
+      {
+       "id": 82,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_29.jpg"
+      },
+      {
+       "id": 83,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_28.jpg"
+      },
+      {
+       "id": 84,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_21.jpg"
+      },
+      {
+       "id": 85,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_17.jpg"
+      },
+      {
+       "id": 86,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_16.jpg"
+      },
+      {
+       "id": 87,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_14.jpg"
+      },
+      {
+       "id": 88,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_11.jpg"
+      },
+      {
+       "id": 89,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_10.jpg"
+      },
+      {
+       "id": 90,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_36.jpg"
+      },
+      {
+       "id": 91,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_9.jpg"
+      },
+      {
+       "id": 92,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_68.jpg"
+      },
+      {
+       "id": 93,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_01.jpg"
+      },
+      {
+       "id": 94,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_89.jpg"
+      },
+      {
+       "id": 95,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_04.jpg"
+      },
+      {
+       "id": 96,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_96.jpg"
+      },
+      {
+       "id": 97,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_a72.jpg"
+      },
+      {
+       "id": 98,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_06.jpg"
+      },
+      {
+       "id": 99,
+       "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_a74.jpg"
+      }
+     ],
+     "thumbnail_size": "full",
+     "gallery_columns": "4",
+     "gallery_link": "none",
+     "open_lightbox": "no",
+     "gallery_rand": "",
+     "_css_classes": "dr-gallery-show"
+    },
+    "elements": []
+   },
+   {
+    "id": "0aa7545",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "12",
+      "row": "12",
+      "isLinked": true,
+      "unit": "px",
+      "size": 12
+     },
+     "flex_justify_content": "center",
+     "flex_align_items": "center",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-btn-row"
+    },
+    "elements": [
+     {
+      "id": "a4d1780",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "View gallery",
+       "link": {
+        "url": "/gallery/",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "size": "sm",
+       "_css_classes": "dr-btn dr-btn--outline"
+      },
+      "elements": []
+     }
+    ]
+   }
+  ]
+ }
+]
