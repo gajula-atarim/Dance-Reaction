@@ -195,15 +195,28 @@
 			track.style.gap = gap + 'px';
 			track.style.setProperty( '--dr-marquee-gap', gap + 'px' );
 			track.style.setProperty( '--dr-marquee-speed', ( box.classList.contains( 'dr-ticker' ) ? Math.max( 20, cards.length * 3.5 ) : Math.max( 30, cards.length * 9 ) ) + 's' );
+			var speedPerSet = parseFloat( track.style.getPropertyValue( '--dr-marquee-speed' ) );
 
-			cards.forEach( function ( c ) { track.appendChild( c ); } );
-			cards.forEach( function ( c ) {
+			var copy = function ( c ) {
 				var clone = c.cloneNode( true );
 				clone.setAttribute( 'aria-hidden', 'true' );
 				clone.removeAttribute( 'id' );
 				track.appendChild( clone );
-			} );
+			};
+			cards.forEach( function ( c ) { track.appendChild( c ); } );
 			host.appendChild( track );
+
+			// One loop "set" must be at least as wide as the screen, or a gap shows before it repeats
+			// (e.g. the short genre ticker on wide monitors). Repeat the items until it is.
+			var setWidth = track.scrollWidth, reps = 1;
+			while ( setWidth * reps < window.innerWidth && reps < 6 ) {
+				cards.forEach( copy );
+				reps++;
+			}
+			// Same on-screen speed however many times the items were repeated.
+			track.style.setProperty( '--dr-marquee-speed', ( speedPerSet * reps ) + 's' );
+			// Then the whole set once more, so the -50% animation loops seamlessly.
+			Array.prototype.slice.call( track.children ).forEach( copy );
 		} );
 	}
 
