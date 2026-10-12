@@ -145,8 +145,9 @@ try {
 
 	/* 5. Menus. */
 	$menus = array(
-		'primary' => array( 'Header Menu', array( 'Home' => '/', 'About Me' => '#', 'The Music' => '#', 'Equipment' => '#', 'Contact' => '#' ) ), // '#' until those pages are designed
-		'footer'  => array( 'Footer Menu', array( 'Home Page' => '/', 'About Me' => '#', 'The Music' => '#', 'Equipment' => '#', 'Contact' => '#', 'Site Map' => '#' ) ), // '#' until those pages are designed
+		'primary' => array( 'Header Menu', array( 'Home' => '/', 'About Me' => '#', 'The Music' => '#', 'Equipment' => '#', 'Gallery' => '#', 'Contact' => '#' ) ), // '#' until those pages are designed
+		'footer'  => array( 'Footer Menu', array( 'Home Page' => '/', 'About Me' => '#', 'The Music' => '#', 'Equipment' => '#', 'Gallery' => '#', 'Contact' => '#', 'Site Map' => '#' ) ), // '#' until those pages are designed
+		// "About Me" is pointed at the About page by tools/about-setup.php.
 		'legal'   => array( 'Footer Legal', array( 'Standard Terms & Conditions of Hire' => '#', 'Privacy Statement' => '#' ) ),
 	);
 	$locations = get_theme_mod( 'nav_menu_locations', array() );

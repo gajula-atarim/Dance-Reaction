@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Elementor JSON for the Dance Reaction home page, header and footer.
+"""Build the Elementor JSON for the Dance Reaction pages (Home, About), header and footer.
 
 Output goes to elementor/*.json. Images are referenced with placeholders
 ({"id": "__IMG__<file>", "url": "__IMG__<file>"}) that tools/setup.php swaps for
@@ -396,6 +396,124 @@ def enquiry():
     return section([row], "dr-enquiry dr-smoke", "enquiry", bg={**bg_image("dr-home-hero.jpg"), "background_color": "#050507"})
 
 
+# ---------------------------------------------------------------- About page
+
+
+def about_hero():
+    content = con([
+        heading("Mobile DJ / MC · Melbourne", "dr-badge", "div"),
+        heading("About Me", "dr-hero-title dr-hero-title--about", "h1"),
+        heading("All things to all events", "dr-hero-tag", "p"),
+        btn_row([button("Booking enquiry", "/#enquiry"),
+                 button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")], mt=6),
+    ], "dr-hero-content", boxed=True, align="flex-start", justify="center", gap_=22,
+        pad=box(110, 48, 110, 48), pad_t=box(90, 32, 90, 32), pad_m=box(56, 16, 56, 16))
+    return con([content], "dr-sec dr-hero dr-hero--about dr-smoke", "about-hero", inner=False, justify="center",
+               bg={**bg_image("dr-about-hero.jpg"), "background_color": "#050507"})
+
+
+TOYS = [("01", "Music", "A select area of my music collection"),
+        ("02", "DJ gear", "The kit behind every event"),
+        ("03", "Ski boat", "Out on the water"),
+        ("04", "The shack", "A little holiday shack on the Murray river")]
+
+
+def family():
+    collage = con([
+        image("dr-about-a.jpg", "DJ mixing on the decks", "dr-collage__main dr-fill"),
+        image("dr-about-b.jpg", "Hands on a DJ controller", "dr-collage__disc dr-fill"),
+        con([heading("2", "dr-collage__num", "div"), heading("Kids · all grown up", "dr-collage__cap", "div")],
+            "dr-collage__badge", gap_=4),
+    ], "dr-collage", width=50, width_t=100, width_m=100)
+
+    toys = con([con([heading(n, "dr-toy__num", "div"), heading(t, "dr-toy__title", "h3"), heading(d, "dr-toy__text", "p")],
+                    "dr-toy") for n, t, d in TOYS], "dr-toys", direction="row", wrap="wrap", gap_=12)
+
+    copy = con([
+        heading("Off the decks", "dr-eyebrow", "div"),
+        heading('A family man with his <span class="dr-grad-text">boys toys</span>', "dr-h2 dr-h2--lg", "h2"),
+        text("<p>I am a family man with two kids (all grown up living their own lives) I have my boys toys which include "
+             "- a select area of my music collection, dj gear, my ski boat and a little holiday shack on the Murray river "
+             "which is a great place to relax when I'm not entertaining....and I have other hobbies and interests as well "
+             "just to keep me busy (when I find some spare time).....</p>", "dr-body-lg"),
+        toys,
+    ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=26, justify="center")
+
+    row = con([collage, copy], "dr-split", direction="row", dir_t="column", gap_=gap(88, 56), align="center")
+    return section([row], "dr-family dr-smoke", "family", pad=box(150, 48, 150, 48), pad_t=box(110, 32, 110, 32),
+                   pad_m=box(80, 16, 80, 16))
+
+
+STEPS = [("Early 1980s", "One night at the local hotel disco"),
+         ("Learning the ropes", "Time with a few DJ's setting up and learning the ins and outs"),
+         ("Until the mid 1990s", "Melbourne hotels, night clubs, and 4 &amp; 5 star reception venues")]
+
+
+def story():
+    record = con([
+        con([image("dr-about-story.jpg", "Vinyl records in a crate", "dr-sleeve__img dr-fill"),
+             heading("80's", "dr-sleeve__label", "div")], "dr-sleeve"),
+    ], "dr-vinyl", width=50, width_t=100, width_m=100)
+
+    copy = con([
+        heading("Where it began", "dr-eyebrow", "div"),
+        heading('It all started one night in the <span class="dr-grad-text">early eighty’s</span>', "dr-h2 dr-h2--lg", "h2"),
+        text("<p>For me, It all started one night in the early eighty’s at the local hotel disco, walking into the venue "
+             "and seeing everyone having a great time dancing away their work day blues socialising, meeting new people "
+             "and catching up with old friends.</p>", "dr-body-lg"),
+    ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=22, justify="center")
+    row = con([record, copy], "dr-split", direction="row", dir_t="column", gap_=gap(100, 48), align="center")
+
+    bars = "".join(f'<i style="--h:{h}%;--d:{d}s;--t:{t}s"></i>'
+                   for h, d, t in [((30 + (i * 29) % 62), round(.6 + (i * .1) % 1, 2), round((i * .1) % 1.6, 2))
+                                   for i in range(36)])
+    neon = con([
+        heading("All this was the work of one person", "dr-neon__kicker", "div", align="center"),
+        heading('"The DJ"', "dr-neon__title", "p", align="center"),
+        text("<p>The enthusiasm and skill the DJ used to create this atmosphere and keep the dance floor pumping inspired "
+             "me. It was a great night and I decided there and then that I wanted to do the same.</p>",
+             "dr-body-lg dr-neon__text", align="center"),
+        html(f'<div class="dr-bars" aria-hidden="true">{bars}</div>', "dr-neon__bars"),
+    ], "dr-neon", align="center", gap_=18, pad=box(110, 56, 0, 56), pad_t=box(80, 32, 0, 32), pad_m=box(56, 20, 0, 20))
+
+    steps = con([con([heading(t, "dr-step__title", "h3"), heading(d, "dr-step__text", "p")], "dr-step", gap_=10)
+                 for t, d in STEPS], "dr-timeline", direction="row", dir_m="column", gap_=gap(40, 32))
+
+    after = text("<p>After doing some time with a few DJ's setting up and learning the ins and outs, I set about creating "
+                 "my own company and from then and until the mid 1990's I worked at a good majority of Melbourne hotels, "
+                 "night clubs, and 4 &amp; 5 star reception venues. This included a very healthy diet of weddings, "
+                 "corporate events, and other various types of parties as a mobile DJ/MC.</p>", "dr-body-lg dr-story__after")
+
+    return section([row, neon, steps, after], "dr-story dr-smoke", "story", gap_=gap(0, 100),
+                   pad=box(140, 48, 140, 48), pad_t=box(100, 32, 100, 32), pad_m=box(80, 16, 80, 16),
+                   bg=bg_color("#050507"))
+
+
+def aim():
+    return section([
+        heading("My aim", "dr-eyebrow dr-eyebrow--light", "div", align="center"),
+        heading("My aim is to allow everyone, including the organisers to relax and enjoy the event.", "dr-aim__text",
+                "p", align="center"),
+    ], "dr-aim", "aim", align="center", gap_=20, bg=bg_grad(),
+        pad=box(110, 48, 110, 48), pad_t=box(80, 32, 80, 32), pad_m=box(64, 16, 64, 16))
+
+
+def dj_style():
+    copy = con([
+        heading("My DJ style", "dr-eyebrow", "div"),
+        heading("A Mobile DJ for every event", "dr-h2", "h2"),
+        text("<p>When asked what my DJ style is, I am a Mobile DJ and as a Mobile DJ you need to be able to change your "
+             "style to suit the event and demographic.</p>"
+             "<p>I think it is fair to say, I believe with my years of experience and various types of functions I can "
+             "be all things to all events.</p>", "dr-body-lg"),
+        btn_row([button("Get in touch", "/#enquiry"),
+                 button("Back to home →", "/", "dr-btn dr-btn--link")]),
+    ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24, justify="center")
+    row = con([stack("dr-about-c.jpg", "DJ performing for a crowd", "dr-about-d.jpg", "Party lights over the dance floor"),
+               copy], "dr-split", direction="row", dir_t="column", gap_=gap(88, 40), align="center")
+    return section([row], "dr-style dr-smoke", "style", pad=box(130, 48, 130, 48))
+
+
 # ---------------------------------------------------------------- UAE (Header Footer Elementor) templates
 # Widget setting keys match Ultimate Addons for Elementor 2.9.x
 # (navigation-menu, hfe-site-title, copyright).
@@ -486,6 +604,7 @@ def main():
         "home.json": [hero(), welcome(), why(), price(), how(), events(), testimonials(), gallery(), enquiry()],
         "hfe-header.json": hfe_header_tpl(),
         "hfe-footer.json": hfe_footer_tpl(),
+        "about.json": [about_hero(), family(), story(), aim(), dj_style(), testimonials(), gallery()],
     }
     for name, data in pages.items():
         with open(os.path.join(OUT, name), "w") as f:

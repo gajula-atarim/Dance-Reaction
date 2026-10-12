@@ -54,6 +54,22 @@
 			{ t: 'note', ch: '𝄞', right: '6%', top: '10%', size: 42, color: P + '.55)', delay: 2.5, dur: 8 },
 			{ t: 'flare', left: '8%', top: '18%', size: 66, delay: .9 }
 		],
+		'about-hero': [
+			{ t: 'flare', left: '62%', top: '22%', size: 70 },
+			{ t: 'note', ch: '♫', right: '8%', bottom: '18%', size: 44, color: P + '.6)', delay: 1 }
+		],
+		family: [
+			{ t: 'note', ch: '♪', left: '3%', top: '8%', size: 44, color: '#F08BEA', delay: 1.5, dur: 8 },
+			{ t: 'note', ch: '♫', right: '4%', top: '6%', size: 34, color: 'rgba(169,180,255,.7)', dur: 7 }
+		],
+		aim: [
+			{ t: 'flare', left: '88%', top: '18%', size: 80 },
+			{ t: 'note', ch: '♬', left: '5%', bottom: '14%', size: 52, color: W + '.35)', delay: .5, dur: 7 }
+		],
+		style: [
+			{ t: 'dots', left: '-50px', top: '10%', size: 180, a: .2, dur: 9 },
+			{ t: 'note', ch: '♪', right: '5%', bottom: '10%', size: 40, color: '#F08BEA', delay: 1, dur: 8 }
+		],
 		enquiry: [
 			{ t: 'dots', left: '-60px', bottom: '-60px', size: 240, a: .22, dur: 11 },
 			{ t: 'flare', left: '40%', top: '12%', size: 64 },
