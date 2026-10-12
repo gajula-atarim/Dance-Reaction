@@ -852,7 +852,15 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 	/* Tablets & phones: "Call" / "Based in" row rule must not affect the stacked contact list. */
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-	.dr-site .dr-info-list--stack { flex-direction: column !important; }
+	/* Contact: keep Mobile / Email / Web stacked (the Home "Call" + "Based in" pair sits side by side). */
+	.dr-site .dr-info-list.dr-info-list--stack { flex-direction: column !important; }
+	.dr-site .dr-info-list.dr-info-list--stack > .dr-info { flex: 0 0 auto !important; width: 100% !important; }
+	/* Feature panels side by side, tip cards two per row (the third spans both), as in the design. */
+	.dr-site .dr-panels { flex-direction: row !important; }
+	.dr-site .dr-panels > .e-con { flex: 1 1 0 !important; width: auto !important; min-width: 0; }
+	.dr-site .dr-tips { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.dr-site .dr-tips > .dr-tip { width: auto !important; }
+	.dr-site .dr-tips > .dr-tip:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 
 @keyframes drLed { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
