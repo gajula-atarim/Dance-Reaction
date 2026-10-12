@@ -680,7 +680,7 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 	.dr-site .dr-timeline > .dr-step:not(:last-child) .dr-step__text::after { content: none; }
 	.dr-site .dr-neon__kicker .elementor-heading-title { letter-spacing: .16em; }
 	.dr-site .dr-story { --gap: 64px 0px; --row-gap: 64px; }
-	#about-hero .dr-note, #aim .dr-note { display: none; }
+	#about-hero .dr-note, #gallery-hero .dr-note, #photos .dr-note, #aim .dr-note { display: none; }
 }
 
 @keyframes drSpin { to { transform: rotate(360deg); } }
@@ -689,6 +689,32 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 @keyframes drGlint { 0% { left: 0; opacity: 0; } 8%, 92% { opacity: 1; } 100% { left: calc(100% - 90px); opacity: 0; } }
 @keyframes drNode { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.18); } }
 @keyframes drRing { 0% { transform: scale(1); opacity: .9; } 100% { transform: scale(2.6); opacity: 0; } }
+
+/* ---------- Gallery page ---------- */
+
+.dr-site .dr-photos { background: radial-gradient(ellipse 50% 40% at 50% 0%, rgba(224, 82, 216, .14), transparent 70%), var(--dr-ink); }
+/* Photo wall: CSS columns (masonry). Each tile is an Image widget; add/remove/reorder them in Elementor. */
+.dr-site .dr-masonry { display: block !important; columns: 3 280px; column-gap: clamp(10px, 1.4vw, 16px); }
+.dr-site .dr-masonry > .dr-mtile {
+	break-inside: avoid; position: relative; overflow: hidden; width: 100% !important; max-width: none !important;
+	margin: 0 0 clamp(10px, 1.4vw, 16px) !important; aspect-ratio: 4 / 5; height: auto;
+	border-radius: 18px; box-shadow: 0 20px 50px -20px rgba(0, 0, 0, .9); transition: transform .5s var(--dr-ease), box-shadow .4s;
+}
+.dr-site .dr-masonry > .dr-mtile--11 { aspect-ratio: 1; }
+.dr-site .dr-masonry > .dr-mtile--32 { aspect-ratio: 3 / 2; }
+.dr-site .dr-masonry > .dr-mtile--34 { aspect-ratio: 3 / 4; }
+.dr-site .dr-masonry > .dr-mtile--alt { border-radius: 36px 8px 52px 6px; }
+.dr-site .dr-masonry > .dr-mtile--glow { box-shadow: 0 0 0 2px rgba(224, 82, 216, .6), 0 30px 60px -20px var(--dr-g3); }
+.dr-site .dr-masonry > .dr-mtile:hover { transform: translateY(-6px); }
+.dr-site .dr-mtile img { transition: transform .8s var(--dr-ease); }
+.dr-site .dr-mtile:hover img { transform: scale(1.04); }
+.dr-site .dr-mtile.dr-tint { --tint: .3; }
+.dr-site .dr-mtile a { cursor: zoom-in; }
+@media (max-width: 767px) {
+	.dr-site .dr-masonry { columns: 2; column-gap: 10px; }
+	.dr-site .dr-masonry > .dr-mtile { margin-bottom: 10px !important; border-radius: 14px; }
+	.dr-site .dr-masonry > .dr-mtile--alt { border-radius: 24px 6px 32px 4px; }
+}
 
 /* ---------- Header ---------- */
 

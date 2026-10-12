@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Elementor JSON for the Dance Reaction pages (Home, About), header and footer.
+"""Build the Elementor JSON for the Dance Reaction pages (Home, About, Gallery), header and footer.
 
 Output goes to elementor/*.json. Images are referenced with placeholders
 ({"id": "__IMG__<file>", "url": "__IMG__<file>"}) that tools/setup.php swaps for
@@ -514,6 +514,59 @@ def dj_style():
     return section([row], "dr-style dr-smoke", "style", pad=box(130, 48, 130, 48))
 
 
+# ---------------------------------------------------------------- Gallery page
+
+GALLERY_PICS = [(80, "gal_31"), (81, "gal_30"), (82, "gal_29"), (83, "gal_28"), (84, "gal_21"), (85, "gal_17"),
+                (86, "gal_16"), (87, "gal_14"), (88, "gal_11"), (89, "gal_10"), (90, "gal_36"), (91, "gal_9"),
+                (92, "IMG_68"), (93, "gal_01"), (94, "IMG_89"), (95, "gal_04"), (96, "IMG_96"), (97, "IMG_a72"),
+                (98, "gal_06"), (99, "IMG_a74")]
+UPLOADS = "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/"
+
+
+def gallery_hero():
+    content = con([
+        heading("Mobile DJ / MC · Melbourne", "dr-badge", "div"),
+        heading("Gallery", "dr-hero-title dr-hero-title--about", "h1"),
+        heading("Feel the rhythm of the night", "dr-hero-tag", "p"),
+        btn_row([button("Booking enquiry", "/#enquiry"),
+                 button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")], mt=6),
+    ], "dr-hero-content", boxed=True, align="flex-start", justify="center", gap_=22,
+        pad=box(110, 48, 110, 48), pad_t=box(90, 32, 90, 32), pad_m=box(56, 16, 56, 16))
+    return con([content], "dr-sec dr-hero dr-hero--about dr-smoke", "gallery-hero", inner=False, justify="center",
+               bg={**bg_image("dr-gallery-hero.jpg"), "background_color": "#050507"})
+
+
+def photo_wall():
+    # Tile shapes follow the design's 16-tile pattern (ratio, alternate corners, glow, colour wash).
+    ratios = ["45", "11", "32", "45", "34", "11", "32", "45", "45", "11", "32", "45", "34", "11", "32", "45"]
+    tiles = []
+    for n, (pid, name) in enumerate(GALLERY_PICS):
+        k = n % 16
+        cls = f"dr-mtile dr-mtile--{ratios[k]} dr-fill"
+        if k % 3 == 1:
+            cls += " dr-mtile--alt"
+        if k in (2, 7, 12):
+            cls += " dr-mtile--glow"
+        if k % 2 == 0:
+            cls += " dr-tint"
+        tiles.append(widget("image", {
+            "image": {"id": pid, "url": f"{UPLOADS}{name}.jpg", "size": "", "alt": "Dance Reaction event photo",
+                      "source": "library"},
+            "image_size": "large", "caption_source": "none", "link_to": "file", "open_lightbox": "yes",
+        }, cls))
+
+    head = con([
+        heading("Gallery", "dr-eyebrow", "div", align="center"),
+        heading('Weddings, parties &amp; <span class="dr-grad-text">corporate events</span>', "dr-h2 dr-h2--lg", "h2",
+                align="center"),
+    ], "dr-photos-head", align="center", gap_=16)
+    wall = con(tiles, "dr-masonry")
+    ctas = btn_row([button("Book your DJ", "/#enquiry"),
+                    button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")], justify="center")
+    return section([head, wall, ctas], "dr-photos dr-smoke", "photos", gap_=56, pad=box(130, 48, 130, 48),
+                   pad_t=box(96, 32, 96, 32), pad_m=box(72, 16, 72, 16))
+
+
 # ---------------------------------------------------------------- UAE (Header Footer Elementor) templates
 # Widget setting keys match Ultimate Addons for Elementor 2.9.x
 # (navigation-menu, hfe-site-title, copyright).
@@ -605,6 +658,7 @@ def main():
         "hfe-header.json": hfe_header_tpl(),
         "hfe-footer.json": hfe_footer_tpl(),
         "about.json": [about_hero(), family(), story(), aim(), dj_style(), testimonials(), gallery()],
+        "gallery.json": [gallery_hero(), photo_wall(), testimonials()],
     }
     for name, data in pages.items():
         with open(os.path.join(OUT, name), "w") as f:

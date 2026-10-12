@@ -8,11 +8,12 @@ https://dance-reaction.wsdfy.com/
 | Path | Purpose |
 | --- | --- |
 | `theme/dance-reaction-child/` | Child theme: brand CSS (`assets/css/dr.css`), effects JS (`assets/js/dr.js`), header/footer loader, booking form shortcode. |
-| `elementor/*.json` | Elementor data for the Home and About pages and the UAE Site Header / Site Footer templates (generated). |
+| `elementor/*.json` | Elementor data for the Home, About and Gallery pages and the UAE Site Header / Site Footer templates (generated). |
 | `assets/images/` | Optimised design images, imported into the Media Library. |
 | `tools/build_elementor.py` | Generates `elementor/*.json` from the design. |
 | `tools/setup.php` | Idempotent installer: copies the theme, imports images, creates the page, templates and menus, and sets Elementor global colours and fonts. |
 | `tools/about-setup.php` | Imports the About photos (`DR_STEP=media`), then creates/updates the About Me page and links it in the menus (`DR_STEP=page`). |
+| `tools/gallery-setup.php` | Creates/updates the Gallery page (photo wall from the 20 event photos) and links it in the menus. |
 
 ## How the pages are built
 
@@ -22,9 +23,10 @@ Every section is a native Elementor **container**. Content is native widgets (He
 - Text: `dr-eyebrow`, `dr-h2`, `dr-h2--md`, `dr-h2--xl`, `dr-body-lg`, `dr-lead`
 - Images: `dr-fill` (cover its box), `dr-tint` (brand colour wash)
 - Blocks: `dr-tile`, `dr-card`, `dr-event`, `dr-quote`, `dr-info`, `dr-cta`, `dr-gallery`, `dr-stack`
+- Gallery page: `dr-masonry` (photo wall) with `dr-mtile` tiles (`dr-mtile--11`, `--32`, `--34` ratios, `--alt` corners, `--glow`)
 - About page: `dr-collage`, `dr-toys` / `dr-toy`, `dr-vinyl` / `dr-sleeve`, `dr-neon`, `dr-timeline` / `dr-step`, `dr-h2--lg`
 
-Floating notes, flares, dot circles and smoke are added by `dr.js`, keyed to the section CSS IDs (`top`, `welcome`, `why`, `price`, `how`, `events`, `testimonials`, `gallery`, `enquiry`; About: `about-hero`, `family`, `aim`, `style`). Add `dr-smoke` to any section to give it the smoke layer.
+Floating notes, flares, dot circles and smoke are added by `dr.js`, keyed to the section CSS IDs (`top`, `welcome`, `why`, `price`, `how`, `events`, `testimonials`, `gallery`, `enquiry`; About: `about-hero`, `family`, `aim`, `style`; Gallery: `gallery-hero`, `photos`). Add `dr-smoke` to any section to give it the smoke layer.
 
 **Header / footer.** Built with Ultimate Addons for Elementor: *Appearance → UAE → Header/Footer Builder → Site Header (UAE) / Site Footer (UAE)*, shown on the entire site. Menu links are managed in *Appearance → Menus* (Header Menu, Footer Menu, Footer Legal). `tools/hfe-setup.php` recreates them.
 

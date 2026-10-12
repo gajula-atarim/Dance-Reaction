@@ -1,0 +1,1679 @@
+[
+ {
+  "id": "fa26732",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "full",
+   "flex_direction": "column",
+   "flex_justify_content": "center",
+   "padding": {
+    "unit": "px",
+    "top": "0",
+    "right": "0",
+    "bottom": "0",
+    "left": "0",
+    "isLinked": true
+   },
+   "background_background": "classic",
+   "background_image": {
+    "id": "__IMG__dr-gallery-hero.jpg",
+    "url": "__IMG__dr-gallery-hero.jpg",
+    "size": "",
+    "alt": "",
+    "source": "library"
+   },
+   "background_position": "center center",
+   "background_size": "cover",
+   "background_repeat": "no-repeat",
+   "background_color": "#050507",
+   "css_classes": "dr-sec dr-hero dr-hero--about dr-smoke",
+   "_element_id": "gallery-hero"
+  },
+  "elements": [
+   {
+    "id": "6da749e",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "boxed",
+     "flex_direction": "column",
+     "boxed_width": {
+      "unit": "px",
+      "size": 1280,
+      "sizes": []
+     },
+     "flex_gap": {
+      "column": "22",
+      "row": "22",
+      "isLinked": true,
+      "unit": "px",
+      "size": 22
+     },
+     "flex_justify_content": "center",
+     "flex_align_items": "flex-start",
+     "padding": {
+      "unit": "px",
+      "top": "110",
+      "right": "48",
+      "bottom": "110",
+      "left": "48",
+      "isLinked": false
+     },
+     "padding_tablet": {
+      "unit": "px",
+      "top": "90",
+      "right": "32",
+      "bottom": "90",
+      "left": "32",
+      "isLinked": false
+     },
+     "padding_mobile": {
+      "unit": "px",
+      "top": "56",
+      "right": "16",
+      "bottom": "56",
+      "left": "16",
+      "isLinked": false
+     },
+     "css_classes": "dr-hero-content"
+    },
+    "elements": [
+     {
+      "id": "ba32aaa",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Mobile DJ / MC · Melbourne",
+       "header_size": "div",
+       "_css_classes": "dr-badge"
+      },
+      "elements": []
+     },
+     {
+      "id": "f3e50f9",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Gallery",
+       "header_size": "h1",
+       "_css_classes": "dr-hero-title dr-hero-title--about"
+      },
+      "elements": []
+     },
+     {
+      "id": "8326252",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Feel the rhythm of the night",
+       "header_size": "p",
+       "_css_classes": "dr-hero-tag"
+      },
+      "elements": []
+     },
+     {
+      "id": "d4c0fd6",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "row",
+       "flex_gap": {
+        "column": "12",
+        "row": "12",
+        "isLinked": true,
+        "unit": "px",
+        "size": 12
+       },
+       "flex_align_items": "center",
+       "flex_wrap": "wrap",
+       "padding": {
+        "unit": "px",
+        "top": "6",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+       },
+       "css_classes": "dr-btn-row"
+      },
+      "elements": [
+       {
+        "id": "de56dfe",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Booking enquiry",
+         "link": {
+          "url": "/#enquiry",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn"
+        },
+        "elements": []
+       },
+       {
+        "id": "7c840ba",
+        "elType": "widget",
+        "widgetType": "button",
+        "settings": {
+         "text": "Call 0419 399 374",
+         "link": {
+          "url": "tel:0419399374",
+          "is_external": "",
+          "nofollow": ""
+         },
+         "size": "sm",
+         "_css_classes": "dr-btn dr-btn--outline"
+        },
+        "elements": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "78fe697",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "56",
+    "row": "56",
+    "isLinked": true,
+    "unit": "px",
+    "size": 56
+   },
+   "padding": {
+    "unit": "px",
+    "top": "130",
+    "right": "48",
+    "bottom": "130",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "css_classes": "dr-sec dr-photos dr-smoke",
+   "_element_id": "photos"
+  },
+  "elements": [
+   {
+    "id": "1730209",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "16",
+      "row": "16",
+      "isLinked": true,
+      "unit": "px",
+      "size": 16
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-photos-head"
+    },
+    "elements": [
+     {
+      "id": "f024820",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Gallery",
+       "header_size": "div",
+       "align": "center",
+       "_css_classes": "dr-eyebrow"
+      },
+      "elements": []
+     },
+     {
+      "id": "8630f50",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Weddings, parties &amp; <span class=\"dr-grad-text\">corporate events</span>",
+       "header_size": "h2",
+       "align": "center",
+       "_css_classes": "dr-h2 dr-h2--lg"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "4de0535",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-masonry"
+    },
+    "elements": [
+     {
+      "id": "300dd98",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 80,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_31.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--45 dr-fill dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "1d1e868",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 81,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_30.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--11 dr-fill dr-mtile--alt"
+      },
+      "elements": []
+     },
+     {
+      "id": "7f6fb7c",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 82,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_29.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--32 dr-fill dr-mtile--glow dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "42a6be5",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 83,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_28.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--45 dr-fill"
+      },
+      "elements": []
+     },
+     {
+      "id": "e4334db",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 84,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_21.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--34 dr-fill dr-mtile--alt dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "950b311",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 85,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_17.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--11 dr-fill"
+      },
+      "elements": []
+     },
+     {
+      "id": "6edcd37",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 86,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_16.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--32 dr-fill dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "6e50803",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 87,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_14.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--45 dr-fill dr-mtile--alt dr-mtile--glow"
+      },
+      "elements": []
+     },
+     {
+      "id": "3bb1768",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 88,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_11.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--45 dr-fill dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "ad70dd9",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 89,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_10.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--11 dr-fill"
+      },
+      "elements": []
+     },
+     {
+      "id": "69246ba",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 90,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_36.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--32 dr-fill dr-mtile--alt dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "d594564",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 91,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_9.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--45 dr-fill"
+      },
+      "elements": []
+     },
+     {
+      "id": "6abcc33",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 92,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_68.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--34 dr-fill dr-mtile--glow dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "9a8d04a",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 93,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_01.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--11 dr-fill dr-mtile--alt"
+      },
+      "elements": []
+     },
+     {
+      "id": "98cd8c7",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 94,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_89.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--32 dr-fill dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "7ac4b87",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 95,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_04.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--45 dr-fill"
+      },
+      "elements": []
+     },
+     {
+      "id": "d44581a",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 96,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_96.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--45 dr-fill dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "f436bf3",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 97,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_a72.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--11 dr-fill dr-mtile--alt"
+      },
+      "elements": []
+     },
+     {
+      "id": "5c3f943",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 98,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/gal_06.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--32 dr-fill dr-mtile--glow dr-tint"
+      },
+      "elements": []
+     },
+     {
+      "id": "351191e",
+      "elType": "widget",
+      "widgetType": "image",
+      "settings": {
+       "image": {
+        "id": 99,
+        "url": "https://dance-reaction.wsdfy.com/wp-content/uploads/2026/10/IMG_a74.jpg",
+        "size": "",
+        "alt": "Dance Reaction event photo",
+        "source": "library"
+       },
+       "image_size": "large",
+       "caption_source": "none",
+       "link_to": "file",
+       "open_lightbox": "yes",
+       "_css_classes": "dr-mtile dr-mtile--45 dr-fill"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "f7d7d0b",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "12",
+      "row": "12",
+      "isLinked": true,
+      "unit": "px",
+      "size": 12
+     },
+     "flex_justify_content": "center",
+     "flex_align_items": "center",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-btn-row"
+    },
+    "elements": [
+     {
+      "id": "ce57b9b",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "Book your DJ",
+       "link": {
+        "url": "/#enquiry",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "size": "sm",
+       "_css_classes": "dr-btn"
+      },
+      "elements": []
+     },
+     {
+      "id": "94be092",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "Call 0419 399 374",
+       "link": {
+        "url": "tel:0419399374",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "size": "sm",
+       "_css_classes": "dr-btn dr-btn--outline"
+      },
+      "elements": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "a82f505",
+  "elType": "container",
+  "isInner": false,
+  "settings": {
+   "content_width": "boxed",
+   "flex_direction": "column",
+   "boxed_width": {
+    "unit": "px",
+    "size": 1280,
+    "sizes": []
+   },
+   "flex_gap": {
+    "column": "56",
+    "row": "56",
+    "isLinked": true,
+    "unit": "px",
+    "size": 56
+   },
+   "padding": {
+    "unit": "px",
+    "top": "120",
+    "right": "48",
+    "bottom": "120",
+    "left": "48",
+    "isLinked": false
+   },
+   "padding_tablet": {
+    "unit": "px",
+    "top": "96",
+    "right": "32",
+    "bottom": "96",
+    "left": "32",
+    "isLinked": false
+   },
+   "padding_mobile": {
+    "unit": "px",
+    "top": "72",
+    "right": "16",
+    "bottom": "72",
+    "left": "16",
+    "isLinked": false
+   },
+   "background_background": "classic",
+   "background_color": "#050507",
+   "css_classes": "dr-sec dr-testimonials dr-smoke",
+   "_element_id": "testimonials"
+  },
+  "elements": [
+   {
+    "id": "33379ea",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "column",
+     "flex_gap": {
+      "column": "14",
+      "row": "14",
+      "isLinked": true,
+      "unit": "px",
+      "size": 14
+     },
+     "flex_align_items": "center",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-quotes-head"
+    },
+    "elements": [
+     {
+      "id": "cbea231",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "Testimonials",
+       "header_size": "div",
+       "align": "center",
+       "_css_classes": "dr-eyebrow"
+      },
+      "elements": []
+     },
+     {
+      "id": "3e8ac00",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "What they say",
+       "header_size": "h2",
+       "align": "center",
+       "_css_classes": "dr-h2"
+      },
+      "elements": []
+     }
+    ]
+   },
+   {
+    "id": "75d0558",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "24",
+      "row": "24",
+      "isLinked": true,
+      "unit": "px",
+      "size": 24
+     },
+     "flex_align_items": "stretch",
+     "flex_wrap": "nowrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-marquee"
+    },
+    "elements": [
+     {
+      "id": "e7a7e47",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "33d7eb0",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "86879bb",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Thank you for all your help at our wedding at the zoo. With your experience and professionalism we enjoyed our reception knowing you were in control giving us one less thing to worry about.</p><p>Thanks again,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "ff36219",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "465defe",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Robert and Sharon",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "e2bf607",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "39c1a40",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "2bda8ae",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "9abb427",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>A big thank you for the sensational job you did at our wedding at the Brighton Savoy. Both Stewart and I, as well as our guests, loved the variety of music you played which was evident by the number of people on the dance floor. We definitely recommend you to our friends.</p><p>Regards,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "918c4a5",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "3edda91",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Melinda and Stewart",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "1b1222b",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "d6dacf0",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "73173c7",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "d1f73d7",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Thank you for doing a fantastic job as DJ/MC at our wedding. The music was great and your professionalism appreciated. All our Guests tell us they had a fantastic time. We know we certainly did. We could have easily partied on for a few hours more.</p><p>Thanks once again,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "79b8fa5",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "3b0eead",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Leonie and Romeo",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "c4e27a1",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "7c93827",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "143fe70",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "3d5b10c",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>I just wanted to say a big thank you for all your musical entertainment at my 21st birthday. The music couldn't have been better. I've passed your name on to many of my friends.</p><p>Thanks again,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "87c7945",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "ad207a9",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Samantha",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "bf0dd1a",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "21st Birthday",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "880214f",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "38eab46",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "44e4175",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Just a note to say thank you for all your efforts at our staff ball at the Regent Hotel. The evening was a great success and the dance floor was at capacity level throughout the night. Your selection of music suited all the different age groups within our company, and I have had many of our staff comment on the DJ and the music.</p><p>Thanks,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "533e3b1",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "8b48fe8",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Peta",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "2982c3f",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Staff ball",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "9cc9887",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "32bbb0a",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "4d0e495",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>On behalf of my wife and myself, I sincerely thank you for the wonderful job by you on the occasion of our wedding at the Royal Melbourne Zoo. Your professionalism and ability to put both of us at ease on such an important day in our lives, was truly outstanding.</p><p>Thank you, thank you, thank you.</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "5bd6b18",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "cdc4c2c",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Ian and Debbie",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "b30596d",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "3918495",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "a77c426",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "33058ec",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>Please accept our sincere thanks for your entertainment at our wedding. Everyone at the function had a fantastic time.</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "4a8489d",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "16fbd42",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Anthony and Naomi",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "350432d",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "id": "b2341da",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+       "content_width": "full",
+       "flex_direction": "column",
+       "flex_gap": {
+        "column": "18",
+        "row": "18",
+        "isLinked": true,
+        "unit": "px",
+        "size": 18
+       },
+       "padding": {
+        "unit": "px",
+        "top": "36",
+        "right": "34",
+        "bottom": "38",
+        "left": "34",
+        "isLinked": false
+       },
+       "padding_mobile": {
+        "unit": "px",
+        "top": "28",
+        "right": "26",
+        "bottom": "30",
+        "left": "26",
+        "isLinked": false
+       },
+       "css_classes": "dr-quote"
+      },
+      "elements": [
+       {
+        "id": "798e33c",
+        "elType": "widget",
+        "widgetType": "heading",
+        "settings": {
+         "title": "Dear Bruce,",
+         "header_size": "div",
+         "_css_classes": "dr-quote__hi"
+        },
+        "elements": []
+       },
+       {
+        "id": "2a32bf0",
+        "elType": "widget",
+        "widgetType": "text-editor",
+        "settings": {
+         "editor": "<p>It was really helpful having you take care of the music for our wedding reception. The night was a total success. Your MC/DJ skills and timing made the night.</p><p>Thanks heaps for a really professional service,</p>",
+         "_css_classes": "dr-quote__text"
+        },
+        "elements": []
+       },
+       {
+        "id": "2e0e292",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+         "content_width": "full",
+         "flex_direction": "column",
+         "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+         },
+         "css_classes": "dr-quote__by"
+        },
+        "elements": [
+         {
+          "id": "4a0bc37",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Yran & George",
+           "header_size": "div",
+           "_css_classes": "dr-quote__name"
+          },
+          "elements": []
+         },
+         {
+          "id": "e07abd4",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Wedding",
+           "header_size": "div",
+           "_css_classes": "dr-quote__tag"
+          },
+          "elements": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
