@@ -672,6 +672,8 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 }
 @media (max-width: 480px) {
 	.dr-site .dr-toys { grid-template-columns: 1fr; }
+	/* "READING" is the widest word: keep it inside the panel on small phones. */
+	.dr-site .dr-neon .dr-neon__title--md .elementor-heading-title { font-size: min(48px, calc((100vw - 72px) / 5.5)); }
 }
 @media (max-width: 767px) {
 	.dr-site .dr-collage { width: calc(100% - 24px) !important; margin-bottom: 24px; }
@@ -804,13 +806,13 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 		linear-gradient(140deg, rgba(224, 82, 216, .8), rgba(61, 79, 232, .3) 60%, rgba(255, 255, 255, .08)) border-box;
 }
 .dr-site .dr-check {
-	display: grid !important; grid-template-columns: auto 1fr; column-gap: 16px; align-items: center;
+	display: grid !important; grid-template-columns: 22px 1fr; column-gap: 16px; align-items: center;
 	padding: 12px 16px !important; border-radius: 12px 3px 16px 3px; background: rgba(244, 241, 234, .035); border: 1px solid rgba(244, 241, 234, .07);
 }
 .dr-site .dr-check > .elementor-element { width: auto !important; }
 .dr-site .dr-check__num .elementor-heading-title { font-size: 13px; color: var(--dr-pink); line-height: 1.4; }
 .dr-site .dr-check__text .elementor-heading-title { font-family: var(--dr-body); font-size: clamp(14.5px, 1.25vw, 16px); line-height: 1.4; }
-.dr-site .dr-checklist--gear .dr-check { grid-template-columns: auto 1fr auto; padding: 14px 16px !important; }
+.dr-site .dr-checklist--gear .dr-check { grid-template-columns: 22px 1fr auto; padding: 14px 16px !important; }
 .dr-site .dr-checklist--gear .dr-check__text .elementor-heading-title { font-family: var(--dr-head); font-size: clamp(14px, 1.3vw, 16.5px); line-height: 1.35; }
 .dr-site .dr-checklist--gear .dr-check::after {
 	content: ""; position: relative; inset: auto; width: 9px; height: 9px; border-radius: 50%; background: var(--dr-pink); box-shadow: 0 0 10px var(--dr-g1);
@@ -838,6 +840,7 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible { ba
 .dr-offscreen .dr-checklist--gear .dr-check::after { animation-play-state: paused !important; }
 
 @media (max-width: 1024px) {
+	#library .dr-note { display: none; } /* would sit on the text once the columns stack */
 	.dr-site .dr-years { align-items: center !important; }
 	.dr-site .dr-years .elementor-heading-title { text-align: center; }
 }
