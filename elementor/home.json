@@ -2962,7 +2962,7 @@
   ]
  },
  {
-  "id": "016f020",
+  "id": "e336bfe",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -3154,11 +3154,57 @@
      "_css_classes": "dr-gallery-show"
     },
     "elements": []
+   },
+   {
+    "id": "b29df33",
+    "elType": "container",
+    "isInner": true,
+    "settings": {
+     "content_width": "full",
+     "flex_direction": "row",
+     "flex_gap": {
+      "column": "12",
+      "row": "12",
+      "isLinked": true,
+      "unit": "px",
+      "size": 12
+     },
+     "flex_justify_content": "center",
+     "flex_align_items": "center",
+     "flex_wrap": "wrap",
+     "padding": {
+      "unit": "px",
+      "top": "0",
+      "right": "0",
+      "bottom": "0",
+      "left": "0",
+      "isLinked": true
+     },
+     "css_classes": "dr-btn-row"
+    },
+    "elements": [
+     {
+      "id": "8d2f5f0",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "View gallery",
+       "link": {
+        "url": "/gallery/",
+        "is_external": "",
+        "nofollow": ""
+       },
+       "size": "sm",
+       "_css_classes": "dr-btn dr-btn--outline"
+      },
+      "elements": []
+     }
+    ]
    }
   ]
  },
  {
-  "id": "0f478d1",
+  "id": "a10208b",
   "elType": "container",
   "isInner": false,
   "settings": {
@@ -3210,7 +3256,7 @@
   },
   "elements": [
    {
-    "id": "e9f44b5",
+    "id": "fb774b6",
     "elType": "container",
     "isInner": true,
     "settings": {
@@ -3237,7 +3283,7 @@
     },
     "elements": [
      {
-      "id": "8d4bb98",
+      "id": "9adc279",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -3278,7 +3324,7 @@
       },
       "elements": [
        {
-        "id": "26bd2ab",
+        "id": "8f63e2c",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3289,7 +3335,7 @@
         "elements": []
        },
        {
-        "id": "afbed44",
+        "id": "f57fd32",
         "elType": "widget",
         "widgetType": "heading",
         "settings": {
@@ -3300,7 +3346,7 @@
         "elements": []
        },
        {
-        "id": "98c4f0e",
+        "id": "22eb863",
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
@@ -3310,7 +3356,7 @@
         "elements": []
        },
        {
-        "id": "3dd8126",
+        "id": "a7ad8e3",
         "elType": "container",
         "isInner": true,
         "settings": {
@@ -3335,7 +3381,7 @@
         },
         "elements": [
          {
-          "id": "21719f9",
+          "id": "0d80554",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3360,7 +3406,7 @@
           },
           "elements": [
            {
-            "id": "1bc6604",
+            "id": "da5240e",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3371,7 +3417,7 @@
             "elements": []
            },
            {
-            "id": "141fdc5",
+            "id": "53c2429",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3384,7 +3430,7 @@
           ]
          },
          {
-          "id": "471fc9c",
+          "id": "bf116bf",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3402,7 +3448,7 @@
           },
           "elements": [
            {
-            "id": "7c427f9",
+            "id": "6be31fb",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3413,7 +3459,7 @@
             "elements": []
            },
            {
-            "id": "5430a90",
+            "id": "59179ba",
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
@@ -3430,7 +3476,7 @@
       ]
      },
      {
-      "id": "493ca18",
+      "id": "0c8c37b",
       "elType": "container",
       "isInner": true,
       "settings": {
@@ -3463,7 +3509,7 @@
       },
       "elements": [
        {
-        "id": "a528ed8",
+        "id": "38be271",
         "elType": "widget",
         "widgetType": "shortcode",
         "settings": {

@@ -376,7 +376,7 @@ def gallery(view=False):
         "gallery_rand": "",
     }, "dr-gallery-show")
     parts = [head, grid]
-    if view:  # The Home page has no "View gallery" button (removed on request); the other pages follow the design.
+    if view:  # "View gallery" under the slideshow (all pages except Gallery itself).
         parts.append(btn_row([button("View gallery", "/gallery/", "dr-btn dr-btn--outline")], justify="center"))
     return section(parts, "dr-gallery-sec dr-smoke", "gallery", gap_=56, pad=box(140, 48, 140, 48))
 
@@ -892,7 +892,7 @@ def hfe_footer_tpl():
 def main():
     os.makedirs(OUT, exist_ok=True)
     pages = {
-        "home.json": [hero(), welcome(), why(), price(), how(), events(), testimonials(), gallery(), enquiry()],
+        "home.json": [hero(), welcome(), why(), price(), how(), events(), testimonials(), gallery(view=True), enquiry()],
         "hfe-header.json": hfe_header_tpl(),
         "hfe-footer.json": hfe_footer_tpl(),
         "about.json": [about_hero(), family(), story(), aim(), dj_style(), testimonials(), gallery(view=True)],
