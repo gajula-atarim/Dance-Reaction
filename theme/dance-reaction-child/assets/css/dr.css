@@ -156,7 +156,8 @@ body.dr-site {
 .dr-site .dr-btn--plain .elementor-button {
 	background: none; box-shadow: none; padding: 10px 4px; font-size: 14.5px; font-weight: 700; color: var(--dr-cream);
 }
-.dr-site .dr-btn--plain .elementor-button:hover { color: var(--dr-pink); transform: none; box-shadow: none; filter: none; }
+.dr-site .dr-btn--plain .elementor-button:hover,
+.dr-site .dr-btn--plain .elementor-button:focus-visible { color: #fff; background: none; transform: none; box-shadow: none; filter: none; }
 
 /* ---------- Image tiles ---------- */
 
