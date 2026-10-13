@@ -217,7 +217,67 @@
 			track.style.setProperty( '--dr-marquee-speed', ( speedPerSet * reps ) + 's' );
 			// Then the whole set once more, so the -50% animation loops seamlessly.
 			Array.prototype.slice.call( track.children ).forEach( copy );
+
+			if ( ! box.classList.contains( 'dr-ticker' ) ) { carousel( box, track, gap, speedPerSet * reps ); }
 		} );
+	}
+
+	// Testimonials on tablets & phones (<= 1024px): slower scroll plus ‹ › arrows that move one card.
+	// Desktop keeps the CSS animation. The JS takes over only while the small-screen query matches.
+	function carousel( box, track, gap, desktopSecs ) {
+		var mq = window.matchMedia( '(max-width: 1024px)' );
+		var reduced = window.matchMedia && window.matchMedia( '(prefers-reduced-motion: reduce)' ).matches;
+		var SLOW = 2.2; // small screens scroll this many times slower than desktop
+		var x = 0, last = 0, tween = null, holdUntil = 0, hovering = false;
+		var section = box.closest( '.dr-sec' );
+
+		var nav = el( 'div', 'dr-qnav' );
+		nav.setAttribute( 'role', 'group' );
+		nav.setAttribute( 'aria-label', 'Testimonials' );
+		var prev = el( 'button', 'dr-qnav__btn dr-qnav__btn--prev' ), next = el( 'button', 'dr-qnav__btn dr-qnav__btn--next' );
+		prev.type = next.type = 'button';
+		prev.setAttribute( 'aria-label', 'Previous testimonial' );
+		next.setAttribute( 'aria-label', 'Next testimonial' );
+		prev.innerHTML = '<span aria-hidden="true">&#8249;</span>';
+		next.innerHTML = '<span aria-hidden="true">&#8250;</span>';
+		nav.appendChild( prev ); nav.appendChild( next );
+		box.parentNode.insertBefore( nav, box.nextSibling );
+
+		function setWidth() { return ( track.scrollWidth + gap ) / 2; } // one loop set incl. its trailing gap
+		function step() { var c = track.firstElementChild; return c ? c.getBoundingClientRect().width + gap : 300; }
+		function wrap( v ) { var w = setWidth(); return w ? ( ( v % w ) + w ) % w : 0; }
+		function go( dir ) {
+			var from = x, to = x + dir * step(), t0 = performance.now();
+			tween = { from: from, to: to, t0: t0, d: 450 };
+			holdUntil = t0 + 450 + 3500; // pause auto-scroll a moment so the card can be read
+		}
+		prev.addEventListener( 'click', function () { go( -1 ); } );
+		next.addEventListener( 'click', function () { go( 1 ); } );
+		box.addEventListener( 'mouseenter', function () { hovering = true; } );
+		box.addEventListener( 'mouseleave', function () { hovering = false; } );
+		box.addEventListener( 'touchstart', function () { holdUntil = performance.now() + 3000; }, { passive: true } );
+
+		function frame( now ) {
+			var dt = last ? Math.min( 0.1, ( now - last ) / 1000 ) : 0;
+			last = now;
+			if ( ! mq.matches ) {
+				if ( box.classList.contains( 'dr-marquee--js' ) ) { box.classList.remove( 'dr-marquee--js' ); track.style.transform = ''; }
+				window.requestAnimationFrame( frame );
+				return;
+			}
+			box.classList.add( 'dr-marquee--js' );
+			if ( tween ) {
+				var k = Math.min( 1, ( now - tween.t0 ) / tween.d ), e = 1 - Math.pow( 1 - k, 3 );
+				x = tween.from + ( tween.to - tween.from ) * e;
+				if ( k >= 1 ) { x = wrap( tween.to ); tween = null; }
+			} else if ( ! reduced && ! hovering && now > holdUntil && ! document.hidden &&
+				! ( section && section.classList.contains( 'dr-offscreen' ) ) ) {
+				x += ( setWidth() / ( desktopSecs * SLOW ) ) * dt;
+			}
+			track.style.transform = 'translate3d(' + ( -wrap( x ) ) + 'px,0,0)';
+			window.requestAnimationFrame( frame );
+		}
+		window.requestAnimationFrame( frame );
 	}
 
 	// Underline the menu item for the section in view (home page anchors).
