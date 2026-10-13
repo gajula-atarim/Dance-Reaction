@@ -806,12 +806,13 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible, .dr
 /* "Reading the crowd" tip cards. */
 @media (min-width: 1025px) { .dr-site .dr-tips > .dr-tip { flex: 1 1 0 !important; width: auto !important; min-width: 0; } }
 .dr-site .dr-tip {
-	border-radius: var(--dr-radius-btn); border: 1.5px solid transparent; transition: transform .5s var(--dr-ease);
+	border-radius: var(--dr-radius-btn); border: 1.5px solid transparent; transition: transform .5s var(--dr-ease), box-shadow .4s;
 	background: linear-gradient(var(--dr-panel), var(--dr-panel)) padding-box,
 		linear-gradient(140deg, rgba(224, 82, 216, .8), rgba(61, 79, 232, .3) 60%, rgba(255, 255, 255, .08)) border-box;
 }
-.dr-site .dr-tip:hover { transform: translateY(-6px); }
 .dr-site .dr-tip--grad { background: var(--dr-grad); border: 0; box-shadow: 0 30px 70px -30px rgba(224, 82, 216, .7); }
+/* Hover from the design: lift, grow slightly, pink outline + blue glow. */
+.dr-site .dr-tip:hover { transform: translateY(-8px) scale(1.03); box-shadow: 0 0 0 2px var(--dr-g1), 0 30px 70px -20px var(--dr-g3); z-index: 2; }
 .dr-site .dr-tip__label .elementor-heading-title { font-size: 13px; color: var(--dr-pink); line-height: 1.4; }
 .dr-site .dr-tip--grad .dr-tip__label .elementor-heading-title, .dr-site .dr-tip--grad .elementor-widget-text-editor { color: #fff; opacity: 1; }
 
