@@ -919,10 +919,10 @@
         "widgetType": "image",
         "settings": {
          "image": {
-          "id": "__IMG__dr-about-b.jpg",
-          "url": "__IMG__dr-about-b.jpg",
+          "id": "__IMG__dr-x-requests.jpg",
+          "url": "__IMG__dr-x-requests.jpg",
           "size": "",
-          "alt": "Hands on a DJ controller",
+          "alt": "A guest singing at a party",
           "source": "library"
          },
          "image_size": "full",
@@ -938,10 +938,10 @@
         "widgetType": "image",
         "settings": {
          "image": {
-          "id": "__IMG__dr-about-a.jpg",
-          "url": "__IMG__dr-about-a.jpg",
+          "id": "__IMG__dr-x-turntable.jpg",
+          "url": "__IMG__dr-x-turntable.jpg",
           "size": "",
-          "alt": "DJ mixing on the decks",
+          "alt": "A record spinning on a turntable",
           "source": "library"
          },
          "image_size": "full",

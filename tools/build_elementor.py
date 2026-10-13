@@ -682,7 +682,7 @@ def music_requests():
              "with regard to any requests made.</p>", "dr-body-lg"),
         btn_row([button("Booking enquiry", CONTACT), button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")]),
     ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24, justify="center")
-    row = con([collage("dr-about-b.jpg", "Hands on a DJ controller", "dr-about-a.jpg", "DJ mixing on the decks"), copy],
+    row = con([collage("dr-x-requests.jpg", "A guest singing at a party", "dr-x-turntable.jpg", "A record spinning on a turntable"), copy],
               "dr-split", direction="row", dir_t="column", gap_=gap(100, 56), align="center")
     return section([row], "dr-requests dr-smoke", "requests", pad=box(130, 48, 130, 48), pad_t=box(110, 32, 110, 32),
                    pad_m=box(80, 16, 80, 16))
@@ -728,7 +728,7 @@ def equip_intro():
         heading('Possibly one of the most important, yet overlooked decisions made in the planning of any event, is '
                 '<span class="dr-grad-text">the equipment package supplied.</span>', "dr-statement", "p"),
     ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=22)
-    right = con([image("dr-about-b.jpg", "Hands on a DJ controller", "dr-intro__img dr-fill dr-tint"),
+    right = con([image("dr-x-intro.jpg", "Hands on a DJ mixer in the smoke and lights", "dr-intro__img dr-fill dr-tint"),
                  text("<p>The equipment, will carry a good percentage of the success of your function, squarely on its "
                       "capacity to perform, and perform to a standard.</p>", "dr-body-lg")],
                 "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24)

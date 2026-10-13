@@ -361,10 +361,10 @@
         "widgetType": "image",
         "settings": {
          "image": {
-          "id": "__IMG__dr-about-b.jpg",
-          "url": "__IMG__dr-about-b.jpg",
+          "id": "__IMG__dr-x-intro.jpg",
+          "url": "__IMG__dr-x-intro.jpg",
           "size": "",
-          "alt": "Hands on a DJ controller",
+          "alt": "Hands on a DJ mixer in the smoke and lights",
           "source": "library"
          },
          "image_size": "full",
