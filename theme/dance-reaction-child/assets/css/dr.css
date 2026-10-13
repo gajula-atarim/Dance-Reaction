@@ -964,9 +964,16 @@ body.dr-site #masthead { position: sticky !important; top: 0; z-index: 50; }
 	.dr-site .dr-header > .e-con-inner > .dr-header__cta { order: 2; margin-left: auto !important; }
 	.dr-site .dr-header .dr-nav--hfe { display: block; flex: 0 0 auto !important; order: 3; }
 	.dr-site .dr-nav--hfe .hfe-nav-menu__toggle { margin-left: 0 !important; margin-right: 0 !important; }
-	/* Keep the collapsed dropdown out of the flow so the menu button stays button-sized
-	   (UAE positions and widens it to full width when opened). */
-	.dr-site .dr-header .dr-nav--hfe nav.hfe-nav-menu__layout-horizontal { position: absolute; top: 100%; right: 0; }
+	/* Dropdown card: positioned against the whole header bar and stretched edge to edge.
+	   (UAE sets an inline left/width when it opens, measured from where the collapsed menu
+	   sits; that pushed the card ~75px off the right edge. CSS now decides the position.)
+	   Keeping it out of the flow also keeps the menu button button-sized. */
+	.dr-site .dr-header .dr-nav--hfe,
+	.dr-site .dr-header .dr-nav--hfe .elementor-widget-container,
+	.dr-site .dr-header .dr-nav--hfe .hfe-nav-menu { position: static !important; }
+	.dr-site .dr-header .dr-nav--hfe nav.hfe-nav-menu__layout-horizontal {
+		position: absolute; top: 100%; left: 0 !important; right: 0 !important; width: auto !important; margin-top: 0 !important;
+	}
 }
 
 /* ---------- Footer ---------- */
