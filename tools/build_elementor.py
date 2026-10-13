@@ -422,8 +422,8 @@ TOYS = [("01", "Music", "A select area of my music collection"),
 
 def family():
     collage = con([
-        # Client photo: family-man-main.webp from the Media Library, AI-upscaled 4x (assets/images).
-        image("family-man-main-hd.jpg", "A family man with his boys toys", "dr-collage__main dr-fill"),
+        # Client photo: Cheerful-DJ-Under-Blue-Stage-Lights.png from the Media Library.
+        image("dr-family-main.png", "A family man with his boys toys", "dr-collage__main dr-fill"),
         image("dr-x-controller.jpg", "Hands on a neon-lit DJ controller", "dr-collage__disc dr-fill"),
         con([heading("2", "dr-collage__num", "div"), heading("Kids · all grown up", "dr-collage__cap", "div")],
             "dr-collage__badge", gap_=4),

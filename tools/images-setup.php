@@ -39,6 +39,7 @@ $images = array(
 // Photos already uploaded to the Media Library by the client: tagged so the pages can use them.
 $existing = array(
 	'dr-equip-gear.webp' => '/2026/10/pexels-eden-fc-620771246-36098638-scaled.webp',
+	'dr-family-main.png' => '/2026/10/Cheerful-DJ-Under-Blue-Stage-Lights.png',
 );
 
 $find = function ( $name ) {
@@ -67,9 +68,6 @@ try {
 			throw new Exception( 'Uploaded photo not found in the Media Library: ' . $path );
 		}
 		update_post_meta( $id, '_dr_source', $name );
-		if ( ! get_post_meta( $id, '_wp_attachment_image_alt', true ) ) {
-			update_post_meta( $id, '_wp_attachment_image_alt', 'DJ equipment set up for an event' );
-		}
 		$log[] = "tagged uploaded photo $name (#$id)";
 	}
 	foreach ( $images as $name => $def ) {
