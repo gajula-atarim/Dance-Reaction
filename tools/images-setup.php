@@ -4,7 +4,7 @@
  * About "Off the decks" round inset
  * (run through Atarim's execute-php with DR_REF defined).
  *
- * Imports the new Pexels photos (skips ones already imported), then re-saves The Music, Equipment and
+ * Imports the new Pexels photos and tags photos the client uploaded (skips ones already done), then re-saves The Music, Equipment and
  * About pages from their elementor/*.json files. Stops after ~7s if needed — run again
  * until "remaining: 0".
  *
@@ -36,6 +36,11 @@ $images = array(
 	'dr-x-controller.jpg' => array( sprintf( $px, '243870', 800 ), 'Hands on a neon-lit DJ controller' ),
 );
 
+// Photos already uploaded to the Media Library by the client: tagged so the pages can use them.
+$existing = array(
+	'dr-equip-gear.webp' => '/2026/10/pexels-eden-fc-620771246-36098638-scaled.webp',
+);
+
 $find = function ( $name ) {
 	$found = get_posts( array( 'post_type' => 'attachment', 'post_status' => 'inherit', 'meta_key' => '_dr_source', 'meta_value' => $name, 'numberposts' => 1, 'fields' => 'ids' ) );
 	return $found ? (int) $found[0] : 0;
@@ -52,6 +57,21 @@ $fetch = function ( $path ) use ( $dr_base ) {
 try {
 	// 1. Photos.
 	$remaining = 0;
+	foreach ( $existing as $name => $path ) {
+		if ( $find( $name ) ) {
+			continue;
+		}
+		$uploads = wp_get_upload_dir();
+		$id      = attachment_url_to_postid( $uploads['baseurl'] . $path );
+		if ( ! $id ) {
+			throw new Exception( 'Uploaded photo not found in the Media Library: ' . $path );
+		}
+		update_post_meta( $id, '_dr_source', $name );
+		if ( ! get_post_meta( $id, '_wp_attachment_image_alt', true ) ) {
+			update_post_meta( $id, '_wp_attachment_image_alt', 'DJ equipment set up for an event' );
+		}
+		$log[] = "tagged uploaded photo $name (#$id)";
+	}
 	foreach ( $images as $name => $def ) {
 		if ( $find( $name ) ) {
 			continue;

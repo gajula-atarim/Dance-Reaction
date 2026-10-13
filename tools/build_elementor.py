@@ -802,7 +802,7 @@ def equip_gear():
                 text("<p>My system comes fully self contained. I don’t require any extra equipment from the venue "
                      "(except 240v power points)</p>", "dr-body-lg")],
                "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24, justify="center")
-    row = con([copy, collage("dr-equip-a.jpg", "Speakers and lighting at a venue", "dr-music-hero.jpg",
+    row = con([copy, collage("dr-equip-gear.webp", "DJ equipment set up for an event", "dr-music-hero.jpg",
                              "Dance floor lights", flip=True)],
               "dr-split", direction="row", dir_t="column-reverse", gap_=gap(100, 56), align="center")
     return section([row], "dr-gear dr-smoke", "gear", pad=box(130, 48, 130, 48), pad_t=box(110, 32, 110, 32),

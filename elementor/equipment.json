@@ -1584,10 +1584,10 @@
         "widgetType": "image",
         "settings": {
          "image": {
-          "id": "__IMG__dr-equip-a.jpg",
-          "url": "__IMG__dr-equip-a.jpg",
+          "id": "__IMG__dr-equip-gear.webp",
+          "url": "__IMG__dr-equip-gear.webp",
           "size": "",
-          "alt": "Speakers and lighting at a venue",
+          "alt": "DJ equipment set up for an event",
           "source": "library"
          },
          "image_size": "full",
