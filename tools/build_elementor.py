@@ -424,7 +424,7 @@ def family():
     collage = con([
         # Client photo: family-man-main.webp from the Media Library, AI-upscaled 4x (assets/images).
         image("family-man-main-hd.jpg", "A family man with his boys toys", "dr-collage__main dr-fill"),
-        image("dr-about-b.jpg", "Hands on a DJ controller", "dr-collage__disc dr-fill"),
+        image("dr-x-controller.jpg", "Hands on a neon-lit DJ controller", "dr-collage__disc dr-fill"),
         con([heading("2", "dr-collage__num", "div"), heading("Kids · all grown up", "dr-collage__cap", "div")],
             "dr-collage__badge", gap_=4),
     ], "dr-collage", width=50, width_t=100, width_m=100)

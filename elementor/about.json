@@ -302,10 +302,10 @@
         "widgetType": "image",
         "settings": {
          "image": {
-          "id": "__IMG__dr-about-b.jpg",
-          "url": "__IMG__dr-about-b.jpg",
+          "id": "__IMG__dr-x-controller.jpg",
+          "url": "__IMG__dr-x-controller.jpg",
           "size": "",
-          "alt": "Hands on a DJ controller",
+          "alt": "Hands on a neon-lit DJ controller",
           "source": "library"
          },
          "image_size": "full",

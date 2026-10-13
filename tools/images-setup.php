@@ -1,10 +1,11 @@
 <?php
 /**
- * Replaces the repeated photos in The Music "Your music, your guests" and Equipment "My gear" sections
+ * Replaces the repeated photos in The Music "Your music, your guests", Equipment "My gear" and the
+ * About "Off the decks" round inset
  * (run through Atarim's execute-php with DR_REF defined).
  *
- * Imports the new Pexels photos (skips ones already imported), then re-saves The Music and Equipment
- * pages from elementor/music.json and elementor/equipment.json. Stops after ~7s if needed — run again
+ * Imports the new Pexels photos (skips ones already imported), then re-saves The Music, Equipment and
+ * About pages from their elementor/*.json files. Stops after ~7s if needed — run again
  * until "remaining: 0".
  *
  * Idempotent: safe to run again.
@@ -32,6 +33,7 @@ $images = array(
 	'dr-x-requests.jpg'  => array( sprintf( $px, '18433817', 1200 ), 'A guest singing at a party' ),
 	'dr-x-turntable.jpg' => array( sprintf( $px, '164853', 800 ), 'A record spinning on a turntable' ),
 	'dr-x-intro.jpg'     => array( sprintf( $px, '9005506', 1200 ), 'Hands on a DJ mixer in the smoke and lights' ),
+	'dr-x-controller.jpg' => array( sprintf( $px, '243870', 800 ), 'Hands on a neon-lit DJ controller' ),
 );
 
 $find = function ( $name ) {
@@ -73,7 +75,7 @@ try {
 	}
 
 	// 2. Pages (once every photo is in).
-	$targets = array( 'dr_music_page_id' => 'music.json', 'dr_equipment_page_id' => 'equipment.json' );
+	$targets = array( 'dr_music_page_id' => 'music.json', 'dr_equipment_page_id' => 'equipment.json', 'dr_about_page_id' => 'about.json' );
 	if ( ! $remaining ) {
 		$media = array();
 		foreach ( get_posts( array( 'post_type' => 'attachment', 'post_status' => 'inherit', 'meta_key' => '_dr_source', 'numberposts' => -1, 'fields' => 'ids' ) ) as $id ) {
