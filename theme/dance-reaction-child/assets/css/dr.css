@@ -1042,6 +1042,9 @@ body.dr-site #masthead { position: sticky !important; top: 0; z-index: 50; }
 	/* "Hi, thanks for dropping by" on one line (text is ~14.7em wide; side padding 16px each). */
 	.dr-site #welcome .dr-h2 .elementor-heading-title { white-space: nowrap; font-size: min(28px, calc((100vw - 32px) / 15)); }
 
+	/* The Music: "All the music you require" on one line (~14.2em wide). */
+	.dr-site #library .dr-h2 .elementor-heading-title { white-space: nowrap; font-size: min(30px, calc((100vw - 32px) / 14.6)); }
+
 	/* "Price should be the last thing." on one line (~16.7em wide). */
 	.dr-site #price .dr-h2 .elementor-heading-title { white-space: nowrap; font-size: min(26.4px, calc((100vw - 32px) / 18.5)); }
 
