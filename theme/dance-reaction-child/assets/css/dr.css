@@ -800,6 +800,12 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible, .dr
 .dr-site .dr-tip--grad .dr-tip__label .elementor-heading-title, .dr-site .dr-tip--grad .elementor-widget-text-editor { color: #fff; opacity: 1; }
 
 /* Equipment intro statement. */
+.dr-site .dr-intro__img {
+	position: relative; overflow: hidden; aspect-ratio: 16 / 10; border-radius: 36px 8px 52px 6px; --tint: .3;
+	box-shadow: 0 0 0 2px rgba(224, 82, 216, .55), 0 30px 70px -20px var(--dr-g3); transition: transform .5s var(--dr-ease);
+}
+.dr-site .dr-intro__img:hover { transform: translateY(-6px); }
+#intro .dr-note { display: none; } /* would sit on the photo's corner */
 .dr-site .dr-statement .elementor-heading-title { font-size: clamp(24px, 3.2vw, 42px); line-height: 1.2; text-wrap: balance; }
 
 /* Numbered lists in a gradient-bordered box (Quality and reliability / The gear). */

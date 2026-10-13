@@ -727,10 +727,11 @@ def equip_intro():
         heading('Possibly one of the most important, yet overlooked decisions made in the planning of any event, is '
                 '<span class="dr-grad-text">the equipment package supplied.</span>', "dr-statement", "p"),
     ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=22)
-    right = con([text("<p>The equipment, will carry a good percentage of the success of your function, squarely on its "
+    right = con([image("dr-about-b.jpg", "Hands on a DJ controller", "dr-intro__img dr-fill dr-tint"),
+                 text("<p>The equipment, will carry a good percentage of the success of your function, squarely on its "
                       "capacity to perform, and perform to a standard.</p>", "dr-body-lg")],
-                "dr-split__copy", width=50, width_t=100, width_m=100)
-    row = con([left, right], "dr-split", direction="row", dir_t="column", gap_=gap(80, 32), align="flex-end")
+                "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24)
+    row = con([left, right], "dr-split", direction="row", dir_t="column", gap_=gap(80, 32), align="center")
     return section([row, neon("Demand quality, and reliability in the equipment you are supplied.",
                               "Your event depends on it.", size="sm")],
                    "dr-intro dr-smoke", "intro", gap_=gap(0, 96), pad=box(140, 48, 140, 48), pad_t=box(100, 32, 100, 32),
