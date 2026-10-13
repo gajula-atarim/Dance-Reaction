@@ -726,7 +726,7 @@ def music_requests():
              "with regard to any requests made.</p>", "dr-body-lg"),
         btn_row([button("Booking enquiry", CONTACT), button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")]),
     ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=24, justify="center")
-    row = con([collage("dr-x-requests.jpg", "A guest singing at a party", "dr-x-turntable.jpg", "A record spinning on a turntable"), copy],
+    row = con([collage("dr-x-requests-neon.jpg", "Pink neon sign reading No Music No Life", "dr-x-turntable.jpg", "A record spinning on a turntable"), copy],
               "dr-split", direction="row", dir_t="column", gap_=gap(100, 56), align="center")
     return section([row], "dr-requests dr-smoke", "requests", pad=box(130, 48, 130, 48), pad_t=box(110, 32, 110, 32),
                    pad_m=box(80, 16, 80, 16))

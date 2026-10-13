@@ -30,7 +30,7 @@ if ( ! get_current_user_id() ) {
 // Placeholder photos (Pexels, free to use). Swap them in the Media Library any time.
 $px     = 'https://images.pexels.com/photos/%1$s/pexels-photo-%1$s.jpeg?auto=compress&cs=tinysrgb&w=%2$s';
 $images = array(
-	'dr-x-requests.jpg'  => array( sprintf( $px, '18433817', 1200 ), 'A guest singing at a party' ),
+	'dr-x-requests-neon.jpg' => array( sprintf( $px, '30674515', 1200 ), 'Pink neon sign reading No Music No Life' ),
 	'dr-x-turntable.jpg' => array( sprintf( $px, '164853', 800 ), 'A record spinning on a turntable' ),
 	'dr-x-intro.jpg'     => array( sprintf( $px, '9005506', 1200 ), 'Hands on a DJ mixer in the smoke and lights' ),
 	'dr-x-controller.jpg' => array( sprintf( $px, '243870', 800 ), 'Hands on a neon-lit DJ controller' ),

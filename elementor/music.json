@@ -919,10 +919,10 @@
         "widgetType": "image",
         "settings": {
          "image": {
-          "id": "__IMG__dr-x-requests.jpg",
-          "url": "__IMG__dr-x-requests.jpg",
+          "id": "__IMG__dr-x-requests-neon.jpg",
+          "url": "__IMG__dr-x-requests-neon.jpg",
           "size": "",
-          "alt": "A guest singing at a party",
+          "alt": "Pink neon sign reading No Music No Life",
           "source": "library"
          },
          "image_size": "full",
