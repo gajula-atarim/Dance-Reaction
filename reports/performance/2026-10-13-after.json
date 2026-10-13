@@ -1,0 +1,655 @@
+{
+ "label": "after",
+ "date": "2026-10-13",
+ "tool": "Google Lighthouse (performance, mobile) via Atarim",
+ "pages": {
+  "https://dance-reaction.wsdfy.com/contact/": {
+   "url": "https://dance-reaction.wsdfy.com/contact/?perf=after2",
+   "fetch_time": "2026-10-13T09:50:28.59Z",
+   "scores": {
+    "performance": 67
+   },
+   "metrics": {
+    "first-contentful-paint": "2.6\u00a0s",
+    "largest-contentful-paint": "3.0\u00a0s",
+    "total-blocking-time": "0\u00a0ms",
+    "cumulative-layout-shift": "0.02",
+    "speed-index": "3.0\u00a0s",
+    "interactive": "3.0\u00a0s"
+   },
+   "failed_audits": [
+    {
+     "id": "server-response-time",
+     "title": "Reduce initial server response time",
+     "score": 0,
+     "display_value": "Root document took 650\u00a0ms"
+    },
+    {
+     "id": "unused-css-rules",
+     "title": "Reduce unused CSS",
+     "score": 0,
+     "display_value": "Est savings of 83\u00a0KiB"
+    },
+    {
+     "id": "unused-javascript",
+     "title": "Reduce unused JavaScript",
+     "score": 0,
+     "display_value": "Est savings of 895\u00a0KiB"
+    },
+    {
+     "id": "bf-cache",
+     "title": "Page prevented back/forward cache restoration",
+     "score": 0,
+     "display_value": "1 failure reason"
+    },
+    {
+     "id": "document-latency-insight",
+     "title": "Document request latency",
+     "score": 0,
+     "display_value": "Est savings of 550\u00a0ms"
+    },
+    {
+     "id": "forced-reflow-insight",
+     "title": "Forced reflow",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "image-delivery-insight",
+     "title": "Improve image delivery",
+     "score": 0,
+     "display_value": "Est savings of 30\u00a0KiB"
+    },
+    {
+     "id": "lcp-discovery-insight",
+     "title": "LCP request discovery",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "network-dependency-tree-insight",
+     "title": "Network dependency tree",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "render-blocking-insight",
+     "title": "Render-blocking requests",
+     "score": 0,
+     "display_value": "Est savings of 110\u00a0ms"
+    },
+    {
+     "id": "first-contentful-paint",
+     "title": "First Contentful Paint",
+     "score": 0.11,
+     "display_value": "2.6\u00a0s"
+    },
+    {
+     "id": "speed-index",
+     "title": "Speed Index",
+     "score": 0.27,
+     "display_value": "3.0\u00a0s"
+    },
+    {
+     "id": "largest-contentful-paint",
+     "title": "Largest Contentful Paint",
+     "score": 0.34,
+     "display_value": "3.0\u00a0s"
+    },
+    {
+     "id": "unminified-css",
+     "title": "Minify CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 5\u00a0KiB"
+    },
+    {
+     "id": "cache-insight",
+     "title": "Use efficient cache lifetimes",
+     "score": 0.5,
+     "display_value": "Est savings of 4\u00a0KiB"
+    },
+    {
+     "id": "interactive",
+     "title": "Time to Interactive",
+     "score": 0.81,
+     "display_value": "3.0\u00a0s"
+    }
+   ]
+  },
+  "https://dance-reaction.wsdfy.com/gallery/": {
+   "url": "https://dance-reaction.wsdfy.com/gallery/?perf=after2",
+   "fetch_time": "2026-10-13T09:50:27.865Z",
+   "scores": {
+    "performance": 70
+   },
+   "metrics": {
+    "first-contentful-paint": "1.6\u00a0s",
+    "largest-contentful-paint": "3.1\u00a0s",
+    "total-blocking-time": "0\u00a0ms",
+    "cumulative-layout-shift": "0.02",
+    "speed-index": "3.5\u00a0s",
+    "interactive": "3.1\u00a0s"
+   },
+   "failed_audits": [
+    {
+     "id": "unused-javascript",
+     "title": "Reduce unused JavaScript",
+     "score": 0,
+     "display_value": "Est savings of 895\u00a0KiB"
+    },
+    {
+     "id": "bf-cache",
+     "title": "Page prevented back/forward cache restoration",
+     "score": 0,
+     "display_value": "1 failure reason"
+    },
+    {
+     "id": "image-delivery-insight",
+     "title": "Improve image delivery",
+     "score": 0,
+     "display_value": "Est savings of 338\u00a0KiB"
+    },
+    {
+     "id": "lcp-discovery-insight",
+     "title": "LCP request discovery",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "network-dependency-tree-insight",
+     "title": "Network dependency tree",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "render-blocking-insight",
+     "title": "Render-blocking requests",
+     "score": 0,
+     "display_value": "Est savings of 510\u00a0ms"
+    },
+    {
+     "id": "speed-index",
+     "title": "Speed Index",
+     "score": 0.17,
+     "display_value": "3.5\u00a0s"
+    },
+    {
+     "id": "largest-contentful-paint",
+     "title": "Largest Contentful Paint",
+     "score": 0.32,
+     "display_value": "3.1\u00a0s"
+    },
+    {
+     "id": "first-contentful-paint",
+     "title": "First Contentful Paint",
+     "score": 0.48,
+     "display_value": "1.6\u00a0s"
+    },
+    {
+     "id": "total-byte-weight",
+     "title": "Avoid enormous network payloads",
+     "score": 0.5,
+     "display_value": "Total size was 2,804\u00a0KiB"
+    },
+    {
+     "id": "unminified-css",
+     "title": "Minify CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 5\u00a0KiB"
+    },
+    {
+     "id": "unused-css-rules",
+     "title": "Reduce unused CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 83\u00a0KiB"
+    },
+    {
+     "id": "cache-insight",
+     "title": "Use efficient cache lifetimes",
+     "score": 0.5,
+     "display_value": "Est savings of 4\u00a0KiB"
+    },
+    {
+     "id": "interactive",
+     "title": "Time to Interactive",
+     "score": 0.79,
+     "display_value": "3.1\u00a0s"
+    }
+   ]
+  },
+  "https://dance-reaction.wsdfy.com/about/": {
+   "url": "https://dance-reaction.wsdfy.com/about/?perf=after2",
+   "fetch_time": "2026-10-13T09:50:28.234Z",
+   "scores": {
+    "performance": 65
+   },
+   "metrics": {
+    "first-contentful-paint": "2.7\u00a0s",
+    "largest-contentful-paint": "3.2\u00a0s",
+    "total-blocking-time": "10\u00a0ms",
+    "cumulative-layout-shift": "0.02",
+    "speed-index": "3.3\u00a0s",
+    "interactive": "3.2\u00a0s"
+   },
+   "failed_audits": [
+    {
+     "id": "unused-javascript",
+     "title": "Reduce unused JavaScript",
+     "score": 0,
+     "display_value": "Est savings of 895\u00a0KiB"
+    },
+    {
+     "id": "bf-cache",
+     "title": "Page prevented back/forward cache restoration",
+     "score": 0,
+     "display_value": "1 failure reason"
+    },
+    {
+     "id": "forced-reflow-insight",
+     "title": "Forced reflow",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "image-delivery-insight",
+     "title": "Improve image delivery",
+     "score": 0,
+     "display_value": "Est savings of 180\u00a0KiB"
+    },
+    {
+     "id": "lcp-discovery-insight",
+     "title": "LCP request discovery",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "network-dependency-tree-insight",
+     "title": "Network dependency tree",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "render-blocking-insight",
+     "title": "Render-blocking requests",
+     "score": 0,
+     "display_value": "Est savings of 110\u00a0ms"
+    },
+    {
+     "id": "first-contentful-paint",
+     "title": "First Contentful Paint",
+     "score": 0.11,
+     "display_value": "2.7\u00a0s"
+    },
+    {
+     "id": "speed-index",
+     "title": "Speed Index",
+     "score": 0.2,
+     "display_value": "3.3\u00a0s"
+    },
+    {
+     "id": "largest-contentful-paint",
+     "title": "Largest Contentful Paint",
+     "score": 0.29,
+     "display_value": "3.2\u00a0s"
+    },
+    {
+     "id": "mainthread-work-breakdown",
+     "title": "Minimize main-thread work",
+     "score": 0.5,
+     "display_value": "2.0\u00a0s"
+    },
+    {
+     "id": "unminified-css",
+     "title": "Minify CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 5\u00a0KiB"
+    },
+    {
+     "id": "unused-css-rules",
+     "title": "Reduce unused CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 71\u00a0KiB"
+    },
+    {
+     "id": "cache-insight",
+     "title": "Use efficient cache lifetimes",
+     "score": 0.5,
+     "display_value": "Est savings of 4\u00a0KiB"
+    },
+    {
+     "id": "interactive",
+     "title": "Time to Interactive",
+     "score": 0.75,
+     "display_value": "3.2\u00a0s"
+    }
+   ]
+  },
+  "https://dance-reaction.wsdfy.com/the-music/": {
+   "url": "https://dance-reaction.wsdfy.com/the-music/?perf=after2",
+   "fetch_time": "2026-10-13T09:50:28.117Z",
+   "scores": {
+    "performance": 65
+   },
+   "metrics": {
+    "first-contentful-paint": "2.8\u00a0s",
+    "largest-contentful-paint": "3.1\u00a0s",
+    "total-blocking-time": "20\u00a0ms",
+    "cumulative-layout-shift": "0.021",
+    "speed-index": "3.6\u00a0s",
+    "interactive": "3.3\u00a0s"
+   },
+   "failed_audits": [
+    {
+     "id": "unused-javascript",
+     "title": "Reduce unused JavaScript",
+     "score": 0,
+     "display_value": "Est savings of 895\u00a0KiB"
+    },
+    {
+     "id": "bf-cache",
+     "title": "Page prevented back/forward cache restoration",
+     "score": 0,
+     "display_value": "1 failure reason"
+    },
+    {
+     "id": "forced-reflow-insight",
+     "title": "Forced reflow",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "image-delivery-insight",
+     "title": "Improve image delivery",
+     "score": 0,
+     "display_value": "Est savings of 100\u00a0KiB"
+    },
+    {
+     "id": "lcp-discovery-insight",
+     "title": "LCP request discovery",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "network-dependency-tree-insight",
+     "title": "Network dependency tree",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "render-blocking-insight",
+     "title": "Render-blocking requests",
+     "score": 0,
+     "display_value": "Est savings of 120\u00a0ms"
+    },
+    {
+     "id": "first-contentful-paint",
+     "title": "First Contentful Paint",
+     "score": 0.08,
+     "display_value": "2.8\u00a0s"
+    },
+    {
+     "id": "speed-index",
+     "title": "Speed Index",
+     "score": 0.15,
+     "display_value": "3.6\u00a0s"
+    },
+    {
+     "id": "largest-contentful-paint",
+     "title": "Largest Contentful Paint",
+     "score": 0.32,
+     "display_value": "3.1\u00a0s"
+    },
+    {
+     "id": "mainthread-work-breakdown",
+     "title": "Minimize main-thread work",
+     "score": 0.5,
+     "display_value": "2.1\u00a0s"
+    },
+    {
+     "id": "unminified-css",
+     "title": "Minify CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 5\u00a0KiB"
+    },
+    {
+     "id": "unused-css-rules",
+     "title": "Reduce unused CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 71\u00a0KiB"
+    },
+    {
+     "id": "cache-insight",
+     "title": "Use efficient cache lifetimes",
+     "score": 0.5,
+     "display_value": "Est savings of 4\u00a0KiB"
+    },
+    {
+     "id": "interactive",
+     "title": "Time to Interactive",
+     "score": 0.75,
+     "display_value": "3.3\u00a0s"
+    }
+   ]
+  },
+  "https://dance-reaction.wsdfy.com/": {
+   "url": "https://dance-reaction.wsdfy.com/?perf=after2",
+   "fetch_time": "2026-10-13T09:50:28.199Z",
+   "scores": {
+    "performance": 64
+   },
+   "metrics": {
+    "first-contentful-paint": "2.7\u00a0s",
+    "largest-contentful-paint": "3.3\u00a0s",
+    "total-blocking-time": "40\u00a0ms",
+    "cumulative-layout-shift": "0.02",
+    "speed-index": "3.5\u00a0s",
+    "interactive": "3.6\u00a0s"
+   },
+   "failed_audits": [
+    {
+     "id": "mainthread-work-breakdown",
+     "title": "Minimize main-thread work",
+     "score": 0,
+     "display_value": "2.1\u00a0s"
+    },
+    {
+     "id": "unused-javascript",
+     "title": "Reduce unused JavaScript",
+     "score": 0,
+     "display_value": "Est savings of 865\u00a0KiB"
+    },
+    {
+     "id": "bf-cache",
+     "title": "Page prevented back/forward cache restoration",
+     "score": 0,
+     "display_value": "1 failure reason"
+    },
+    {
+     "id": "forced-reflow-insight",
+     "title": "Forced reflow",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "lcp-discovery-insight",
+     "title": "LCP request discovery",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "network-dependency-tree-insight",
+     "title": "Network dependency tree",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "first-contentful-paint",
+     "title": "First Contentful Paint",
+     "score": 0.11,
+     "display_value": "2.7\u00a0s"
+    },
+    {
+     "id": "speed-index",
+     "title": "Speed Index",
+     "score": 0.16,
+     "display_value": "3.5\u00a0s"
+    },
+    {
+     "id": "largest-contentful-paint",
+     "title": "Largest Contentful Paint",
+     "score": 0.26,
+     "display_value": "3.3\u00a0s"
+    },
+    {
+     "id": "total-byte-weight",
+     "title": "Avoid enormous network payloads",
+     "score": 0.5,
+     "display_value": "Total size was 2,670\u00a0KiB"
+    },
+    {
+     "id": "unminified-css",
+     "title": "Minify CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 5\u00a0KiB"
+    },
+    {
+     "id": "unused-css-rules",
+     "title": "Reduce unused CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 71\u00a0KiB"
+    },
+    {
+     "id": "cache-insight",
+     "title": "Use efficient cache lifetimes",
+     "score": 0.5,
+     "display_value": "Est savings of 4\u00a0KiB"
+    },
+    {
+     "id": "image-delivery-insight",
+     "title": "Improve image delivery",
+     "score": 0.5,
+     "display_value": "Est savings of 176\u00a0KiB"
+    },
+    {
+     "id": "render-blocking-insight",
+     "title": "Render-blocking requests",
+     "score": 0.5,
+     "display_value": null
+    },
+    {
+     "id": "interactive",
+     "title": "Time to Interactive",
+     "score": 0.67,
+     "display_value": "3.6\u00a0s"
+    }
+   ]
+  },
+  "https://dance-reaction.wsdfy.com/equipment/": {
+   "url": "https://dance-reaction.wsdfy.com/equipment/?perf=after2",
+   "fetch_time": "2026-10-13T09:50:28.793Z",
+   "scores": {
+    "performance": 66
+   },
+   "metrics": {
+    "first-contentful-paint": "2.7\u00a0s",
+    "largest-contentful-paint": "2.8\u00a0s",
+    "total-blocking-time": "90\u00a0ms",
+    "cumulative-layout-shift": "0.02",
+    "speed-index": "3.7\u00a0s",
+    "interactive": "3.6\u00a0s"
+   },
+   "failed_audits": [
+    {
+     "id": "mainthread-work-breakdown",
+     "title": "Minimize main-thread work",
+     "score": 0,
+     "display_value": "2.6\u00a0s"
+    },
+    {
+     "id": "unused-javascript",
+     "title": "Reduce unused JavaScript",
+     "score": 0,
+     "display_value": "Est savings of 894\u00a0KiB"
+    },
+    {
+     "id": "bf-cache",
+     "title": "Page prevented back/forward cache restoration",
+     "score": 0,
+     "display_value": "1 failure reason"
+    },
+    {
+     "id": "forced-reflow-insight",
+     "title": "Forced reflow",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "image-delivery-insight",
+     "title": "Improve image delivery",
+     "score": 0,
+     "display_value": "Est savings of 79\u00a0KiB"
+    },
+    {
+     "id": "lcp-discovery-insight",
+     "title": "LCP request discovery",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "network-dependency-tree-insight",
+     "title": "Network dependency tree",
+     "score": 0,
+     "display_value": null
+    },
+    {
+     "id": "render-blocking-insight",
+     "title": "Render-blocking requests",
+     "score": 0,
+     "display_value": "Est savings of 70\u00a0ms"
+    },
+    {
+     "id": "first-contentful-paint",
+     "title": "First Contentful Paint",
+     "score": 0.1,
+     "display_value": "2.7\u00a0s"
+    },
+    {
+     "id": "speed-index",
+     "title": "Speed Index",
+     "score": 0.14,
+     "display_value": "3.7\u00a0s"
+    },
+    {
+     "id": "largest-contentful-paint",
+     "title": "Largest Contentful Paint",
+     "score": 0.38,
+     "display_value": "2.8\u00a0s"
+    },
+    {
+     "id": "unminified-css",
+     "title": "Minify CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 5\u00a0KiB"
+    },
+    {
+     "id": "unused-css-rules",
+     "title": "Reduce unused CSS",
+     "score": 0.5,
+     "display_value": "Est savings of 71\u00a0KiB"
+    },
+    {
+     "id": "cache-insight",
+     "title": "Use efficient cache lifetimes",
+     "score": 0.5,
+     "display_value": "Est savings of 4\u00a0KiB"
+    },
+    {
+     "id": "interactive",
+     "title": "Time to Interactive",
+     "score": 0.67,
+     "display_value": "3.6\u00a0s"
+    }
+   ]
+  }
+ }
+}
