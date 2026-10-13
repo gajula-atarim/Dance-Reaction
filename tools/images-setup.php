@@ -40,6 +40,7 @@ $images = array(
 $existing = array(
 	'dr-equip-gear.webp' => '/2026/10/pexels-eden-fc-620771246-36098638-scaled.webp',
 	'dr-family-main.png' => '/2026/10/Cheerful-DJ-Under-Blue-Stage-Lights.png',
+	'dr-requests-main.webp' => '/2026/10/pexels-jake-l-davies-42710276-15262993-scaled.webp',
 );
 
 $find = function ( $name ) {
