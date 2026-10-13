@@ -70,20 +70,67 @@ add_filter( 'image_editor_output_format', function ( $formats ) {
 	return $formats;
 } );
 
-// Preload the hero photo (a CSS background, so the browser would otherwise find it late).
+/**
+ * Image size used for a container's background photo: the page hero gets the 1536px copy,
+ * the booking-enquiry background 1024px, every other card / tile / section 768px.
+ */
+function dr_background_size( $css_classes ) {
+	$cls = ' ' . $css_classes . ' ';
+	if ( false !== strpos( $cls, ' dr-hero ' ) ) {
+		return '1536x1536';
+	}
+	return false !== strpos( $cls, ' dr-enquiry ' ) ? 'large' : 'medium_large';
+}
+
+// Whenever an Elementor page is saved (editor or deploy script), point background photos at
+// the right-sized copy instead of the full-size original.
+add_filter( 'elementor/document/save/data', function ( $data ) {
+	$walk = function ( $els ) use ( &$walk ) {
+		foreach ( $els as $k => $e ) {
+			$bg = $e['settings']['background_image'] ?? null;
+			if ( ! empty( $bg['id'] ) && is_numeric( $bg['id'] ) ) {
+				$url = wp_get_attachment_image_url( (int) $bg['id'], dr_background_size( $e['settings']['css_classes'] ?? '' ) );
+				if ( $url ) {
+					$els[ $k ]['settings']['background_image']['url'] = $url;
+				}
+			}
+			if ( ! empty( $e['elements'] ) ) {
+				$els[ $k ]['elements'] = $walk( $e['elements'] );
+			}
+		}
+		return $els;
+	};
+	if ( ! empty( $data['elements'] ) && is_array( $data['elements'] ) ) {
+		$data['elements'] = $walk( $data['elements'] );
+	}
+	return $data;
+} );
+
+// Preload the page's hero photo (a CSS background, so the browser would otherwise find it late).
 add_action( 'wp_head', function () {
-	if ( ! is_front_page() ) {
+	if ( ! is_singular( 'page' ) ) {
 		return;
 	}
-	$hero = get_posts( array( 'post_type' => 'attachment', 'post_status' => 'inherit', 'meta_key' => '_dr_source', 'meta_value' => 'dr-home-hero.jpg', 'numberposts' => 1, 'fields' => 'ids' ) );
-	if ( $hero ) {
-		// Same file the hero container uses as its background (the 1536px WebP copy when it exists).
-		$url = wp_get_attachment_image_url( (int) $hero[0], '1536x1536' );
-		if ( $url ) {
-			printf( '<link rel="preload" as="image" href="%s" fetchpriority="high">' . "\n", esc_url( $url ) );
-		}
+	$data = json_decode( (string) get_post_meta( get_queried_object_id(), '_elementor_data', true ), true );
+	$first = is_array( $data ) && $data ? $data[0] : array();
+	$bg    = $first['settings']['background_image'] ?? array();
+	if ( empty( $bg['id'] ) || false === strpos( ' ' . ( $first['settings']['css_classes'] ?? '' ) . ' ', ' dr-hero ' ) ) {
+		return;
+	}
+	// Same file the hero container uses as its background.
+	$url = ! empty( $bg['url'] ) ? $bg['url'] : wp_get_attachment_image_url( (int) $bg['id'], '1536x1536' );
+	if ( $url ) {
+		printf( '<link rel="preload" as="image" href="%s" fetchpriority="high">' . "\n", esc_url( $url ) );
 	}
 }, 2 );
+
+// Gallery wall tiles are a third of the layout wide (half on phones), not half.
+add_filter( 'wp_get_attachment_image_attributes', function ( $attr ) {
+	if ( isset( $attr['sizes'] ) && false !== strpos( $attr['class'] ?? '', 'size-large' ) && is_page( (int) get_option( 'dr_gallery_page_id' ) ) ) {
+		$attr['sizes'] = '(max-width: 767px) 50vw, (max-width: 1280px) 33vw, 420px';
+	}
+	return $attr;
+} );
 
 // Content images are never wider than half the 1280px layout on desktop, so tell the
 // browser that instead of "100vw" and it downloads a right-sized version.
