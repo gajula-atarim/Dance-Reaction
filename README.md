@@ -15,6 +15,9 @@ https://dance-reaction.wsdfy.com/
 | `tools/about-setup.php` | Imports the About photos (`DR_STEP=media`), then creates/updates the About Me page and links it in the menus (`DR_STEP=page`). |
 | `tools/gallery-setup.php` | Creates/updates the Gallery page (photo wall from the 20 event photos) and links it in the menus. |
 | `tools/pages-setup.php` | Imports photos (`DR_STEP=media`), then creates/updates The Music, Equipment and Contact pages, refreshes About/Gallery and the header, and links the pages in the menus (`DR_STEP=pages`). |
+| `tools/images-setup.php` | Imports the replacement photos for the repeated images and re-saves The Music, Equipment and About. |
+| `tools/perf-setup.php` | Speed settings: hero preload and right-sized backgrounds on every page, page-cache minify + gzip. Reports in `reports/performance/`. |
+| `tools/sitemap-setup.php` | Creates/updates the Site Map page and links "Site Map" in the footer menu. |
 
 ## How the pages are built
 

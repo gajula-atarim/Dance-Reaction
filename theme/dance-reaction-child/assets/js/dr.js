@@ -78,6 +78,14 @@
 			{ t: 'flare', left: '62%', top: '22%', size: 70 },
 			{ t: 'note', ch: '♫', right: '8%', bottom: '18%', size: 44, color: P + '.6)', delay: 1 }
 		],
+		'sitemap-hero': [
+			{ t: 'flare', left: '62%', top: '22%', size: 70 },
+			{ t: 'note', ch: '♫', right: '8%', bottom: '18%', size: 44, color: P + '.6)', delay: 1 }
+		],
+		sitemap: [
+			{ t: 'note', ch: '♪', left: '3%', top: '5%', size: 38, color: '#F08BEA', delay: 1, dur: 8 },
+			{ t: 'flare', right: '4%', top: '2%', size: 64, delay: .6 }
+		],
 		library: [
 			{ t: 'note', ch: '𝄞', right: '5%', top: '8%', size: 48, color: P + '.55)', dur: 8 },
 			{ t: 'note', ch: '♫', left: '4%', bottom: '30%', size: 36, color: 'rgba(169,180,255,.6)', delay: 1, dur: 7 }

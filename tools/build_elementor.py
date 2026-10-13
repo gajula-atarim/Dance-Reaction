@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Elementor JSON for the Dance Reaction pages (Home, About, Gallery, The Music, Equipment, Contact), header and footer.
+"""Build the Elementor JSON for the Dance Reaction pages (Home, About, Gallery, The Music, Equipment, Contact, Site Map), header and footer.
 
 Output goes to elementor/*.json. Images are referenced with placeholders
 ({"id": "__IMG__<file>", "url": "__IMG__<file>"}) that tools/setup.php swaps for
@@ -570,6 +570,50 @@ def photo_wall():
                    pad_t=box(96, 32, 96, 32), pad_m=box(72, 16, 72, 16))
 
 
+# ---------------------------------------------------------------- Site Map page
+
+SITEMAP = [
+    ("Home", "/", "The welcome, what to look for when booking a DJ, and the events Dance Reaction covers.",
+     [("Welcome", "#welcome"), ("Booking a DJ", "#why"), ("Price should be the last thing", "#price"),
+      ("Planning &amp; communication", "#how"), ("Events we cover", "#events"), ("Testimonials", "#testimonials"),
+      ("Gallery", "#gallery"), ("Booking enquiry", "#enquiry")]),
+    ("About Me", "/about/", "The DJ behind Dance Reaction — from a night at the local hotel disco to every kind of event.",
+     [("Off the decks", "#family"), ("Where it began", "#story"), ("My aim", "#aim"), ("My DJ style", "#style"),
+      ("Testimonials", "#testimonials"), ("Gallery", "#gallery")]),
+    ("The Music", "/the-music/", "From the swing era to the dance hits of today, and how the music is chosen on the night.",
+     [("All the music you require", "#library"), ("The music list", "#list"), ("Your music, your guests", "#requests"),
+      ("Reading the crowd", "#crowd"), ("Testimonials", "#testimonials"), ("Gallery", "#gallery")]),
+    ("Equipment", "/equipment/", "The equipment package, the standards it meets and the guest numbers it suits.",
+     [("My gear", "#intro"), ("Quality and reliability", "#standards"), ("The gear", "#gear"),
+      ("Guest lists", "#capacity"), ("Testimonials", "#testimonials"), ("Gallery", "#gallery")]),
+    ("Gallery", "/gallery/", "Photos from weddings, parties and corporate events.",
+     [("Photo wall", "#photos"), ("Testimonials", "#testimonials")]),
+    ("Contact", "/contact/", "Send an enquiry or get in touch directly by phone or email.",
+     [("Enquiry form &amp; contact details", "#contact")]),
+]
+
+
+def sitemap_section():
+    cards = []
+    for n, (title, url, desc, secs) in enumerate(SITEMAP, 1):
+        links = "".join(f'<li><a href="{url}{a}">{t}</a></li>' for t, a in secs)
+        cards.append(con([
+            heading(f"{n:02d}", "dr-smap__num", "div"),
+            heading(title, "dr-smap__title", "h2", link=url),
+            text(f"<p>{desc}</p>", "dr-smap__desc"),
+            text(f'<ul class="dr-smap__links">{links}</ul>', "dr-smap__list"),
+            button(f"Go to {title} →", url, "dr-btn dr-btn--link"),
+        ], "dr-smap", width=33, width_t=48, width_m=100, gap_=14, pad=box(36), pad_t=box(30, 28, 30, 28),
+            pad_m=box(26, 22, 26, 22)))
+    head = con([
+        heading("Site map", "dr-eyebrow", "div", align="center"),
+        heading('Every page, <span class="dr-grad-text">at a glance</span>', "dr-h2 dr-h2--lg", "h2", align="center"),
+    ], "dr-photos-head", align="center", gap_=16)
+    grid = con(cards, "dr-smap-grid", direction="row", wrap="wrap", gap_=gap(24, 24), align="stretch")
+    return section([head, grid, cta_pair()], "dr-sitemap dr-smoke", "sitemap", gap_=56, pad=box(130, 48, 130, 48),
+                   pad_t=box(96, 32, 96, 32), pad_m=box(72, 16, 72, 16))
+
+
 # ---------------------------------------------------------------- Shared blocks for the inner pages
 
 CONTACT = "/contact/"
@@ -907,6 +951,8 @@ def main():
                            gallery(view=True)],
         "contact.json": [page_hero("contact-hero", "Contact", "Get in touch", "dr-contact-hero.jpg"),
                          contact_section()],
+        "sitemap.json": [page_hero("sitemap-hero", "Site Map", "Every page at a glance", "dr-sitemap-hero.jpg"),
+                         sitemap_section()],
     }
     for name, data in pages.items():
         with open(os.path.join(OUT, name), "w") as f:
