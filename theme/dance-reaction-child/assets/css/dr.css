@@ -786,10 +786,11 @@ a.dr-info:hover, .dr-site a.dr-info:hover, .dr-site a.dr-info:focus-visible, .dr
 	position: relative; overflow: hidden; isolation: isolate; border-radius: 36px 8px 52px 6px; border: 1.5px solid transparent;
 	background: linear-gradient(var(--dr-panel), var(--dr-panel)) padding-box,
 		linear-gradient(140deg, rgba(224, 82, 216, .8), rgba(61, 79, 232, .3) 60%, rgba(255, 255, 255, .08)) border-box;
-	box-shadow: 0 30px 70px -30px rgba(148, 68, 220, .6); transition: transform .5s var(--dr-ease);
+	box-shadow: 0 30px 70px -30px rgba(148, 68, 220, .6); transition: transform .5s var(--dr-ease), box-shadow .4s;
 }
-.dr-site .dr-panel:hover { transform: translateY(-6px); }
 .dr-site .dr-panel--grad { background: var(--dr-grad); border: 0; box-shadow: 0 40px 90px -30px rgba(224, 82, 216, .7); }
+/* Hover from the design: lift, grow slightly, pink outline + blue glow. */
+.dr-site .dr-panel:hover { transform: translateY(-8px) scale(1.03); box-shadow: 0 0 0 2px var(--dr-g1), 0 30px 70px -20px var(--dr-g3); z-index: 2; }
 .dr-site .dr-panel--grad::before {
 	content: ""; position: absolute; left: auto; right: -30px; top: -30px; bottom: auto; width: 200px; height: 200px; border-radius: 50%; z-index: 0; pointer-events: none;
 	background: repeating-radial-gradient(circle, rgba(255, 255, 255, .14) 0 2px, transparent 2px 9px);
