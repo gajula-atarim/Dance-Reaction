@@ -1073,11 +1073,16 @@ body.dr-site #masthead { position: sticky !important; top: 0; z-index: 50; }
 	.dr-site .dr-tiles > .dr-tile { width: 100% !important; max-width: 340px; }
 }
 
+@media (max-width: 767px) {
+	/* Header logo: as large as the row allows next to "Book now" and the menu button. */
+	.dr-site .dr-logo .hfe-heading, .dr-site .dr-logo .elementor-heading-title { font-size: clamp(14px, calc((100vw - 236px) / 10.8), 18px); letter-spacing: .04em; }
+}
+
 @media (max-width: 400px) {
 	/* Header: logo, menu button and Book now fit side by side. */
 	.dr-site .dr-header { --gap: 8px 8px; --column-gap: 8px; }
 	.dr-site .dr-header > .e-con-inner { gap: 8px !important; }
-	.dr-site .dr-logo .hfe-heading, .dr-site .dr-logo .elementor-heading-title { font-size: 12px; letter-spacing: .04em; }
+	.dr-site .dr-logo .hfe-heading, .dr-site .dr-logo .elementor-heading-title { font-size: clamp(12px, calc((100vw - 200px) / 11), 18px); letter-spacing: .04em; }
 	.dr-site .dr-header .dr-btn .elementor-button { padding: 10px 14px; font-size: 12.5px; word-spacing: 2px; }
 	.dr-site .dr-header__cta { gap: 8px !important; }
 	.dr-site .dr-nav--hfe .hfe-nav-menu__toggle { padding: 6px; }
