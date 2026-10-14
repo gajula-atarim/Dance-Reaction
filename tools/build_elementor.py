@@ -188,7 +188,7 @@ def hero():
     content = con([
         heading("Mobile DJ · Melbourne", "dr-badge", "div"),
         heading("Dance Reaction", "dr-hero-title", "h1"),
-        heading("Mobile Disco's", "dr-hero-sub", "p"),
+        heading("Mobile Disco", "dr-hero-sub", "p"),
         heading("Feel the rhythm of the night", "dr-hero-tag", "p"),
         text("<p>Weddings, corporate dinners, birthdays and any other type of event.</p>", "dr-lead"),
         btn_row([button("Booking enquiry", "#enquiry"),
