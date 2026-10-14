@@ -187,8 +187,9 @@ TEL = "tel:0419399374"
 def hero():
     content = con([
         heading("Mobile DJ · Melbourne", "dr-badge", "div"),
-        heading("Dance Reaction", "dr-hero-title", "h1"),
-        heading("Mobile Disco", "dr-hero-sub", "p"),
+        # Company name with "Mobile Disco" centred under it (client feedback).
+        con([heading("Dance Reaction", "dr-hero-title", "h1"),
+             heading("Mobile Disco", "dr-hero-sub", "p", align="center")], "dr-hero-name", align="center", gap_=8),
         heading('Feel the <span class="dr-hp"><span>rhythm</span></span> of the night', "dr-hero-tag dr-hero-tag--rhythm", "p"),
         text("<p>Weddings, corporate dinners, birthdays and any other type of event.</p>", "dr-lead"),
         btn_row([button("Booking enquiry", "#enquiry"),
