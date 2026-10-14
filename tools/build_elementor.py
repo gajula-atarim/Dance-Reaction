@@ -189,7 +189,7 @@ def hero():
         heading("Mobile DJ · Melbourne", "dr-badge", "div"),
         heading("Dance Reaction", "dr-hero-title", "h1"),
         heading("Mobile Disco", "dr-hero-sub", "p"),
-        heading("Feel the rhythm of the night", "dr-hero-tag", "p"),
+        heading('Feel the <span class="dr-hp"><span>rhythm</span></span> of the night', "dr-hero-tag dr-hero-tag--rhythm", "p"),
         text("<p>Weddings, corporate dinners, birthdays and any other type of event.</p>", "dr-lead"),
         btn_row([button("Booking enquiry", "#enquiry"),
                  button(f"Call {PHONE}", TEL, "dr-btn dr-btn--outline")], mt=8),
@@ -218,9 +218,9 @@ def welcome():
     copy = con([
         heading("Welcome", "dr-eyebrow", "div"),
         heading("Hi, thanks for dropping by", "dr-h2", "h2"),
-        text("<p>Hi, thanks for dropping by to check out Dance Reaction. I know that planning a party or a celebration, "
-             "be it a wedding, corporate dinner, birthday or any other type of event, can take some time, and trying to "
-             "find the right DJ for your event may be frustrating.</p>"
+        text("<p>Hi, thanks for dropping by. I know that planning and organising a party or special celebration, be it a "
+             "wedding, corporate event, birthday or a social club presentation evening, can be time consuming and "
+             "stressful when trying to find the right DJ / music for your event.</p>"
              "<p>So what you will get here, is an uncomplicated honest look at what Dance Reaction is about, what I do, "
              "and how I make it work for your event.</p>", "dr-body-lg"),
         btn_row([button("Get in touch", "#enquiry"),
@@ -389,7 +389,7 @@ def enquiry():
         con([
             con([heading("Call", "dr-info__label", "div"), heading(PHONE, "dr-info__value", "div")],
                 "dr-info dr-info--call", tag="a", link=TEL),
-            con([heading("Based in", "dr-info__label", "div"), heading("Sunshine North, VIC 3020", "dr-info__value", "div")],
+            con([heading("Based in", "dr-info__label", "div"), heading("Preston, VIC 3072", "dr-info__value", "div")],
                 "dr-info dr-info--place"),
         ], "dr-info-list", gap_=12),
     ], "dr-split__copy", width=50, width_t=100, width_m=100, gap_=26, justify="center")

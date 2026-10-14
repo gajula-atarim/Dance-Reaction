@@ -122,9 +122,9 @@
       "elType": "widget",
       "widgetType": "heading",
       "settings": {
-       "title": "Feel the rhythm of the night",
+       "title": "Feel the <span class=\"dr-hp\"><span>rhythm</span></span> of the night",
        "header_size": "p",
-       "_css_classes": "dr-hero-tag"
+       "_css_classes": "dr-hero-tag dr-hero-tag--rhythm"
       },
       "elements": []
      },
@@ -421,7 +421,7 @@
         "elType": "widget",
         "widgetType": "text-editor",
         "settings": {
-         "editor": "<p>Hi, thanks for dropping by to check out Dance Reaction. I know that planning a party or a celebration, be it a wedding, corporate dinner, birthday or any other type of event, can take some time, and trying to find the right DJ for your event may be frustrating.</p><p>So what you will get here, is an uncomplicated honest look at what Dance Reaction is about, what I do, and how I make it work for your event.</p>",
+         "editor": "<p>Hi, thanks for dropping by. I know that planning and organising a party or special celebration, be it a wedding, corporate event, birthday or a social club presentation evening, can be time consuming and stressful when trying to find the right DJ / music for your event.</p><p>So what you will get here, is an uncomplicated honest look at what Dance Reaction is about, what I do, and how I make it work for your event.</p>",
          "_css_classes": "dr-body-lg"
         },
         "elements": []
@@ -3463,7 +3463,7 @@
             "elType": "widget",
             "widgetType": "heading",
             "settings": {
-             "title": "Sunshine North, VIC 3020",
+             "title": "Preston, VIC 3072",
              "header_size": "div",
              "_css_classes": "dr-info__value"
             },
