@@ -761,7 +761,7 @@ STANDARDS = ["Clean and regularly maintained components and media",
              "tested &amp; tagged equipment as required by law, and by qualified persons",
              "roadcased components", "industry standard rigging", "safe wiring practices",
              "restricted access to equipment"]
-GEAR = ["Denon cd/mp3/midi players", "Wireless Mic Systems", "DBX compressior/limiter",
+GEAR = ["Native Instruments Traktor Pro", "Wireless Mic Systems", "DBX compressior/limiter",
         "HK Linier3 1000 Active Speakers", "HK Linier3 1000 Active Sub Speakers",
         "DMX Controlled &amp; Sound Activated lighting"]
 
