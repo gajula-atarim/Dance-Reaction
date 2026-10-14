@@ -109,8 +109,12 @@ body.dr-site {
 .dr-site .dr-h2--md .elementor-heading-title { font-size: clamp(26.4px, 3.34vw, 45.8px); line-height: 1.08; }
 .dr-site .dr-h2--xl .elementor-heading-title { font-size: clamp(35.2px, 4.93vw, 66.9px); line-height: 1; }
 .dr-site .dr-why-head .dr-h2--md .elementor-heading-title { font-size: clamp(26.4px, 3.4vw, 47.5px); }
-.dr-site .dr-events .dr-h2--xl .elementor-heading-title { font-size: clamp(31.7px, 4.75vw, 63.4px); }
 .dr-site .dr-quotes-head .dr-h2 .elementor-heading-title { font-size: clamp(28.2px, 4.05vw, 52.8px); }
+/* Home keeps its original heading sizes (the zip sizes above apply to the inner pages). */
+.home.dr-site .dr-hero-title .elementor-heading-title { font-size: clamp(34px, 4.58vw, 68.6px); }
+.dr-site .dr-price .dr-h2--md .elementor-heading-title { font-size: clamp(26.4px, 3.4vw, 47.5px); }
+.dr-site .dr-events .dr-h2--xl .elementor-heading-title { font-size: clamp(34px, 4.9vw, 66.9px); }
+.home.dr-site .dr-quotes-head .dr-h2 .elementor-heading-title { font-size: clamp(28px, 3.87vw, 49.3px); }
 
 .dr-site .dr-body-lg { font-size: clamp(16.5px, 1.32vw, 19px); line-height: 1.65; opacity: .9; }
 .dr-site .dr-body-lg p { text-wrap: pretty; }
