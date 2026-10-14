@@ -832,7 +832,7 @@ def equip_capacity():
 def contact_section():
     left = con([
         heading("Contact", "dr-eyebrow dr-eyebrow--line", "div"),
-        heading('Dance Reaction <span class="dr-grad-text">Mobile Disco</span>', "dr-h2 dr-h2--lg", "h2"),
+        heading('Dance Reaction <span class="dr-grad-text">Mobile Discos</span>', "dr-h2 dr-h2--lg", "h2"),
         heading("abn: 63 006 859 187", "dr-abn", "div"),
         con([
             con([heading("Mobile", "dr-info__label", "div"), heading(PHONE, "dr-info__value", "div")],
