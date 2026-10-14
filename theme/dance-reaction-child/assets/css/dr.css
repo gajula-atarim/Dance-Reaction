@@ -236,7 +236,7 @@ body.dr-site {
 /* Home hero: "Mobile Disco" a bit larger, centred under the company name (client). */
 .dr-site .dr-hero-name { width: fit-content !important; max-width: 100%; }
 .dr-site .dr-hero-name > .dr-hero-sub { margin-top: 0 !important; width: 100%; }
-.dr-site .dr-hero-name .dr-hero-sub .elementor-heading-title { font-size: clamp(15px, 1.75vw, 24px); letter-spacing: .32em; text-align: center; padding-left: .32em; }
+.dr-site .dr-hero-name .dr-hero-sub .elementor-heading-title { font-size: clamp(15px, 1.75vw, 24px); letter-spacing: .32em; text-align: center; transform: translateX(-.08em); }
 /* Home hero badge a bit larger (client). */
 .home.dr-site .dr-hero .dr-badge .elementor-heading-title { font-size: 13.5px; gap: 12px; padding: 10px 18px; }
 .home.dr-site .dr-hero .dr-badge .dr-eq { height: 17px; }
